@@ -92,6 +92,7 @@ export async function POST(request: Request) {
       "group_memberships",
       "theme_company_links",
       "daily_reports",
+      "material_signals",
     ].map((table) => binding.prepare(`DELETE FROM ${table}`)),
     ...data.sources.map((source) =>
       binding
@@ -145,7 +146,7 @@ export async function POST(request: Request) {
     ...data.themes.map((theme) =>
       binding
         .prepare(
-          "INSERT INTO themes (id, run_id, name, kicker, score, stage, direction, thesis, why_now, value_capture, chain, catalysts, risks, source_ids) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+          "INSERT INTO themes (id, run_id, name, kicker, score, stage, direction, lifecycle, first_detected_at, early_signal_score, market_heat, momentum, spark_signals, spread_triggers, invalidation_signals, thesis, why_now, value_capture, chain, catalysts, risks, source_ids) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
         )
         .bind(
           theme.id,
@@ -155,6 +156,14 @@ export async function POST(request: Request) {
           theme.score,
           theme.stage,
           theme.direction,
+          theme.lifecycle,
+          theme.firstDetectedAt,
+          theme.earlySignalScore,
+          theme.marketHeat,
+          theme.momentum,
+          json(theme.sparkSignals),
+          json(theme.spreadTriggers),
+          json(theme.invalidationSignals),
           theme.thesis,
           theme.whyNow,
           theme.valueCapture,
@@ -229,6 +238,25 @@ export async function POST(request: Request) {
         json(data.dailyReport.signals),
         json(data.dailyReport.risks),
       ),
+    ...data.materialSignals.map((signal) =>
+      binding
+        .prepare(
+          "INSERT INTO material_signals (id, run_id, material, direction, change_label, period, status, thesis, source_ids, theme_ids, stock_links) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+        )
+        .bind(
+          signal.id,
+          data.run.id,
+          signal.material,
+          signal.direction,
+          signal.change,
+          signal.period,
+          signal.status,
+          signal.thesis,
+          json(signal.sourceIds),
+          json(signal.themeIds),
+          json(signal.stockLinks),
+        ),
+    ),
     binding
       .prepare(
         "INSERT INTO published_snapshots (run_id, content_hash, payload, published_at) VALUES (?, ?, ?, ?) ON CONFLICT(run_id) DO UPDATE SET content_hash = excluded.content_hash, payload = excluded.payload, published_at = excluded.published_at",

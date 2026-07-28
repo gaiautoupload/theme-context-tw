@@ -6,6 +6,8 @@ export type SourceType =
   | "manual_review";
 
 export type Confidence = "high" | "medium" | "low";
+export type ThemeLifecycle = "spark" | "spreading" | "hot" | "cooling" | "fading";
+export type ThemeMomentum = "rising" | "stable" | "falling";
 
 export interface ResearchRun {
   id: string;
@@ -52,6 +54,14 @@ export interface Theme {
   score: number;
   stage: string;
   direction: string;
+  lifecycle: ThemeLifecycle;
+  firstDetectedAt: string;
+  earlySignalScore: number;
+  marketHeat: number;
+  momentum: ThemeMomentum;
+  sparkSignals: string[];
+  spreadTriggers: string[];
+  invalidationSignals: string[];
   thesis: string;
   whyNow: string;
   valueCapture: string;
@@ -103,6 +113,25 @@ export interface Claim {
   sourceIds: string[];
 }
 
+export interface MaterialStockLink {
+  ticker: string;
+  relationship: "direct_supplier" | "inventory_leverage" | "cost_pressure";
+  reasoning: string;
+}
+
+export interface MaterialSignal {
+  id: string;
+  material: string;
+  direction: "up" | "down" | "tightening" | "easing";
+  change: string;
+  period: string;
+  status: string;
+  thesis: string;
+  sourceIds: string[];
+  themeIds: string[];
+  stockLinks: MaterialStockLink[];
+}
+
 export interface ResearchData {
   run: ResearchRun;
   dailyReport: DailyReport;
@@ -114,4 +143,5 @@ export interface ResearchData {
   themeCompanyLinks: ThemeCompanyLink[];
   sources: Source[];
   claims: Claim[];
+  materialSignals: MaterialSignal[];
 }

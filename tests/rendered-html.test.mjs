@@ -1,5 +1,10 @@
 import assert from "node:assert/strict";
+import { readFile } from "node:fs/promises";
 import test from "node:test";
+
+const seed = JSON.parse(
+  await readFile(new URL("../data/seed-data.json", import.meta.url), "utf8"),
+);
 
 async function loadWorker() {
   const workerUrl = new URL("../dist/server/index.js", import.meta.url);
@@ -34,9 +39,15 @@ test("server-renders the final research homepage", async () => {
   assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
   const html = await response.text();
   assert.match(html, /題材脈絡/);
-  assert.match(html, /AI 主線沒有消失/);
+  assert.match(html, /AI 需求仍有數字支撐/);
   assert.match(html, /國際事件/);
   assert.match(html, /投資主題/);
+  assert.match(html, /市場還沒燒起來，證據先冒煙/);
+  assert.match(html, /小火苗/);
+  assert.match(html, /FOPLP、CPO 與異質整合/);
+  assert.match(html, /五分鐘，只看會影響判斷的事/);
+  assert.match(html, /DRAM \+13～18%/);
+  assert.match(html, /誰的關聯最直接/);
   assert.doesNotMatch(html, /Your site is taking shape|react-loading-skeleton|codex-preview/);
 });
 
@@ -49,8 +60,8 @@ test("public APIs expose the current snapshot and search", async () => {
   );
   assert.equal(latest.status, 200);
   const report = await latest.json();
-  assert.equal(report.run.id, "2026-07-28-close-v1");
-  assert.equal(report.topThemes.length, 5);
+  assert.equal(report.run.id, seed.run.id);
+  assert.equal(report.topThemes.length, seed.themes.length);
 
   const search = await worker.fetch(
     new Request("http://localhost/api/search?q=台積電"),

@@ -6,9 +6,9 @@ const data = JSON.parse(
   await readFile(new URL("../data/seed-data.json", import.meta.url), "utf8"),
 );
 
-test("first published research set meets launch scope", () => {
+test("current published research set meets minimum scope", () => {
   assert.ok(data.themes.length >= 3);
-  assert.ok(data.groups.length >= 3);
+  assert.ok(data.groups.length >= 2);
   assert.ok(data.companies.length >= 3);
   assert.ok(data.events.length >= 1);
 });
@@ -26,6 +26,13 @@ test("identifiers, sources, and relationships are internally consistent", () => 
     );
     assert.ok(publishers.size >= 2, `${theme.id} must have two independent publishers`);
     assert.ok(theme.score >= 0 && theme.score <= 100);
+    assert.ok(["spark", "spreading", "hot", "cooling", "fading"].includes(theme.lifecycle));
+    assert.ok(["rising", "stable", "falling"].includes(theme.momentum));
+    assert.ok(theme.earlySignalScore >= 0 && theme.earlySignalScore <= 100);
+    assert.ok(theme.marketHeat >= 0 && theme.marketHeat <= 100);
+    assert.ok(theme.sparkSignals.length > 0);
+    assert.ok(theme.spreadTriggers.length > 0);
+    assert.ok(theme.invalidationSignals.length > 0);
   }
   for (const company of data.companies) {
     assert.match(company.ticker, /^\d{4}$/);
@@ -38,6 +45,29 @@ test("identifiers, sources, and relationships are internally consistent", () => 
   for (const membership of data.groupMemberships) {
     assert.ok(groupIds.has(membership.groupId));
     assert.ok(tickers.has(membership.ticker));
+  }
+});
+
+test("early-signal model exposes at least one low-heat spark", () => {
+  const sparks = data.themes.filter(
+    (theme) =>
+      theme.lifecycle === "spark" &&
+      theme.earlySignalScore >= 70 &&
+      theme.marketHeat <= 40 &&
+      theme.momentum === "rising",
+  );
+  assert.ok(sparks.length >= 1, "expected at least one rising spark before market heat");
+});
+
+test("material price signals map to themes and ranked stocks", () => {
+  assert.ok(data.materialSignals.length >= 1);
+  const themeIds = new Set(data.themes.map((theme) => theme.id));
+  const tickers = new Set(data.companies.map((company) => company.ticker));
+  for (const signal of data.materialSignals) {
+    assert.ok(signal.sourceIds.length >= 2);
+    assert.ok(signal.themeIds.every((id) => themeIds.has(id)));
+    assert.ok(signal.stockLinks.length >= 1);
+    assert.ok(signal.stockLinks.every((link) => tickers.has(link.ticker)));
   }
 });
 

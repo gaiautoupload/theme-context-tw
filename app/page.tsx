@@ -3,6 +3,8 @@ import Link from "next/link";
 import { SignalMap } from "@/components/SignalMap";
 import { ThemeCard } from "@/components/ThemeCard";
 import { ConfidenceBadge, SourceTypeBadge } from "@/components/Badges";
+import { SparkRadar } from "@/components/SparkRadar";
+import { QuickDecisionBoard } from "@/components/QuickDecisionBoard";
 import { getPublishedData, themeLinks } from "@/lib/data";
 
 export const metadata: Metadata = {
@@ -19,21 +21,23 @@ export default async function Home() {
   }).format(new Date(data.run.asOf));
   const highlightedClaims = data.claims.slice(0, 3);
   const sourceById = new Map(data.sources.map((source) => [source.id, source]));
+  const sparkCount = data.themes.filter((theme) => theme.lifecycle === "spark").length;
 
   return (
     <>
       <section className="hero">
         <div className="container hero-grid">
           <div className="hero-copy">
-            <p className="eyebrow">DAILY MARKET CONTEXT · 收盤後研究</p>
-            <h1>{data.dailyReport.title}</h1>
-            <p className="hero-lede">{data.dailyReport.narrative}</p>
+            <p className="eyebrow">5-MINUTE MARKET RESEARCH · 五分鐘快研究</p>
+            <h1>先看新題材，<br />再找最直接的股票。</h1>
+            <p className="hero-lede"><strong>{data.dailyReport.title}</strong></p>
+            <p className="hero-summary">{data.dailyReport.narrative}</p>
             <div className="hero-actions">
-              <Link className="button button-primary" href="/themes">
-                查看今日主題
+              <Link className="button button-primary" href="#quick-research">
+                開始五分鐘快看
               </Link>
-              <Link className="button button-secondary" href="/methodology">
-                研究如何產生
+              <Link className="button button-secondary" href="#spark-radar-title">
+                找小火苗
               </Link>
             </div>
           </div>
@@ -52,8 +56,8 @@ export default async function Home() {
               <span>引用來源</span>
             </div>
             <div className="brief-stat">
-              <strong>{data.groups.length}</strong>
-              <span>企業集團</span>
+              <strong>{sparkCount}</strong>
+              <span>小火苗</span>
             </div>
             <p className="status-line">
               <span aria-hidden="true" />
@@ -62,6 +66,11 @@ export default async function Home() {
           </aside>
         </div>
       </section>
+
+      <div className="container">
+        <QuickDecisionBoard data={data} />
+        <SparkRadar themes={data.themes} />
+      </div>
 
       <section className="container change-strip" aria-labelledby="changes-title">
         <p className="eyebrow" id="changes-title">WHAT CHANGED</p>
@@ -90,9 +99,9 @@ export default async function Home() {
         <div className="section-heading">
           <div>
             <p className="eyebrow">TOP THEMES</p>
-            <h2>今天最值得追蹤的五條主線</h2>
+            <h2>從小火苗到火熱，分開判讀</h2>
           </div>
-          <p>強度不是漲幅預測，而是來源品質、催化新鮮度、商用階段與價值捕捉的綜合分數。</p>
+          <p>題材強度衡量研究重要性；先行分數與市場熱度的落差，才用來辨識是否仍在早期。</p>
         </div>
         <div className="theme-grid">
           {data.themes.map((theme, index) => (

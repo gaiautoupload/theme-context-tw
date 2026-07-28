@@ -33,6 +33,7 @@ export function validateResearchData(input: unknown): {
     "themeCompanyLinks",
     "sources",
     "claims",
+    "materialSignals",
   ] as const;
   for (const key of requiredArrays) {
     if (!Array.isArray(data[key])) errors.push(`${key} must be an array`);
@@ -81,6 +82,33 @@ export function validateResearchData(input: unknown): {
     if (publishers.size < 2) {
       errors.push(`theme ${theme.id} needs two independent publishers`);
     }
+    if (!["spark", "spreading", "hot", "cooling", "fading"].includes(theme.lifecycle)) {
+      errors.push(`theme ${theme.id} has invalid lifecycle`);
+    }
+    if (!["rising", "stable", "falling"].includes(theme.momentum)) {
+      errors.push(`theme ${theme.id} has invalid momentum`);
+    }
+    if (
+      !Number.isInteger(theme.earlySignalScore) ||
+      theme.earlySignalScore < 0 ||
+      theme.earlySignalScore > 100
+    ) {
+      errors.push(`theme ${theme.id} has invalid earlySignalScore`);
+    }
+    if (!Number.isInteger(theme.marketHeat) || theme.marketHeat < 0 || theme.marketHeat > 100) {
+      errors.push(`theme ${theme.id} has invalid marketHeat`);
+    }
+    if (
+      !theme.firstDetectedAt ||
+      !Array.isArray(theme.sparkSignals) ||
+      !Array.isArray(theme.spreadTriggers) ||
+      !Array.isArray(theme.invalidationSignals) ||
+      theme.sparkSignals.length === 0 ||
+      theme.spreadTriggers.length === 0 ||
+      theme.invalidationSignals.length === 0
+    ) {
+      errors.push(`theme ${theme.id} is missing lifecycle evidence`);
+    }
     for (const sourceId of theme.sourceIds) {
       if (!sourceIds.has(sourceId)) errors.push(`theme ${theme.id} references missing source`);
     }
@@ -117,6 +145,24 @@ export function validateResearchData(input: unknown): {
     }
     for (const sourceId of claim.sourceIds) {
       if (!sourceIds.has(sourceId)) errors.push(`claim ${claim.id} references missing source`);
+    }
+  }
+
+  for (const signal of data.materialSignals!) {
+    if (!["up", "down", "tightening", "easing"].includes(signal.direction)) {
+      errors.push(`material signal ${signal.id} has invalid direction`);
+    }
+    if (signal.sourceIds.length < 2) {
+      errors.push(`material signal ${signal.id} needs at least two sources`);
+    }
+    for (const sourceId of signal.sourceIds) {
+      if (!sourceIds.has(sourceId)) errors.push(`material signal ${signal.id} references missing source`);
+    }
+    for (const themeId of signal.themeIds) {
+      if (!themeIds.has(themeId)) errors.push(`material signal ${signal.id} references missing theme`);
+    }
+    for (const stock of signal.stockLinks) {
+      if (!tickers.has(stock.ticker)) errors.push(`material signal ${signal.id} references missing ticker`);
     }
   }
 

@@ -16,7 +16,15 @@ export async function getPublishedData(): Promise<ResearchData> {
       .first<{ payload: string }>();
 
     if (!row?.payload) return seedData;
-    return JSON.parse(row.payload) as ResearchData;
+    const parsed = JSON.parse(row.payload) as Partial<ResearchData>;
+    if (
+      !Array.isArray(parsed.materialSignals) ||
+      !Array.isArray(parsed.themes) ||
+      parsed.themes.some((theme) => !theme.lifecycle)
+    ) {
+      return seedData;
+    }
+    return parsed as ResearchData;
   } catch {
     return seedData;
   }

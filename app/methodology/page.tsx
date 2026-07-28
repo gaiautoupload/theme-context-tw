@@ -41,6 +41,36 @@ export default function MethodologyPage() {
 
       <section className="method-section">
         <div className="section-heading compact">
+          <div><p className="eyebrow">LIFECYCLE MODEL</p><h2>不是只找熱門，而是追蹤火怎麼燒</h2></div>
+        </div>
+        <div className="method-flow lifecycle-method-flow">
+          {[
+            ["01", "小火苗", "至少兩個獨立訊號開始聚合，但市場注意力與營收驗證仍低。"],
+            ["02", "擴散", "跨媒體、跨供應鏈或跨公司出現確認，題材開始被更多參與者採用。"],
+            ["03", "火熱", "成交、新聞與市場敘事高度擁擠，研究重點轉向兌現與估值風險。"],
+            ["04", "降溫", "催化沒有延續、驗證延後或價格動能轉弱，必須降低優先級。"],
+            ["05", "衰敗", "核心假設被正式數據推翻，主題保留歷史但退出追蹤名單。"],
+          ].map(([number, title, copy]) => (
+            <article key={number}>
+              <span>{number}</span><strong>{title}</strong><p>{copy}</p>
+            </article>
+          ))}
+        </div>
+        <div className="signal-formula">
+          <strong>小火苗判斷</strong>
+          <span>來源新鮮度</span><b>＋</b>
+          <span>獨立訊號聚合</span><b>＋</b>
+          <span>價值鏈可驗證性</span><b>＋</b>
+          <span>先行分數－市場熱度落差</span>
+        </div>
+        <p className="method-note">
+          「市場熱度」不是即時成交量模型，而是依新聞密度、題材普及度、公司揭露與市場敘事擁擠程度做的研究標記；
+          因此只用來排序查證優先級，不當作報酬預測。
+        </p>
+      </section>
+
+      <section className="method-section">
+        <div className="section-heading compact">
           <div><p className="eyebrow">SCORING</p><h2>題材強度如何計算</h2></div>
         </div>
         <div className="score-method-grid">

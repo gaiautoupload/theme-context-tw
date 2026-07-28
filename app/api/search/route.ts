@@ -17,6 +17,9 @@ export async function GET(request: Request) {
         id: theme.id,
         title: theme.name,
         summary: theme.thesis,
+        lifecycle: theme.lifecycle,
+        earlySignalScore: theme.earlySignalScore,
+        marketHeat: theme.marketHeat,
         href: `/themes/${theme.id}`,
       })),
     ...data.groups

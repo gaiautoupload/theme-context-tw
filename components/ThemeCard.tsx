@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { Company, Theme, ThemeCompanyLink } from "@/lib/types";
-import { ThemeScore } from "./Badges";
+import { LifecycleBadge, ThemeScore } from "./Badges";
 
 export function ThemeCard({
   theme,
@@ -20,7 +20,7 @@ export function ThemeCard({
         <span className="rank">0{rank}</span>
         <div className="theme-card-badges">
           <span className="eyebrow">{theme.kicker}</span>
-          <span className="stage-pill">{theme.stage}</span>
+          <LifecycleBadge lifecycle={theme.lifecycle} momentum={theme.momentum} />
         </div>
         <ThemeScore score={theme.score} />
       </div>
@@ -28,6 +28,10 @@ export function ThemeCard({
         <Link href={`/themes/${theme.id}`}>{theme.name}</Link>
       </h3>
       <p>{theme.thesis}</p>
+      <div className="theme-heat-summary">
+        <span>先行 {theme.earlySignalScore}</span>
+        <span>熱度 {theme.marketHeat}</span>
+      </div>
       <div className="theme-card-focus">
         <span>代表股</span>
         <div>

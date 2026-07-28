@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ConfidenceBadge, SourceTypeBadge, ThemeScore } from "@/components/Badges";
+import { LifecycleBadge } from "@/components/Badges";
 import { companyMap, getPublishedData, sourceMap, themeLinks } from "@/lib/data";
 
 export async function generateMetadata({
@@ -43,6 +44,7 @@ export default async function ThemeDetailPage({
           <h1>{theme.name}</h1>
           <p className="detail-thesis">{theme.thesis}</p>
           <div className="detail-tags">
+            <LifecycleBadge lifecycle={theme.lifecycle} momentum={theme.momentum} />
             <span>{theme.stage}</span>
             <span>{theme.direction}</span>
             <span>{theme.sourceIds.length} 個主要來源</span>
@@ -50,6 +52,23 @@ export default async function ThemeDetailPage({
         </div>
         <ThemeScore score={theme.score} />
       </header>
+
+      <section className="theme-lifecycle-panel">
+        <div>
+          <p className="eyebrow">LIFECYCLE POSITION</p>
+          <h2>這個題材現在燒到哪裡？</h2>
+          <p>首次偵測於 {theme.firstDetectedAt}。先行分數 {theme.earlySignalScore}，市場熱度 {theme.marketHeat}。</p>
+        </div>
+        <div className="heat-gap detail-heat-gap">
+          <div><span>證據聚合</span><b>{theme.earlySignalScore}</b><i><em style={{ width: `${theme.earlySignalScore}%` }} /></i></div>
+          <div><span>市場熱度</span><b>{theme.marketHeat}</b><i><em style={{ width: `${theme.marketHeat}%` }} /></i></div>
+        </div>
+        <div className="lifecycle-detail-grid">
+          <article><span>早期證據</span><ul>{theme.sparkSignals.map((item) => <li key={item}>{item}</li>)}</ul></article>
+          <article><span>擴散條件</span><ul>{theme.spreadTriggers.map((item) => <li key={item}>{item}</li>)}</ul></article>
+          <article><span>失效條件</span><ul>{theme.invalidationSignals.map((item) => <li key={item}>{item}</li>)}</ul></article>
+        </div>
+      </section>
 
       <section className="answer-grid">
         <article>

@@ -18,6 +18,7 @@ for (const key of [
   "themeCompanyLinks",
   "sources",
   "claims",
+  "materialSignals",
 ]) {
   if (!Array.isArray(data[key])) errors.push(`${key} must be an array`);
 }
@@ -49,6 +50,29 @@ for (const company of data.companies ?? []) {
 for (const theme of data.themes ?? []) {
   if (!Number.isInteger(theme.score) || theme.score < 0 || theme.score > 100) {
     errors.push(`invalid score on theme ${theme.id}`);
+  }
+  if (!["spark", "spreading", "hot", "cooling", "fading"].includes(theme.lifecycle)) {
+    errors.push(`invalid lifecycle on theme ${theme.id}`);
+  }
+  if (!["rising", "stable", "falling"].includes(theme.momentum)) {
+    errors.push(`invalid momentum on theme ${theme.id}`);
+  }
+  if (!Number.isInteger(theme.earlySignalScore) || theme.earlySignalScore < 0 || theme.earlySignalScore > 100) {
+    errors.push(`invalid early signal score on theme ${theme.id}`);
+  }
+  if (!Number.isInteger(theme.marketHeat) || theme.marketHeat < 0 || theme.marketHeat > 100) {
+    errors.push(`invalid market heat on theme ${theme.id}`);
+  }
+  if (
+    !theme.firstDetectedAt ||
+    !Array.isArray(theme.sparkSignals) ||
+    !Array.isArray(theme.spreadTriggers) ||
+    !Array.isArray(theme.invalidationSignals) ||
+    !theme.sparkSignals.length ||
+    !theme.spreadTriggers.length ||
+    !theme.invalidationSignals.length
+  ) {
+    errors.push(`missing lifecycle evidence on theme ${theme.id}`);
   }
   const referencedSources = theme.sourceIds.map((id) => sourceById.get(id)).filter(Boolean);
   const publishers = new Set(referencedSources.map((source) => source.publisher));
@@ -88,6 +112,22 @@ for (const claim of data.claims ?? []) {
   }
   for (const sourceId of claim.sourceIds) {
     if (!sourceIds.has(sourceId)) errors.push(`unknown source ${sourceId} on claim ${claim.id}`);
+  }
+}
+
+for (const signal of data.materialSignals ?? []) {
+  if (!["up", "down", "tightening", "easing"].includes(signal.direction)) {
+    errors.push(`invalid material signal direction: ${signal.id}`);
+  }
+  if (signal.sourceIds.length < 2) errors.push(`material signal ${signal.id} needs two sources`);
+  for (const sourceId of signal.sourceIds) {
+    if (!sourceIds.has(sourceId)) errors.push(`unknown source ${sourceId} on material signal ${signal.id}`);
+  }
+  for (const themeId of signal.themeIds) {
+    if (!themeIds.has(themeId)) errors.push(`unknown theme ${themeId} on material signal ${signal.id}`);
+  }
+  for (const stock of signal.stockLinks) {
+    if (!tickers.has(stock.ticker)) errors.push(`unknown ticker ${stock.ticker} on material signal ${signal.id}`);
   }
 }
 

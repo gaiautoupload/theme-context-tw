@@ -33,6 +33,10 @@ CREATE TABLE IF NOT EXISTS events (
 CREATE TABLE IF NOT EXISTS themes (
   id TEXT PRIMARY KEY, run_id TEXT NOT NULL, name TEXT NOT NULL, kicker TEXT NOT NULL,
   score INTEGER NOT NULL, stage TEXT NOT NULL, direction TEXT NOT NULL, thesis TEXT NOT NULL,
+  lifecycle TEXT NOT NULL DEFAULT 'spark', first_detected_at TEXT NOT NULL DEFAULT '',
+  early_signal_score INTEGER NOT NULL DEFAULT 0, market_heat INTEGER NOT NULL DEFAULT 0,
+  momentum TEXT NOT NULL DEFAULT 'stable', spark_signals TEXT NOT NULL DEFAULT '[]',
+  spread_triggers TEXT NOT NULL DEFAULT '[]', invalidation_signals TEXT NOT NULL DEFAULT '[]',
   why_now TEXT NOT NULL, value_capture TEXT NOT NULL, chain TEXT NOT NULL,
   catalysts TEXT NOT NULL, risks TEXT NOT NULL, source_ids TEXT NOT NULL
 );
@@ -56,6 +60,11 @@ CREATE TABLE IF NOT EXISTS theme_company_links (
 CREATE TABLE IF NOT EXISTS daily_reports (
   id TEXT PRIMARY KEY, run_id TEXT NOT NULL, title TEXT NOT NULL, eyebrow TEXT NOT NULL,
   narrative TEXT NOT NULL, changes TEXT NOT NULL, signals TEXT NOT NULL, risks TEXT NOT NULL
+);
+CREATE TABLE IF NOT EXISTS material_signals (
+  id TEXT PRIMARY KEY, run_id TEXT NOT NULL, material TEXT NOT NULL, direction TEXT NOT NULL,
+  change_label TEXT NOT NULL, period TEXT NOT NULL, status TEXT NOT NULL, thesis TEXT NOT NULL,
+  source_ids TEXT NOT NULL, theme_ids TEXT NOT NULL, stock_links TEXT NOT NULL
 );
 CREATE TABLE IF NOT EXISTS sync_jobs (
   run_id TEXT PRIMARY KEY, content_hash TEXT NOT NULL, status TEXT NOT NULL,
@@ -81,10 +90,23 @@ DATABASE.parent.mkdir(parents=True, exist_ok=True)
 connection = sqlite3.connect(DATABASE)
 try:
     connection.executescript(SCHEMA)
+    theme_columns = {row[1] for row in connection.execute("PRAGMA table_info(themes)")}
+    for column, definition in (
+        ("lifecycle", "TEXT NOT NULL DEFAULT 'spark'"),
+        ("first_detected_at", "TEXT NOT NULL DEFAULT ''"),
+        ("early_signal_score", "INTEGER NOT NULL DEFAULT 0"),
+        ("market_heat", "INTEGER NOT NULL DEFAULT 0"),
+        ("momentum", "TEXT NOT NULL DEFAULT 'stable'"),
+        ("spark_signals", "TEXT NOT NULL DEFAULT '[]'"),
+        ("spread_triggers", "TEXT NOT NULL DEFAULT '[]'"),
+        ("invalidation_signals", "TEXT NOT NULL DEFAULT '[]'"),
+    ):
+        if column not in theme_columns:
+            connection.execute(f"ALTER TABLE themes ADD COLUMN {column} {definition}")
     connection.execute("BEGIN IMMEDIATE")
     for table in (
         "sources", "claims", "events", "themes", "companies", "corporate_groups",
-        "group_memberships", "theme_company_links", "daily_reports"
+        "group_memberships", "theme_company_links", "daily_reports", "material_signals"
     ):
         connection.execute(f"DELETE FROM {table}")
 
@@ -123,11 +145,19 @@ try:
         ],
     )
     connection.executemany(
-        "INSERT INTO themes VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+        """INSERT INTO themes (
+            id, run_id, name, kicker, score, stage, direction, lifecycle,
+            first_detected_at, early_signal_score, market_heat, momentum,
+            spark_signals, spread_triggers, invalidation_signals,
+            thesis, why_now, value_capture, chain, catalysts, risks, source_ids
+        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
         [
             (
                 item["id"], run_id, item["name"], item["kicker"], item["score"], item["stage"],
-                item["direction"], item["thesis"], item["whyNow"], item["valueCapture"],
+                item["direction"], item["lifecycle"], item["firstDetectedAt"],
+                item["earlySignalScore"], item["marketHeat"], item["momentum"],
+                packed(item["sparkSignals"]), packed(item["spreadTriggers"]),
+                packed(item["invalidationSignals"]), item["thesis"], item["whyNow"], item["valueCapture"],
                 packed(item["chain"]), packed(item["catalysts"]), packed(item["risks"]),
                 packed(item["sourceIds"]),
             )
@@ -175,6 +205,17 @@ try:
             report["id"], run_id, report["title"], report["eyebrow"], report["narrative"],
             packed(report["changes"]), packed(report["signals"]), packed(report["risks"]),
         ),
+    )
+    connection.executemany(
+        "INSERT INTO material_signals VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+        [
+            (
+                item["id"], run_id, item["material"], item["direction"], item["change"],
+                item["period"], item["status"], item["thesis"], packed(item["sourceIds"]),
+                packed(item["themeIds"]), packed(item["stockLinks"]),
+            )
+            for item in data["materialSignals"]
+        ],
     )
     connection.execute(
         "INSERT OR REPLACE INTO published_snapshots VALUES (?, ?, ?, ?)",

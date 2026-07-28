@@ -51,6 +51,14 @@ export const themes = sqliteTable("themes", {
   score: integer("score").notNull(),
   stage: text("stage").notNull(),
   direction: text("direction").notNull(),
+  lifecycle: text("lifecycle").notNull().default("spark"),
+  firstDetectedAt: text("first_detected_at").notNull().default(""),
+  earlySignalScore: integer("early_signal_score").notNull().default(0),
+  marketHeat: integer("market_heat").notNull().default(0),
+  momentum: text("momentum").notNull().default("stable"),
+  sparkSignals: text("spark_signals").notNull().default("[]"),
+  spreadTriggers: text("spread_triggers").notNull().default("[]"),
+  invalidationSignals: text("invalidation_signals").notNull().default("[]"),
   thesis: text("thesis").notNull(),
   whyNow: text("why_now").notNull(),
   valueCapture: text("value_capture").notNull(),
@@ -125,6 +133,20 @@ export const dailyReports = sqliteTable("daily_reports", {
   changes: text("changes").notNull(),
   signals: text("signals").notNull(),
   risks: text("risks").notNull(),
+});
+
+export const materialSignals = sqliteTable("material_signals", {
+  id: text("id").primaryKey(),
+  runId: text("run_id").notNull(),
+  material: text("material").notNull(),
+  direction: text("direction").notNull(),
+  changeLabel: text("change_label").notNull(),
+  period: text("period").notNull(),
+  status: text("status").notNull(),
+  thesis: text("thesis").notNull(),
+  sourceIds: text("source_ids").notNull(),
+  themeIds: text("theme_ids").notNull(),
+  stockLinks: text("stock_links").notNull(),
 });
 
 export const syncJobs = sqliteTable("sync_jobs", {
