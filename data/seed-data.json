@@ -1,0 +1,258 @@
+{
+  "run": {
+    "id": "2026-07-28-close-v1",
+    "asOf": "2026-07-28T18:30:00+08:00",
+    "status": "published",
+    "contentHash": "seed-20260728-v1"
+  },
+  "dailyReport": {
+    "id": "daily-2026-07-28",
+    "title": "AI 主線沒有消失，但市場開始追問：電從哪裡來、資本由誰承擔？",
+    "eyebrow": "2026.07.28｜收盤後投資敘事",
+    "narrative": "亞洲半導體股因 AI 基礎設施融資與中國競爭疑慮出現估值壓力，與此同時，美國資料中心仍在擴大至數 GW 等級，電網擾動與設備短缺讓電力、散熱及整櫃交付成為更硬的瓶頸。台股研究重點因此從「所有 AI 都買」轉向「有訂單驗證、能解決物理瓶頸、且不必替客戶承擔資本風險」的公司。",
+    "changes": [
+      "AI 半導體由單純需求敘事，進入融資品質與客戶資本紀律的驗證期。",
+      "電網事件讓高壓供配電、備援電力與液冷從題材升級為營運必要條件。",
+      "整櫃交付與高速網通的價值提升，但需區分量產訂單與概念性合作。"
+    ],
+    "signals": [
+      "大型雲端業者資本支出與資料中心接電進度",
+      "800V DC、HVDC、CDU 與液冷機櫃的正式量產認證",
+      "台廠法說對 AI 伺服器營收、毛利與客戶集中度的揭露"
+    ],
+    "risks": [
+      "AI 基礎設施循環融資或供應商墊資造成資本效率惡化",
+      "中國供應鏈競爭加速規格商品化與價格壓力",
+      "電力許可、社區反對與設備交期延後資料中心上線"
+    ]
+  },
+  "events": [
+    {
+      "id": "event-ai-valuation-reset",
+      "title": "亞洲 AI 晶片股出現估值重估",
+      "summary": "投資人同時擔心 AI 基礎設施的融資結構與中國競爭，市場焦點由需求想像轉向資本效率。",
+      "region": "全球／亞洲",
+      "happenedAt": "2026-07-28",
+      "impact": "風險升溫",
+      "sourceIds": ["src-reuters-ai-selloff"]
+    },
+    {
+      "id": "event-pjm-grid",
+      "title": "大型資料中心負載中斷擾動美國 PJM 電網",
+      "summary": "大規模算力負載的瞬間變化顯示電能品質、備援與電網協調已成為資料中心營運風險。",
+      "region": "美國",
+      "happenedAt": "2026-07-22",
+      "impact": "瓶頸確認",
+      "sourceIds": ["src-reuters-pjm"]
+    },
+    {
+      "id": "event-meta-5gw",
+      "title": "Meta 路易斯安那資料中心擴至 5GW",
+      "summary": "單一園區投資超過 500 億美元，凸顯電力、散熱與整體工程的需求強度。",
+      "region": "美國",
+      "happenedAt": "2026-07-13",
+      "impact": "需求擴張",
+      "sourceIds": ["src-reuters-meta"]
+    },
+    {
+      "id": "event-tsmc-demand",
+      "title": "先進製程與封裝需求維持多年能見度",
+      "summary": "台積電持續擴充 AI 所需的先進製程、CoWoS 與光電整合能力，但市場也提高對投資報酬的要求。",
+      "region": "台灣／全球",
+      "happenedAt": "2026-07-20",
+      "impact": "主線延續",
+      "sourceIds": ["src-reuters-tsmc", "src-tsmc-a13", "src-tsmc-q2"]
+    },
+    {
+      "id": "event-drone-alliance",
+      "title": "台灣推進非紅無人機與衛星合作鏈",
+      "summary": "政策合作為射頻、天線與網通設備創造中長期驗證場景，商用放量仍需訂單佐證。",
+      "region": "台灣／歐洲",
+      "happenedAt": "2026-05-06",
+      "impact": "政策催化",
+      "sourceIds": ["src-cna-drone"]
+    }
+  ],
+  "themes": [
+    {
+      "id": "ai-power-cooling-grid",
+      "name": "AI 資料中心電力、散熱與電網韌性",
+      "kicker": "物理瓶頸主線",
+      "score": 91,
+      "stage": "量產擴張",
+      "direction": "順風",
+      "thesis": "算力需求仍在，但真正限制上線速度的是接電、電能品質與高熱通量散熱。",
+      "whyNow": "5GW 級資料中心投資與電網擾動同時出現，讓供配電、備援與液冷由選配轉為必要條件。",
+      "valueCapture": "具有系統認證、長交期設備、控制軟體與整體方案能力的供應商，比單純零件代工更能保留利潤。",
+      "chain": ["高壓供配電", "備援與電能品質", "液冷與熱管理", "機櫃級整合"],
+      "catalysts": ["800V DC／HVDC 規格落地", "大型資料中心接電與開工", "液冷機櫃正式量產"],
+      "risks": ["接電許可延後", "客戶自行設計壓低供應商價值", "資本支出放緩"],
+      "sourceIds": ["src-reuters-pjm", "src-reuters-meta", "src-foxconn-sk"]
+    },
+    {
+      "id": "advanced-process-packaging",
+      "name": "先進製程、CoWoS 與光電整合",
+      "kicker": "高壁壘核心",
+      "score": 86,
+      "stage": "供給擴張",
+      "direction": "順風但估值敏感",
+      "thesis": "AI 晶片的價值仍集中在先進製程與高密度封裝，但估值將更依賴實際產能利用率與客戶回報。",
+      "whyNow": "台積電持續推進 A13、CoWoS 與共封裝光學，同時市場開始重新評估 AI 基建融資品質。",
+      "valueCapture": "製程平台、先進封裝良率與不可替代的材料／測試能力，是最有機會守住定價權的環節。",
+      "chain": ["先進製程", "先進封裝", "高階載板", "測試與光電整合"],
+      "catalysts": ["A13 客戶設計導入", "CoWoS 擴產", "CPO 於 2026 年進入生產節點"],
+      "risks": ["客戶資本支出延後", "封裝供需反轉", "中國替代供應鏈競爭"],
+      "sourceIds": ["src-reuters-ai-selloff", "src-reuters-tsmc", "src-tsmc-a13", "src-tsmc-q2"]
+    },
+    {
+      "id": "rack-scale-ai-networking",
+      "name": "整櫃 AI 伺服器與高速網通交付",
+      "kicker": "量產驗證主線",
+      "score": 83,
+      "stage": "出貨放量",
+      "direction": "選股",
+      "thesis": "價值由單機板組裝擴散到整櫃設計、能源管理、高速交換器與全球交付能力。",
+      "whyNow": "超大型資料中心擴張與鴻海、緯創集團的 AI 基礎設施布局，讓整體方案能力成為接單門檻。",
+      "valueCapture": "具備客戶共同設計、機櫃熱電整合、全球製造與維運能力的廠商較能擴大單位內容價值。",
+      "chain": ["主機板與運算節點", "整櫃設計", "高速交換器", "全球製造與維運"],
+      "catalysts": ["新平台量產爬坡", "雲端客戶擴充機房", "整櫃出貨占比提高"],
+      "risks": ["客戶集中", "墊資與存貨壓力", "組裝價格競爭"],
+      "sourceIds": ["src-reuters-meta", "src-foxconn-sk", "src-wistron-group"]
+    },
+    {
+      "id": "leo-edge-networking",
+      "name": "低軌衛星、射頻與邊緣網通",
+      "kicker": "政策與驗證主線",
+      "score": 74,
+      "stage": "驗證導入",
+      "direction": "中長線",
+      "thesis": "非紅供應鏈與低軌寬頻政策創造驗證機會，真正受惠者需跨過射頻設計、系統整合與量產認證。",
+      "whyNow": "台灣推動民主無人機供應鏈，緯創集團亦將低軌寬頻列入網通解決方案範圍。",
+      "valueCapture": "天線／射頻共同設計、衛星級認證與長週期客戶關係，比一般終端組裝更具稀缺性。",
+      "chain": ["射頻元件", "天線模組", "地面設備", "邊緣運算與維運"],
+      "catalysts": ["政策採購", "衛星地面設備認證", "電信商商用部署"],
+      "risks": ["商用時程遞延", "訂單規模不及預期", "出口與國安限制"],
+      "sourceIds": ["src-cna-drone", "src-wistron-group"]
+    },
+    {
+      "id": "high-value-materials-energy-transition",
+      "name": "高值化材料與新能源轉型",
+      "kicker": "集團轉型觀察",
+      "score": 67,
+      "stage": "轉型驗證",
+      "direction": "觀察",
+      "thesis": "傳統石化集團的重估關鍵不在景氣反彈，而是差異化產品、電子材料與新能源能否形成可量化獲利。",
+      "whyNow": "台塑企業提出 2030 年轉型效益與差異化產品比重目標，市場可開始用專案進度而非口號追蹤。",
+      "valueCapture": "認證門檻較高的電子材料、電池與能源解決方案，可能改善集團長期產品組合。",
+      "chain": ["差異化石化材料", "電子材料與載板", "記憶體", "電池與能源"],
+      "catalysts": ["轉型專案利益認列", "差異化產品比重提高", "新能源產能利用率提升"],
+      "risks": ["石化供給過剩", "新事業回收期長", "原料與能源價格波動"],
+      "sourceIds": ["src-fpg-transition", "src-fpg-profile", "src-cna-fpg-transition"]
+    }
+  ],
+  "groups": [
+    {
+      "id": "hon-hai-group",
+      "name": "鴻海科技集團",
+      "description": "從電子製造服務延伸至 AI 伺服器、資料中心、能源、機器人與新世代通訊的全球製造平台。",
+      "focus": ["AI 伺服器", "資料中心與能源", "機器人", "網通設備"],
+      "sourceIds": ["src-foxconn-profile", "src-foxconn-sk"]
+    },
+    {
+      "id": "wistron-group",
+      "name": "緯創集團",
+      "description": "以緯創為核心，延伸出雲端基礎設施、網通與科技服務等獨立上市公司。",
+      "focus": ["AI 整機與機櫃", "雲端基礎設施", "高速網通", "低軌衛星"],
+      "sourceIds": ["src-wistron-group"]
+    },
+    {
+      "id": "formosa-plastics-group",
+      "name": "台塑企業",
+      "description": "橫跨石化、塑膠、電子材料、記憶體、載板與新能源的多角化企業群。",
+      "focus": ["高值化材料", "電子材料", "記憶體與載板", "新能源"],
+      "sourceIds": ["src-fpg-profile", "src-fpg-transition"]
+    }
+  ],
+  "companies": [
+    {"ticker":"2308","name":"台達電","industry":"電源與能源管理","role":"資料中心電源、散熱與能源管理整合","groupId":null,"summary":"觀察高功率電源、液冷與整體方案占比，核心在規格與系統整合。"},
+    {"ticker":"3017","name":"奇鋐","industry":"散熱模組","role":"高熱通量散熱與液冷零組件","groupId":null,"summary":"受惠液冷滲透，但需追蹤客戶認證、產品組合與擴產節奏。"},
+    {"ticker":"3324","name":"雙鴻","industry":"散熱模組","role":"伺服器散熱與液冷方案","groupId":null,"summary":"題材純度高，驗證重點為量產時程、良率與毛利結構。"},
+    {"ticker":"1519","name":"華城","industry":"重電設備","role":"變壓器與電網設備","groupId":null,"summary":"受惠電網設備長交期，風險在擴產執行與訂單基期。"},
+    {"ticker":"2330","name":"台積電","industry":"晶圓代工","role":"AI 先進製程與先進封裝平台","groupId":null,"summary":"核心價值是製程、良率與平台生態；市場開始更重視客戶投資回報。"},
+    {"ticker":"3711","name":"日月光投控","industry":"封裝測試","role":"先進封裝與測試服務","groupId":null,"summary":"受惠封裝複雜度提升，需觀察先進封裝產能利用率與資本支出。"},
+    {"ticker":"3037","name":"欣興","industry":"PCB／載板","role":"高階載板與 AI 相關 PCB","groupId":null,"summary":"規格升級創造價值，仍具典型載板供需循環風險。"},
+    {"ticker":"2317","name":"鴻海","industry":"電子製造服務","role":"AI 伺服器、整櫃與全球交付","groupId":"hon-hai-group","summary":"規模與全球交付是優勢，需辨識 AI 成長對毛利與營運資金的實際貢獻。"},
+    {"ticker":"2354","name":"鴻準","industry":"機構件與製造","role":"集團製造與機構件關聯公司","groupId":"hon-hai-group","summary":"集團連結明確，但 AI 題材的直接營收證據需個別確認。"},
+    {"ticker":"3062","name":"建漢","industry":"網通設備","role":"企業與寬頻網通設備","groupId":"hon-hai-group","summary":"具網通位置，衛星與新世代通訊受惠程度須以實際訂單驗證。"},
+    {"ticker":"3231","name":"緯創","industry":"電子製造服務","role":"AI 伺服器與系統製造","groupId":"wistron-group","summary":"AI 製造規模提升，追蹤整機／整櫃組合與資本支出效率。"},
+    {"ticker":"6669","name":"緯穎","industry":"雲端基礎設施","role":"資料中心運算、儲存與機櫃方案","groupId":"wistron-group","summary":"雲端基礎設施純度高，客戶集中與新平台量產節奏是主要變數。"},
+    {"ticker":"6285","name":"啓碁","industry":"網通設備","role":"高速網通、低軌衛星與邊緣基礎設施","groupId":"wistron-group","summary":"技術橫跨 RF、天線與系統整合，需追蹤衛星與交換器實際放量。"},
+    {"ticker":"4953","name":"緯軟","industry":"科技服務","role":"AI、雲端與企業軟體服務","groupId":"wistron-group","summary":"服務型收入與硬體主題不同，應以人才利用率及專案能見度評估。"},
+    {"ticker":"1301","name":"台塑","industry":"塑膠與化學材料","role":"集團基礎化學與差異化材料","groupId":"formosa-plastics-group","summary":"轉型價值需以差異化產品利益與景氣逆風下的現金流驗證。"},
+    {"ticker":"1303","name":"南亞","industry":"材料與電子材料","role":"電子材料、塑膠與機電產品","groupId":"formosa-plastics-group","summary":"跨足電子材料，是台塑企業連結 AI 材料鏈的重要節點。"},
+    {"ticker":"1326","name":"台化","industry":"石化與纖維","role":"差異化材料與石化中間原料","groupId":"formosa-plastics-group","summary":"核心觀察是差異化產品能否抵銷大宗石化供給壓力。"},
+    {"ticker":"6505","name":"台塑化","industry":"煉油與石化","role":"集團能源與石化原料平台","groupId":"formosa-plastics-group","summary":"油價、裂解利差與集團能源轉型共同影響獲利。"},
+    {"ticker":"2408","name":"南亞科","industry":"記憶體","role":"DRAM 製造","groupId":"formosa-plastics-group","summary":"記憶體循環與製程轉換是關鍵，AI 受惠不能等同 HBM 直接曝險。"},
+    {"ticker":"8046","name":"南電","industry":"IC 載板","role":"高階 IC 載板","groupId":"formosa-plastics-group","summary":"受惠高階封裝載板需求，但仍需控制供需循環與稼動率風險。"}
+  ],
+  "groupMemberships": [
+    {"groupId":"hon-hai-group","ticker":"2317","relation":"核心公司"},
+    {"groupId":"hon-hai-group","ticker":"2354","relation":"關聯上市公司"},
+    {"groupId":"hon-hai-group","ticker":"3062","relation":"關聯上市公司"},
+    {"groupId":"wistron-group","ticker":"3231","relation":"核心公司"},
+    {"groupId":"wistron-group","ticker":"6669","relation":"集團上市公司"},
+    {"groupId":"wistron-group","ticker":"6285","relation":"集團上市公司"},
+    {"groupId":"wistron-group","ticker":"4953","relation":"集團上市公司"},
+    {"groupId":"formosa-plastics-group","ticker":"1301","relation":"核心公司"},
+    {"groupId":"formosa-plastics-group","ticker":"1303","relation":"核心公司"},
+    {"groupId":"formosa-plastics-group","ticker":"1326","relation":"核心公司"},
+    {"groupId":"formosa-plastics-group","ticker":"6505","relation":"核心公司"},
+    {"groupId":"formosa-plastics-group","ticker":"2408","relation":"集團上市公司"},
+    {"groupId":"formosa-plastics-group","ticker":"8046","relation":"集團上市公司"}
+  ],
+  "themeCompanyLinks": [
+    {"themeId":"ai-power-cooling-grid","ticker":"2308","relevance":96,"role":"電源、液冷與能源管理整合","stance":"核心","reasoning":"可同時處理資料中心的電力與熱管理瓶頸。"},
+    {"themeId":"ai-power-cooling-grid","ticker":"3017","relevance":87,"role":"高熱通量散熱","stance":"核心","reasoning":"液冷滲透提高散熱模組內容價值。"},
+    {"themeId":"ai-power-cooling-grid","ticker":"3324","relevance":84,"role":"液冷散熱方案","stance":"核心","reasoning":"題材純度高，量產與良率決定利潤。"},
+    {"themeId":"ai-power-cooling-grid","ticker":"1519","relevance":78,"role":"電網與變壓器設備","stance":"延伸","reasoning":"資料中心接電擴張增加重電設備需求。"},
+    {"themeId":"ai-power-cooling-grid","ticker":"2317","relevance":76,"role":"機櫃與資料中心整合","stance":"延伸","reasoning":"整櫃交付與能源方案提升系統內容。"},
+    {"themeId":"advanced-process-packaging","ticker":"2330","relevance":98,"role":"先進製程與封裝平台","stance":"核心","reasoning":"AI 晶片製造與封裝生態的關鍵平台。"},
+    {"themeId":"advanced-process-packaging","ticker":"3711","relevance":88,"role":"先進封裝測試","stance":"核心","reasoning":"封裝複雜度提高測試與整合價值。"},
+    {"themeId":"advanced-process-packaging","ticker":"3037","relevance":84,"role":"高階載板","stance":"核心","reasoning":"高密度封裝推升載板規格與良率門檻。"},
+    {"themeId":"advanced-process-packaging","ticker":"8046","relevance":76,"role":"IC 載板","stance":"延伸","reasoning":"屬高階載板供應鏈，但循環性較高。"},
+    {"themeId":"rack-scale-ai-networking","ticker":"6669","relevance":96,"role":"雲端運算、儲存與機櫃","stance":"核心","reasoning":"資料中心基礎設施純度與客戶共同設計能力高。"},
+    {"themeId":"rack-scale-ai-networking","ticker":"3231","relevance":90,"role":"AI 伺服器製造","stance":"核心","reasoning":"具全球製造與新平台量產能力。"},
+    {"themeId":"rack-scale-ai-networking","ticker":"2317","relevance":89,"role":"整櫃與全球交付","stance":"核心","reasoning":"規模、垂直整合與全球據點形成交付優勢。"},
+    {"themeId":"rack-scale-ai-networking","ticker":"6285","relevance":80,"role":"高速網通與交換器","stance":"延伸","reasoning":"AI 叢集需要高速網路與邊緣連接。"},
+    {"themeId":"leo-edge-networking","ticker":"6285","relevance":92,"role":"射頻、天線與低軌寬頻","stance":"核心","reasoning":"官方集團資料明列低軌衛星寬頻解決方案。"},
+    {"themeId":"leo-edge-networking","ticker":"3062","relevance":76,"role":"寬頻與企業網通","stance":"驗證","reasoning":"具網通產品位置，衛星營收仍需更多證據。"},
+    {"themeId":"high-value-materials-energy-transition","ticker":"1303","relevance":85,"role":"電子材料與機電","stance":"核心","reasoning":"是台塑企業由石化延伸電子材料的重要節點。"},
+    {"themeId":"high-value-materials-energy-transition","ticker":"2408","relevance":80,"role":"DRAM 製造","stance":"延伸","reasoning":"連結電子景氣與記憶體循環，非所有 AI 記憶體均直接受惠。"},
+    {"themeId":"high-value-materials-energy-transition","ticker":"8046","relevance":74,"role":"IC 載板","stance":"延伸","reasoning":"高階電子材料與封裝載板的集團曝險。"},
+    {"themeId":"high-value-materials-energy-transition","ticker":"1301","relevance":62,"role":"差異化化學材料","stance":"觀察","reasoning":"轉型方向明確，但獲利貢獻仍需專案驗證。"}
+  ],
+  "sources": [
+    {"id":"src-reuters-ai-selloff","title":"Asian chip stocks slide as China competition fears rattle AI trade","publisher":"Reuters（Investing.com 轉載）","url":"https://au.investing.com/news/stock-market-news/samsung-sk-hynix-slide-amid-nvidia-financing-worries-china-competition-4555278","publishedAt":"2026-07-28","retrievedAt":"2026-07-28T17:20:00+08:00","sourceType":"news_derived","quality":"A-"},
+    {"id":"src-reuters-pjm","title":"Massive disconnect of power roils largest US electric grid","publisher":"Reuters（Investing.com 轉載）","url":"https://www.investing.com/news/stock-market-news/massive-disconnect-of-power-roiled-largest-us-electric-grid-4807202","publishedAt":"2026-07-22","retrievedAt":"2026-07-28T17:21:00+08:00","sourceType":"news_derived","quality":"A-"},
+    {"id":"src-reuters-meta","title":"Meta expands Louisiana data center to 5 gigawatts","publisher":"Reuters（Investing.com 轉載）","url":"https://www.investing.com/news/stock-market-news/meta-expands-louisiana-data-center-to-5-gigawatts-compute-capacity-4787796","publishedAt":"2026-07-13","retrievedAt":"2026-07-28T17:22:00+08:00","sourceType":"news_derived","quality":"A-"},
+    {"id":"src-reuters-tsmc","title":"TSMC expects strong, multi-year demand for AI chips","publisher":"Reuters（Investing.com 轉載）","url":"https://www.investing.com/news/stock-market-news/tsmc-expects-strong-multiyear-demand-for-ai-chips-as-it-ramps-up-arizona-investment-4799752","publishedAt":"2026-07-20","retrievedAt":"2026-07-28T17:23:00+08:00","sourceType":"news_derived","quality":"A-"},
+    {"id":"src-tsmc-a13","title":"TSMC Debuts A13 Technology at 2026 North America Technology Symposium","publisher":"TSMC","url":"https://pr.tsmc.com/english/news/3302","publishedAt":"2026-04-22","retrievedAt":"2026-07-28T17:24:00+08:00","sourceType":"official","quality":"A+"},
+    {"id":"src-tsmc-q2","title":"TSMC Reports Second Quarter EPS of NT$27.25","publisher":"TSMC","url":"https://pr.tsmc.com/japanese/news/3326","publishedAt":"2026-07-16","retrievedAt":"2026-07-28T17:25:00+08:00","sourceType":"official","quality":"A+"},
+    {"id":"src-foxconn-sk","title":"鴻海科技集團攜手韓國 SK 集團深化 AI 基礎設施合作","publisher":"鴻海科技集團","url":"https://www.foxconn.com.tw/zh-tw/press-center/events/foxconn-events","publishedAt":"2026-06-04","retrievedAt":"2026-07-28T17:26:00+08:00","sourceType":"official","quality":"A+"},
+    {"id":"src-foxconn-profile","title":"關於鴻海科技集團","publisher":"鴻海科技集團","url":"https://www.foxconn.com.tw/zh-tw/about/group-profile","publishedAt":"2026-01-01","retrievedAt":"2026-07-28T17:27:00+08:00","sourceType":"official","quality":"A+"},
+    {"id":"src-wistron-group","title":"緯創集團","publisher":"緯創","url":"https://www.wistron.com/ch/AboutWistron/WistronGroup","publishedAt":"2026-01-01","retrievedAt":"2026-07-28T17:28:00+08:00","sourceType":"official","quality":"A+"},
+    {"id":"src-fpg-transition","title":"革新銳變 加速轉型：台塑企業 2030 年轉型效益 386 億元","publisher":"台塑企業","url":"https://www.fpg.com.tw/tw/issue-news/2026/603","publishedAt":"2026-03-12","retrievedAt":"2026-07-28T17:29:00+08:00","sourceType":"official","quality":"A+"},
+    {"id":"src-fpg-profile","title":"台塑企業簡介","publisher":"台塑企業","url":"https://www.fpg.com.tw/tw/about/info/history","publishedAt":"2024-04-30","retrievedAt":"2026-07-28T17:30:00+08:00","sourceType":"official","quality":"A+"},
+    {"id":"src-cna-fpg-transition","title":"台塑四寶加速轉型　2030年創造386億元轉型效益","publisher":"中央社","url":"https://www.cna.com.tw/news/afe/202603120186.aspx","publishedAt":"2026-03-12","retrievedAt":"2026-07-28T18:08:00+08:00","sourceType":"news_derived","quality":"A"},
+    {"id":"src-cna-drone","title":"外交部：台灣合作盟友 拚無人機民主供應鏈亞太中心","publisher":"中央社","url":"https://www.cna.com.tw/news/aipl/202605060399.aspx","publishedAt":"2026-05-06","retrievedAt":"2026-07-28T17:31:00+08:00","sourceType":"news_derived","quality":"A"}
+  ],
+  "claims": [
+    {"id":"claim-meta-5gw","entityType":"event","entityId":"event-meta-5gw","statement":"Meta 將路易斯安那資料中心擴至 5GW，投資超過 500 億美元。","confidence":"high","sourceType":"news_derived","sourceIds":["src-reuters-meta"]},
+    {"id":"claim-grid-stability","entityType":"theme","entityId":"ai-power-cooling-grid","statement":"資料中心已不只是耗電問題，負載瞬間變化也會成為電網穩定與電能品質議題。","confidence":"high","sourceType":"news_derived","sourceIds":["src-reuters-pjm"]},
+    {"id":"claim-power-value","entityType":"theme","entityId":"ai-power-cooling-grid","statement":"具備供配電、備援、液冷與控制整合能力的供應商，可能取得比單一零件更高的價值。","confidence":"medium","sourceType":"llm_inference","sourceIds":["src-reuters-pjm","src-reuters-meta","src-foxconn-sk"]},
+    {"id":"claim-tsmc-platform","entityType":"theme","entityId":"advanced-process-packaging","statement":"台積電持續推進 A13、CoWoS 與共封裝光學，以支援更高運算與記憶體整合需求。","confidence":"high","sourceType":"official","sourceIds":["src-tsmc-a13"]},
+    {"id":"claim-ai-capital-risk","entityType":"theme","entityId":"advanced-process-packaging","statement":"AI 需求仍強，但市場已提高對融資結構、客戶回報與估值的要求。","confidence":"medium","sourceType":"llm_inference","sourceIds":["src-reuters-ai-selloff","src-reuters-tsmc","src-tsmc-q2"]},
+    {"id":"claim-wistron-links","entityType":"group","entityId":"wistron-group","statement":"緯創官方集團頁列出緯穎的雲端基礎設施能力，以及啓碁的高速網通與低軌衛星寬頻方案。","confidence":"high","sourceType":"official","sourceIds":["src-wistron-group"]},
+    {"id":"claim-fpg-shift","entityType":"group","entityId":"formosa-plastics-group","statement":"台塑企業以差異化產品、新事業、低碳能源與數位轉型作為 2030 年轉型引擎。","confidence":"high","sourceType":"official","sourceIds":["src-fpg-transition"]}
+  ]
+}
