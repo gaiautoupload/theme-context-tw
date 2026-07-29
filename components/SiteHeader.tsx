@@ -1,11 +1,11 @@
 import Link from "next/link";
 
 const nav = [
-  { href: "/", label: "今日脈絡" },
+  { href: "/#alerts", label: "題材快訊" },
+  { href: "/#spark-radar-title", label: "小火苗" },
   { href: "/themes", label: "投資主題" },
   { href: "/groups", label: "企業集團" },
   { href: "/sources", label: "證據來源" },
-  { href: "/methodology", label: "研究方法" },
 ];
 
 export function SiteHeader() {
@@ -18,7 +18,7 @@ export function SiteHeader() {
           </span>
           <span>
             <strong>題材脈絡</strong>
-            <small>THEME CONTEXT · TAIWAN</small>
+            <small>THEME ALERTS · TAIWAN</small>
           </span>
         </Link>
         <nav className="primary-nav" aria-label="主要導覽">

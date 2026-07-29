@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { SignalMap } from "@/components/SignalMap";
-import { ThemeCard } from "@/components/ThemeCard";
 import { ConfidenceBadge, SourceTypeBadge } from "@/components/Badges";
 import { SparkRadar } from "@/components/SparkRadar";
 import { QuickDecisionBoard } from "@/components/QuickDecisionBoard";
-import { getPublishedData, themeLinks } from "@/lib/data";
+import { AlertConsole } from "@/components/AlertConsole";
+import { getPublishedData } from "@/lib/data";
 
 export const metadata: Metadata = {
   title: "今日脈絡",
@@ -21,51 +21,10 @@ export default async function Home() {
   }).format(new Date(data.run.asOf));
   const highlightedClaims = data.claims.slice(0, 3);
   const sourceById = new Map(data.sources.map((source) => [source.id, source]));
-  const sparkCount = data.themes.filter((theme) => theme.lifecycle === "spark").length;
 
   return (
-    <>
-      <section className="hero">
-        <div className="container hero-grid">
-          <div className="hero-copy">
-            <p className="eyebrow">5-MINUTE MARKET RESEARCH · 五分鐘快研究</p>
-            <h1>先看新題材，<br />再找最直接的股票。</h1>
-            <p className="hero-lede"><strong>{data.dailyReport.title}</strong></p>
-            <p className="hero-summary">{data.dailyReport.narrative}</p>
-            <div className="hero-actions">
-              <Link className="button button-primary" href="#quick-research">
-                開始五分鐘快看
-              </Link>
-              <Link className="button button-secondary" href="#spark-radar-title">
-                找小火苗
-              </Link>
-            </div>
-          </div>
-          <aside className="hero-brief">
-            <div className="brief-meta">
-              <span>資料時間</span>
-              <strong>{date}</strong>
-              <em>版本 {data.run.id}</em>
-            </div>
-            <div className="brief-stat">
-              <strong>{data.themes.length}</strong>
-              <span>今日主題</span>
-            </div>
-            <div className="brief-stat">
-              <strong>{data.sources.length}</strong>
-              <span>引用來源</span>
-            </div>
-            <div className="brief-stat">
-              <strong>{sparkCount}</strong>
-              <span>小火苗</span>
-            </div>
-            <p className="status-line">
-              <span aria-hidden="true" />
-              已通過來源、代號與關聯檢查
-            </p>
-          </aside>
-        </div>
-      </section>
+    <div className="alert-home">
+      <AlertConsole data={data} formattedDate={date} />
 
       <div className="container">
         <QuickDecisionBoard data={data} />
@@ -84,91 +43,77 @@ export default async function Home() {
         </div>
       </section>
 
-      <div className="container">
-        <SignalMap
-          events={data.events}
-          themes={data.themes}
-          groups={data.groups}
-          companies={data.companies}
-          links={data.themeCompanyLinks}
-          memberships={data.groupMemberships}
-        />
+      <div className="deep-research-shell">
+        <div className="container">
+          <div className="deep-research-intro">
+            <p className="eyebrow">DEEP RESEARCH</p>
+            <h2>五分鐘後，想深挖再往下。</h2>
+            <p>{data.dailyReport.narrative}</p>
+          </div>
+          <SignalMap
+            events={data.events}
+            themes={data.themes}
+            groups={data.groups}
+            companies={data.companies}
+            links={data.themeCompanyLinks}
+            memberships={data.groupMemberships}
+          />
+        </div>
+
+        <section className="container evidence-section">
+          <div className="section-heading">
+            <div>
+              <p className="eyebrow">EVIDENCE LAYER</p>
+              <h2>把事實與推論分開看</h2>
+            </div>
+            <Link className="text-link" href="/sources">
+              查看全部來源 →
+            </Link>
+          </div>
+          <div className="evidence-grid">
+            {highlightedClaims.map((claim) => (
+              <article key={claim.id}>
+                <div className="badge-row">
+                  <SourceTypeBadge type={claim.sourceType} />
+                  <ConfidenceBadge confidence={claim.confidence} />
+                </div>
+                <p>{claim.statement}</p>
+                <div className="claim-sources">
+                  {claim.sourceIds.map((id) => {
+                    const source = sourceById.get(id);
+                    return source ? (
+                      <a href={source.url} target="_blank" rel="noreferrer" key={id}>
+                        {source.publisher} ↗
+                      </a>
+                    ) : null;
+                  })}
+                </div>
+              </article>
+            ))}
+          </div>
+        </section>
+
+        <section className="container watch-grid" id="risk-radar">
+          <article className="watch-card signal-card">
+            <p className="eyebrow">VALIDATION SIGNALS</p>
+            <h2>接下來要驗證什麼</h2>
+            <ul>
+              {data.dailyReport.signals.map((signal) => (
+                <li key={signal}>{signal}</li>
+              ))}
+            </ul>
+          </article>
+          <article className="watch-card risk-card">
+            <p className="eyebrow">RISK RADAR</p>
+            <h2>不能忽略的反證</h2>
+            <ul>
+              {data.dailyReport.risks.map((risk) => (
+                <li key={risk}>{risk}</li>
+              ))}
+            </ul>
+          </article>
+        </section>
       </div>
-
-      <section className="container section-block">
-        <div className="section-heading">
-          <div>
-            <p className="eyebrow">TOP THEMES</p>
-            <h2>從小火苗到火熱，分開判讀</h2>
-          </div>
-          <p>題材強度衡量研究重要性；先行分數與市場熱度的落差，才用來辨識是否仍在早期。</p>
-        </div>
-        <div className="theme-grid">
-          {data.themes.map((theme, index) => (
-            <ThemeCard
-              theme={theme}
-              links={themeLinks(data, theme.id)}
-              companies={data.companies}
-              rank={index + 1}
-              key={theme.id}
-            />
-          ))}
-        </div>
-      </section>
-
-      <section className="container evidence-section">
-        <div className="section-heading">
-          <div>
-            <p className="eyebrow">EVIDENCE LAYER</p>
-            <h2>把事實與推論分開看</h2>
-          </div>
-          <Link className="text-link" href="/sources">
-            查看全部來源 →
-          </Link>
-        </div>
-        <div className="evidence-grid">
-          {highlightedClaims.map((claim) => (
-            <article key={claim.id}>
-              <div className="badge-row">
-                <SourceTypeBadge type={claim.sourceType} />
-                <ConfidenceBadge confidence={claim.confidence} />
-              </div>
-              <p>{claim.statement}</p>
-              <div className="claim-sources">
-                {claim.sourceIds.map((id) => {
-                  const source = sourceById.get(id);
-                  return source ? (
-                    <a href={source.url} target="_blank" rel="noreferrer" key={id}>
-                      {source.publisher} ↗
-                    </a>
-                  ) : null;
-                })}
-              </div>
-            </article>
-          ))}
-        </div>
-      </section>
-
-      <section className="container watch-grid">
-        <article className="watch-card signal-card">
-          <p className="eyebrow">VALIDATION SIGNALS</p>
-          <h2>接下來要驗證什麼</h2>
-          <ul>
-            {data.dailyReport.signals.map((signal) => (
-              <li key={signal}>{signal}</li>
-            ))}
-          </ul>
-        </article>
-        <article className="watch-card risk-card">
-          <p className="eyebrow">RISK RADAR</p>
-          <h2>不能忽略的反證</h2>
-          <ul>
-            {data.dailyReport.risks.map((risk) => (
-              <li key={risk}>{risk}</li>
-            ))}
-          </ul>
-        </article>
-      </section>
-    </>
+    </div>
   );
 }

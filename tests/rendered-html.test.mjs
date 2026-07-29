@@ -42,6 +42,10 @@ test("server-renders the final research homepage", async () => {
   assert.match(html, /AI 需求仍有數字支撐/);
   assert.match(html, /國際事件/);
   assert.match(html, /投資主題/);
+  assert.match(html, /小火苗剛冒煙，/);
+  assert.match(html, /現在只處理這 3 件事/);
+  assert.match(html, /設定你要等的訊號/);
+  assert.match(html, /先行分數 ≥ 80/);
   assert.match(html, /市場還沒燒起來，證據先冒煙/);
   assert.match(html, /小火苗/);
   assert.match(html, /FOPLP、CPO 與異質整合/);
