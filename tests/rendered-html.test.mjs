@@ -39,11 +39,15 @@ test("server-renders the final research homepage", async () => {
   assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
   const html = await response.text();
   assert.match(html, /題材脈絡/);
-  assert.match(html, /先回答昨天為什麼跌/);
-  assert.match(html, /台股一天跌/);
-  assert.match(html, /2,030.83/);
-  assert.match(html, /川普伊朗口風一天轉硬/);
-  assert.match(html, /FOMC 結果尚未公布/);
+  assert.match(html, /今日正式收盤/);
+  assert.match(html, /台股收盤/);
+  assert.match(html, /40,039.18/);
+  assert.match(html, /-3.76%/);
+  assert.match(html, /11,491.90(?:<!-- -->)? 億/);
+  assert.match(html, /class="price-down"/);
+  assert.doesNotMatch(html, /41,603.36|2,030.83|-4.65%/);
+  assert.match(html, /台股再跌1,564點/);
+  assert.match(html, /FOMC結果尚未公布|FOMC結果仍待證明/);
   assert.match(html, /不用一直往下滑/);
   assert.match(html, /即時震源/);
   assert.match(html, /大盤技術/);
@@ -82,11 +86,11 @@ test("research detail is split across focused pages", async () => {
   assert.equal(technicalResponse.status, 200);
   const technicalHtml = await technicalResponse.text();
   assert.match(technicalHtml, /大盤技術線型推演/);
-  assert.match(technicalHtml, /A 波急跌/);
-  assert.match(technicalHtml, /B 波反彈/);
-  assert.match(technicalHtml, /C 波再測/);
+  assert.match(technicalHtml, /A｜急跌延伸已確認/);
+  assert.match(technicalHtml, /B｜條件式反彈/);
+  assert.match(technicalHtml, /C｜半年線失守/);
   assert.match(technicalHtml, /情境推演，不是命定劇本/);
-  assert.match(technicalHtml, /43,714–44,081/);
+  assert.match(technicalHtml, /42,756.48/);
   assert.match(technicalHtml, /半年線支撐/);
 
   const opportunityResponse = await worker.fetch(

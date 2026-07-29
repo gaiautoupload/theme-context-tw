@@ -3086,7 +3086,6 @@ a {
 }
 
 .pulse-main-story h1 em {
-  color: #ff746d;
   font-style: normal;
 }
 
@@ -3134,8 +3133,21 @@ a {
   font-size: clamp(21px, 2.5vw, 31px);
 }
 
-.pulse-index-strip .negative strong {
-  color: #ff746d;
+.price-up,
+.price-up strong {
+  color: #ff746d !important;
+}
+
+.price-down,
+.price-down strong,
+.pulse-index-strip .negative strong,
+.technical-snapshot .negative strong {
+  color: #35d8ae !important;
+}
+
+.price-flat,
+.price-flat strong {
+  color: #c7d0db !important;
 }
 
 .pulse-cause-chain {
@@ -5241,10 +5253,6 @@ a {
   font-size: 20px;
 }
 
-.technical-snapshot .negative strong {
-  color: #ff746d;
-}
-
 .technical-observations {
   display: grid;
   gap: 7px;
@@ -5334,13 +5342,13 @@ a {
 }
 
 .average-below b {
-  color: #ffaaa5;
-  background: #2b171b;
+  color: #78e7c7;
+  background: #12251f;
 }
 
 .average-above b {
-  color: #78e7c7;
-  background: #12251f;
+  color: #ffaaa5;
+  background: #2b171b;
 }
 
 .scenario-heading {
@@ -5400,7 +5408,7 @@ a {
 }
 
 .scenario-observed {
-  border-top-color: #ff746d;
+  border-top-color: #35d8ae;
 }
 
 .scenario-conditional {

@@ -21,6 +21,13 @@ const kindLabel: Record<MarketSignal["kind"], string> = {
   company_release: "公司快訊",
 };
 
+function formatIndex(value: number) {
+  return new Intl.NumberFormat("zh-TW", {
+    maximumFractionDigits: 2,
+    minimumFractionDigits: 2,
+  }).format(value);
+}
+
 function SignalSources({
   signal,
   data,
@@ -121,7 +128,16 @@ export function MarketPulseBoard({
   const companyReleases = data.marketSignals.filter(
     (signal) => signal.kind === "company_release",
   );
-  const prioritySignals = [...leaders, ...(rateDecision ? [rateDecision] : [])];
+  const prioritySignals = [shock, leaders[0], rateDecision]
+    .filter((signal): signal is MarketSignal => Boolean(signal))
+    .slice(0, 3);
+  const technical = data.indexTechnicalAnalysis;
+  const priceDirection = technical.changePercent > 0
+    ? "price-up"
+    : technical.changePercent < 0
+      ? "price-down"
+      : "price-flat";
+  const changePrefix = technical.changePercent > 0 ? "+" : "";
   const showHero = view !== "details";
   const showDetails = view !== "hero";
 
@@ -136,21 +152,23 @@ export function MarketPulseBoard({
 
         <div className="container pulse-hero-grid">
           <div className="pulse-main-story">
-            <p className="pulse-eyebrow">5 分鐘快研究 · 先回答昨天為什麼跌</p>
-            <h1>台股一天跌<br /><em>2,030.83</em> 點</h1>
+            <p className="pulse-eyebrow">5 分鐘快研究 · 今日正式收盤</p>
+            <h1>台股收盤<br /><em className={priceDirection}>{formatIndex(technical.close)}</em> 點</h1>
             <p className="pulse-deck">
-              先處理正在改變價格的事，再看長線題材。今天的三個關鍵：
-              晶片股風險重定價、川普伊朗口風轉硬、FOMC 結果尚未公布。
+              {data.dailyReport.title}
             </p>
             <div className="pulse-index-strip" aria-label="台股收盤摘要">
-              <div><span>TAIEX</span><strong>41,603.36</strong></div>
-              <div className="negative"><span>單日</span><strong>-4.65%</strong></div>
-              <div className="negative"><span>跌停</span><strong>54 家</strong></div>
+              <div><span>TAIEX</span><strong>{formatIndex(technical.close)}</strong></div>
+              <div className={priceDirection}>
+                <span>單日</span>
+                <strong>{changePrefix}{technical.changePercent.toFixed(2)}%</strong>
+              </div>
+              <div><span>成交金額</span><strong>{formatIndex(technical.turnoverBillionTwd * 10)} 億</strong></div>
             </div>
             <div className="pulse-cause-chain">
-              <p><span>已確認</span> 指數、點數、成交值與跌停家數</p>
-              <p><span>媒體歸因</span> 亞洲晶片賣壓 ＋ AI 投資疑慮 ＋ 中國半導體競爭</p>
-              <p><span>Codex 推論</span> 高估值與擁擠部位放大同方向賣壓，不視為單一原因</p>
+              <p><span>已確認</span> {shock?.marketMove ?? technical.summary}</p>
+              <p><span>原因鏈</span> {shock?.whyItMatters ?? data.dailyReport.narrative}</p>
+              <p><span>技術結構</span> {technical.regime}</p>
             </div>
             <div className="pulse-hero-actions">
               <Link href="/market#market-shocks">看真正的新訊號</Link>
@@ -169,7 +187,13 @@ export function MarketPulseBoard({
             {prioritySignals.map((signal, index) => (
               <Link
                 className={`pulse-command-item pulse-command-${signal.severity}`}
-                href={signal.kind === "rate_decision" ? "/market#rate-watch" : "/market#leader-watch"}
+                href={
+                  signal.kind === "market_shock"
+                    ? "/market#market-shocks"
+                    : signal.kind === "rate_decision"
+                      ? "/market#rate-watch"
+                      : "/market#leader-watch"
+                }
                 key={signal.id}
               >
                 <span>{String(index + 1).padStart(2, "0")}</span>

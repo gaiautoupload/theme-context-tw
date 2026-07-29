@@ -48,9 +48,9 @@ export function IndexTechnicalPanel({ data }: { data: ResearchData }) {
                 <span>收盤</span>
                 <strong>{formatIndex(technical.close)}</strong>
               </div>
-              <div className="negative">
+              <div className={technical.changePercent > 0 ? "price-up" : technical.changePercent < 0 ? "price-down" : "price-flat"}>
                 <span>單日</span>
-                <strong>{technical.changePercent.toFixed(2)}%</strong>
+                <strong>{technical.changePercent > 0 ? "+" : ""}{technical.changePercent.toFixed(2)}%</strong>
               </div>
               <div>
                 <span>成交金額</span>
