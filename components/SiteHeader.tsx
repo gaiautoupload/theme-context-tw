@@ -2,6 +2,7 @@ import Link from "next/link";
 
 const nav = [
   { href: "/#market-shocks", label: "市場震源" },
+  { href: "/#market-technical", label: "大盤技術" },
   { href: "/#leader-watch", label: "大人物言論" },
   { href: "/#company-wire", label: "公司公告" },
   { href: "/themes", label: "中線題材" },

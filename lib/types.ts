@@ -75,6 +75,51 @@ export interface MarketSignal {
   sourceIds: string[];
 }
 
+export interface TechnicalAverage {
+  period: 5 | 10 | 20 | 60 | 120 | 240;
+  value: number;
+  position: "above" | "below";
+}
+
+export interface TechnicalLevel {
+  label: string;
+  value: number;
+  kind: "support" | "resistance" | "pivot";
+  basis: string;
+}
+
+export interface TechnicalScenario {
+  id: "wave-a" | "wave-b" | "wave-c";
+  label: string;
+  status: "observed" | "conditional" | "risk_case";
+  confidence: Confidence;
+  thesis: string;
+  trigger: string;
+  invalidation: string;
+  targetZone: string;
+}
+
+export interface IndexTechnicalAnalysis {
+  id: string;
+  symbol: string;
+  name: string;
+  asOf: string;
+  dataStatus: "official_close" | "provisional";
+  close: number;
+  changePoints: number;
+  changePercent: number;
+  turnoverBillionTwd: number;
+  turnoverRatio20: number;
+  regime: string;
+  summary: string;
+  movingAverages: TechnicalAverage[];
+  levels: TechnicalLevel[];
+  scenarios: TechnicalScenario[];
+  observations: string[];
+  nextConfirmation: string[];
+  sourceIds: string[];
+}
+
 export interface Theme {
   id: string;
   name: string;
@@ -173,4 +218,5 @@ export interface ResearchData {
   claims: Claim[];
   materialSignals: MaterialSignal[];
   marketSignals: MarketSignal[];
+  indexTechnicalAnalysis: IndexTechnicalAnalysis;
 }

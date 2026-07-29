@@ -38,6 +38,10 @@ CREATE TABLE IF NOT EXISTS market_signals (
   affected_theme_ids TEXT NOT NULL, affected_tickers TEXT NOT NULL,
   next_watch TEXT NOT NULL, source_ids TEXT NOT NULL
 );
+CREATE TABLE IF NOT EXISTS index_technical_analysis (
+  id TEXT PRIMARY KEY, run_id TEXT NOT NULL, symbol TEXT NOT NULL,
+  as_of TEXT NOT NULL, payload TEXT NOT NULL
+);
 CREATE TABLE IF NOT EXISTS themes (
   id TEXT PRIMARY KEY, run_id TEXT NOT NULL, name TEXT NOT NULL, kicker TEXT NOT NULL,
   score INTEGER NOT NULL, stage TEXT NOT NULL, direction TEXT NOT NULL, thesis TEXT NOT NULL,
@@ -113,7 +117,7 @@ try:
             connection.execute(f"ALTER TABLE themes ADD COLUMN {column} {definition}")
     connection.execute("BEGIN IMMEDIATE")
     for table in (
-        "sources", "claims", "events", "market_signals", "themes", "companies", "corporate_groups",
+        "sources", "claims", "events", "market_signals", "index_technical_analysis", "themes", "companies", "corporate_groups",
         "group_memberships", "theme_company_links", "daily_reports", "material_signals"
     ):
         connection.execute(f"DELETE FROM {table}")
@@ -164,6 +168,14 @@ try:
             )
             for item in data["marketSignals"]
         ],
+    )
+    technical = data["indexTechnicalAnalysis"]
+    connection.execute(
+        "INSERT INTO index_technical_analysis VALUES (?, ?, ?, ?, ?)",
+        (
+            technical["id"], run_id, technical["symbol"], technical["asOf"],
+            packed(technical),
+        ),
     )
     connection.executemany(
         """INSERT INTO themes (

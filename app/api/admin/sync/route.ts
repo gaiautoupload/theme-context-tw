@@ -87,6 +87,7 @@ export async function POST(request: Request) {
       "claims",
       "events",
       "market_signals",
+      "index_technical_analysis",
       "themes",
       "companies",
       "corporate_groups",
@@ -169,6 +170,17 @@ export async function POST(request: Request) {
           json(signal.sourceIds),
         ),
     ),
+    binding
+      .prepare(
+        "INSERT INTO index_technical_analysis (id, run_id, symbol, as_of, payload) VALUES (?, ?, ?, ?, ?)",
+      )
+      .bind(
+        data.indexTechnicalAnalysis.id,
+        data.run.id,
+        data.indexTechnicalAnalysis.symbol,
+        data.indexTechnicalAnalysis.asOf,
+        json(data.indexTechnicalAnalysis),
+      ),
     ...data.themes.map((theme) =>
       binding
         .prepare(

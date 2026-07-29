@@ -89,6 +89,33 @@ test("material price signals map to themes and ranked stocks", () => {
   }
 });
 
+test("index technical analysis is complete, conditional, and sourced", () => {
+  const technical = data.indexTechnicalAnalysis;
+  const sourceIds = new Set(data.sources.map((source) => source.id));
+  assert.equal(technical.symbol, "TWSE:IX0001");
+  assert.ok(technical.close > 0);
+  assert.ok(technical.turnoverBillionTwd > 0);
+  assert.ok(technical.turnoverRatio20 > 0);
+  assert.deepEqual(
+    technical.movingAverages.map((average) => average.period),
+    [5, 10, 20, 60, 120, 240],
+  );
+  assert.deepEqual(
+    technical.scenarios.map((scenario) => scenario.id),
+    ["wave-a", "wave-b", "wave-c"],
+  );
+  for (const scenario of technical.scenarios) {
+    assert.ok(["observed", "conditional", "risk_case"].includes(scenario.status));
+    assert.ok(["high", "medium", "low"].includes(scenario.confidence));
+    assert.ok(scenario.trigger.length > 0);
+    assert.ok(scenario.invalidation.length > 0);
+    assert.ok(scenario.targetZone.length > 0);
+  }
+  assert.ok(technical.levels.length >= 3);
+  assert.ok(technical.sourceIds.length >= 2);
+  assert.ok(technical.sourceIds.every((id) => sourceIds.has(id)));
+});
+
 test("every claim has provenance and an inference label", () => {
   const sourceIds = new Set(data.sources.map((source) => source.id));
   for (const claim of data.claims) {

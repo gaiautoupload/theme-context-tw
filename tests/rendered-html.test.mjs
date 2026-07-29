@@ -58,6 +58,13 @@ test("server-renders the final research homepage", async () => {
   assert.match(html, /五分鐘，只看會影響判斷的事/);
   assert.match(html, /DRAM \+13～18%/);
   assert.match(html, /誰的關聯最直接/);
+  assert.match(html, /大盤技術線型推演/);
+  assert.match(html, /A 波急跌/);
+  assert.match(html, /B 波反彈/);
+  assert.match(html, /C 波再測/);
+  assert.match(html, /情境推演，不是命定劇本/);
+  assert.match(html, /43,714–44,081/);
+  assert.match(html, /半年線支撐/);
   assert.doesNotMatch(html, /Your site is taking shape|react-loading-skeleton|codex-preview/);
 });
 
@@ -73,6 +80,7 @@ test("public APIs expose the current snapshot and search", async () => {
   assert.equal(report.run.id, seed.run.id);
   assert.equal(report.topThemes.length, seed.themes.length);
   assert.equal(report.marketSignals.length, seed.marketSignals.length);
+  assert.equal(report.indexTechnicalAnalysis.id, seed.indexTechnicalAnalysis.id);
 
   const search = await worker.fetch(
     new Request("http://localhost/api/search?q=台積電"),

@@ -23,6 +23,9 @@ export function validateResearchData(input: unknown): {
   if (!data.dailyReport?.id || !data.dailyReport.title) {
     errors.push("dailyReport.id and dailyReport.title are required");
   }
+  if (!data.indexTechnicalAnalysis?.id || !data.indexTechnicalAnalysis.symbol) {
+    errors.push("indexTechnicalAnalysis.id and symbol are required");
+  }
 
   const requiredArrays = [
     "events",
@@ -69,6 +72,38 @@ export function validateResearchData(input: unknown): {
   const themeIds = new Set(data.themes!.map((theme) => theme.id));
   const tickers = new Set(data.companies!.map((company) => company.ticker));
   const groupIds = new Set(data.groups!.map((group) => group.id));
+
+  const technical = data.indexTechnicalAnalysis!;
+  if (
+    !["official_close", "provisional"].includes(technical.dataStatus) ||
+    !Number.isFinite(technical.close) ||
+    technical.movingAverages.length !== 6 ||
+    technical.scenarios.length !== 3 ||
+    technical.levels.length < 3
+  ) {
+    errors.push("indexTechnicalAnalysis is incomplete");
+  }
+  const expectedPeriods = new Set([5, 10, 20, 60, 120, 240]);
+  for (const average of technical.movingAverages) {
+    if (!expectedPeriods.has(average.period) || !Number.isFinite(average.value)) {
+      errors.push("indexTechnicalAnalysis has invalid moving averages");
+    }
+  }
+  for (const scenario of technical.scenarios) {
+    if (
+      !["wave-a", "wave-b", "wave-c"].includes(scenario.id) ||
+      !["observed", "conditional", "risk_case"].includes(scenario.status) ||
+      !scenario.trigger ||
+      !scenario.invalidation
+    ) {
+      errors.push(`technical scenario ${scenario.id} is incomplete`);
+    }
+  }
+  for (const sourceId of technical.sourceIds) {
+    if (!sourceIds.has(sourceId)) {
+      errors.push(`indexTechnicalAnalysis references missing source ${sourceId}`);
+    }
+  }
 
   for (const signal of data.marketSignals!) {
     if (

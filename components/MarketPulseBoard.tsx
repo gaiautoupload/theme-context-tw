@@ -4,6 +4,7 @@ import type {
   MarketSignalFreshness,
   ResearchData,
 } from "@/lib/types";
+import { IndexTechnicalPanel } from "@/components/IndexTechnicalPanel";
 
 const freshnessLabel: Record<MarketSignalFreshness, string> = {
   breaking: "剛剛發生",
@@ -220,6 +221,8 @@ export function MarketPulseBoard({
           </div>
         </div>
       </section>
+
+      <IndexTechnicalPanel data={data} />
 
       <section className="company-wire" id="company-wire">
         <div className="container">

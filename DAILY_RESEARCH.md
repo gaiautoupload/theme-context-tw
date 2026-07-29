@@ -55,6 +55,26 @@
 
 每個 `marketSignals` 項目必須包含 `kind`、`actor`、`occurredAt`、`freshness`、`severity`、`direction`、`status`、`marketMove`、`whyItMatters`、`affectedThemeIds`、`affectedTickers`、`nextWatch` 與 `sourceIds`。公司言論不得只寫口號，必須附數字、指引或可驗證節點。
 
+## 大盤技術線型：資料先算，情境再推演
+
+每天研究開始先執行 `npm run data:technicals -- YYYY-MM-DD`，讀取 `data/index-technical-input.json`。均線、成交金額、20 日量比、20／60 日高低點必須採證交所官方資料計算，不得由新聞或語言模型猜數字。
+
+Codex 再以專業分析師角度填寫 `indexTechnicalAnalysis`：
+
+1. `regime` 必須同時描述短期、中期與長期結構，不能只寫多或空。
+2. `summary` 先說已確認的價格位置與量價，再說推論；跌破季線不等於長期熊市，站上年線也不等於必漲。
+3. `movingAverages` 固定列出 5、10、20、60、120、240 日線及指數位於其上或下。
+4. `scenarios` 固定提供 A、B、C 三段，但每天可改寫意義：
+   - A：已觀察到的主段或當前結構。
+   - B：條件式反彈／整理情境。
+   - C：失敗後的替代或風險情境。
+5. 每個情境必須寫 `trigger`、`invalidation`、`targetZone` 與信心。沒有觸發就不得寫成正在發生；不得宣告精確日期必然落底。
+6. `levels` 的每一個點位要有計算依據，例如均線、前高低、缺口或大量區。120 日線稱半年線、240 日線稱年線，不得混用。
+7. `observations` 至少涵蓋趨勢、量價、市場廣度與一項外部風險；`nextConfirmation` 只保留下一交易日最值得驗證的 3–5 件事。
+8. 技術推演是 Codex 推論，不是事實或買賣指令。若官方收盤尚未完成，沿用上一個正式收盤並清楚標示，不可用盤中值冒充收盤。
+
+資訊設計吸收 TradingView 的「圖表、技術指標、篩選、熱圖、日曆、新聞流」思維，但本站的差異是把它們壓縮成五分鐘可以採取下一步的研究結論。第一版網站的「加權指數研判、ABC 波段、全球指數位階、題材地圖、產業報價、個股 Wiki」是產品骨架，不得在後續更新中遺失。
+
 ## 品質閘門
 
 - schema、四碼股票代號、來源 URL、關聯完整性、重複來源全數通過。

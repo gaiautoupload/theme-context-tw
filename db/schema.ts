@@ -63,6 +63,14 @@ export const marketSignals = sqliteTable("market_signals", {
   sourceIds: text("source_ids").notNull(),
 });
 
+export const indexTechnicalAnalysis = sqliteTable("index_technical_analysis", {
+  id: text("id").primaryKey(),
+  runId: text("run_id").notNull(),
+  symbol: text("symbol").notNull(),
+  asOf: text("as_of").notNull(),
+  payload: text("payload").notNull(),
+});
+
 export const themes = sqliteTable("themes", {
   id: text("id").primaryKey(),
   runId: text("run_id").notNull(),

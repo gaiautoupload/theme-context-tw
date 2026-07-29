@@ -1,9 +1,9 @@
 {
   "run": {
-    "id": "2026-07-29-noon-v4",
-    "asOf": "2026-07-29T12:00:00+08:00",
+    "id": "2026-07-29-tech-v6",
+    "asOf": "2026-07-29T14:30:00+08:00",
     "status": "published",
-    "contentHash": "research-20260729-noon-v4-market-signals"
+    "contentHash": "research-20260729-tech-v6-scenario-analysis"
   },
   "dailyReport": {
     "id": "daily-2026-07-29-v4",
@@ -11,6 +11,7 @@
     "eyebrow": "2026.07.29｜午間市場震源",
     "narrative": "昨天台股收跌 2,030.83 點、跌幅 4.65%，不是新的長線題材，而是正在發生的風險重定價。已確認的是指數與成交數字；多家媒體共同歸因於亞洲晶片股賣壓、AI 基礎設施投資可持續性疑慮，以及中國記憶體與半導體設備競爭。今天更要盯三個會改變價格的即時節點：川普對伊朗由談判轉向強硬警告所造成的油價與避險資產擺動、尚未公布結果的 FOMC，以及 Cadence、KLA、NXP 最新財報對半導體需求的交叉驗證。",
     "changes": [
+      "新增加權指數技術位階與 ABC 條件式推演；均線、量價和支撐壓力使用證交所正式資料計算，Codex 推論另行標示。",
       "首頁改為市場震源：先解釋台股大跌，再顯示大人物言論、央行狀態與公司公告。",
       "川普伊朗談話在不到 24 小時內由談判可能轉為強硬警告，油價、航運與通膨預期需同步追蹤。",
       "FOMC 尚未公布結果，只標示為排程事件，不預判升息或降息。",
@@ -29,6 +30,134 @@
       "FOMC 聲明與記者會比利率數字更鷹派，壓縮高估值科技股評價",
       "國際半導體財報強勁，但台灣個股未必取得同等訂單或毛利",
       "反彈量價不足、外資賣壓延續，使短線抄底風險高於題材想像"
+    ]
+  },
+  "indexTechnicalAnalysis": {
+    "id": "taiex-technical-20260728",
+    "symbol": "TWSE:IX0001",
+    "name": "臺灣證券交易所發行量加權股價指數",
+    "asOf": "2026-07-28T13:30:00+08:00",
+    "dataStatus": "official_close",
+    "close": 41603.36,
+    "changePoints": -2030.83,
+    "changePercent": -4.65,
+    "turnoverBillionTwd": 872.57,
+    "turnoverRatio20": 0.83,
+    "regime": "短中期空方，長期多頭結構尚未正式破壞",
+    "summary": "收盤一次跌破 5、10、20 與 60 日線，A 波急跌已成立；但成交金額僅約 20 日均值 0.83 倍，還不是典型爆量止跌，因此不能宣告 A 波完成。指數仍高於 120 與 240 日線，現階段是中期趨勢轉弱、長期結構等待驗證。",
+    "movingAverages": [
+      {
+        "period": 5,
+        "value": 43713.8,
+        "position": "below"
+      },
+      {
+        "period": 10,
+        "value": 43917.94,
+        "position": "below"
+      },
+      {
+        "period": 20,
+        "value": 44954.6,
+        "position": "below"
+      },
+      {
+        "period": 60,
+        "value": 44081.1,
+        "position": "below"
+      },
+      {
+        "period": 120,
+        "value": 39194.2,
+        "position": "above"
+      },
+      {
+        "period": 240,
+        "value": 33076.04,
+        "position": "above"
+      }
+    ],
+    "levels": [
+      {
+        "label": "昨日低點／短線生死線",
+        "value": 41565,
+        "kind": "pivot",
+        "basis": "7/28 日線最低點；跌破且賣壓擴大，C 波風險升高。"
+      },
+      {
+        "label": "5 日線第一反壓",
+        "value": 43713.8,
+        "kind": "resistance",
+        "basis": "B 波反彈需先收復，否則仍只是弱勢反抽。"
+      },
+      {
+        "label": "季線主要反壓",
+        "value": 44081.1,
+        "kind": "resistance",
+        "basis": "60 日均線；站回並維持才算中期趨勢修復。"
+      },
+      {
+        "label": "前波低點支撐帶",
+        "value": 39228.39,
+        "kind": "support",
+        "basis": "近 60 個交易日低點，與 120 日線形成支撐群聚。"
+      },
+      {
+        "label": "半年線支撐",
+        "value": 39194.2,
+        "kind": "support",
+        "basis": "120 日均線；不是年線，跌破代表長期結構進一步惡化。"
+      }
+    ],
+    "scenarios": [
+      {
+        "id": "wave-a",
+        "label": "A 波急跌",
+        "status": "observed",
+        "confidence": "high",
+        "thesis": "全民追價後的擁擠部位正在去槓桿，失守 42,000 點並出現 54 家跌停，急跌修正已被價格與市場廣度確認；是否進入尾聲仍沒有證據。",
+        "trigger": "已發生：單日 -4.65%、跌破全部短中期均線，跌停家數快速擴大。",
+        "invalidation": "若指數快速站回 43,713 點且跌停家數、外資賣壓同步收斂，A 波延伸風險才會下降。",
+        "targetZone": "先觀察 41,565 點能否守住，不預設最低點。"
+      },
+      {
+        "id": "wave-b",
+        "label": "B 波反彈",
+        "status": "conditional",
+        "confidence": "medium",
+        "thesis": "急跌後可能出現超跌反彈，但只有價量與市場廣度同步改善才成立；反彈先視為風險回補，不直接當成多頭重啟。",
+        "trigger": "重新站上 42,000 點，接著帶量收復 5 日線 43,713 點；上漲家數與權值股同步擴散。",
+        "invalidation": "反彈量縮、半導體權值未跟進，或收盤再破 41,565 點。",
+        "targetZone": "43,714–44,081 點，為 5 日線至季線反壓帶。"
+      },
+      {
+        "id": "wave-c",
+        "label": "C 波再測",
+        "status": "risk_case",
+        "confidence": "medium",
+        "thesis": "若 B 波反彈無法收復短期均線，套牢賣壓與風險資產再定價可能形成第二段下探；這是風險情境，不是既定劇本。",
+        "trigger": "收盤跌破 41,565 點，且成交金額放大、跌停家數或外資賣超重新惡化。",
+        "invalidation": "重新站穩 42,000 點並進一步收復 5 日線，市場廣度連續改善。",
+        "targetZone": "39,228–39,194 點，近 60 日低點與 120 日線支撐群聚。"
+      }
+    ],
+    "observations": [
+      "收盤低於 5、10、20、60 日線，短中期趨勢全面轉弱。",
+      "仍高於 120 與 240 日線，不能把短線崩跌直接等同長期熊市成立。",
+      "成交金額約 8,726 億元，僅為 20 日平均約 0.83 倍，尚未出現典型爆量止跌訊號。",
+      "54 家跌停、下跌家數遠高於上漲家數，市場廣度比單看指數更弱。"
+    ],
+    "nextConfirmation": [
+      "收盤能否先站回 42,000 點，再收復 5 日線 43,713 點。",
+      "反彈成交量是否增加，且漲停／上漲家數同步擴散。",
+      "外資現貨與台指期淨部位是否停止惡化。",
+      "FOMC 後美債殖利率、美元與費半是否同方向轉穩。"
+    ],
+    "sourceIds": [
+      "src-twse-taiex-history-20260728",
+      "src-twse-market-turnover-20260728",
+      "src-edn-taiex-20260728",
+      "src-cna-twse-rout"
     ]
   },
   "marketSignals": [
@@ -895,6 +1024,36 @@
   ],
   "sources": [
     {
+      "id": "src-twse-taiex-history-20260728",
+      "title": "發行量加權股價指數歷史資料（2026年7月）",
+      "publisher": "臺灣證券交易所",
+      "url": "https://www.twse.com.tw/rwd/zh/TAIEX/MI_5MINS_HIST?date=20260701&response=json",
+      "publishedAt": "2026-07-28T13:30:00+08:00",
+      "retrievedAt": "2026-07-29T14:20:00+08:00",
+      "sourceType": "official",
+      "quality": "證交所官方日線開高低收資料；5、10、20、60、120、240 日均線由最近 263 個交易日資料依收盤價重新計算。"
+    },
+    {
+      "id": "src-twse-market-turnover-20260728",
+      "title": "市場成交資訊（2026年7月）",
+      "publisher": "臺灣證券交易所",
+      "url": "https://www.twse.com.tw/rwd/zh/afterTrading/FMTQIK?date=20260701&response=json",
+      "publishedAt": "2026-07-28T13:30:00+08:00",
+      "retrievedAt": "2026-07-29T14:20:00+08:00",
+      "sourceType": "official",
+      "quality": "證交所官方成交金額資料；20 日均量比由每日成交金額計算，與只統計股票成交值的媒體口徑可能不同。"
+    },
+    {
+      "id": "src-tradingview-features-2026",
+      "title": "TradingView 功能：圖表、篩選器、熱圖、日曆與新聞流",
+      "publisher": "TradingView",
+      "url": "https://tw.tradingview.com/features/",
+      "publishedAt": "2026-01-01",
+      "retrievedAt": "2026-07-29T14:20:00+08:00",
+      "sourceType": "official",
+      "quality": "產品官方功能頁；只用於資訊設計與分析工作流參考，不作為台股價格資料來源。"
+    },
+    {
       "id": "src-edn-taiex-20260728",
       "title": "台股重挫逾2,000點、失守42,000點",
       "publisher": "經濟日報",
@@ -1206,6 +1365,18 @@
     }
   ],
   "claims": [
+    {
+      "id": "claim-taiex-technicals-20260728",
+      "entityType": "event",
+      "entityId": "event-asia-ai-reset-20260728",
+      "statement": "依證交所至 7 月 28 日正式收盤資料計算，加權指數低於 5、10、20、60 日線，高於 120、240 日線；成交金額約為 20 日平均的 0.83 倍。",
+      "confidence": "high",
+      "sourceType": "manual_review",
+      "sourceIds": [
+        "src-twse-taiex-history-20260728",
+        "src-twse-market-turnover-20260728"
+      ]
+    },
     {
       "id": "claim-market-shock-20260728",
       "entityType": "event",
