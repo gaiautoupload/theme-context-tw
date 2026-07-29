@@ -1,12 +1,12 @@
 import Link from "next/link";
 
 const nav = [
-  { href: "/#market-shocks", label: "市場震源" },
-  { href: "/#market-technical", label: "大盤技術" },
-  { href: "/#leader-watch", label: "大人物言論" },
-  { href: "/#company-wire", label: "公司公告" },
-  { href: "/themes", label: "中線題材" },
-  { href: "/sources", label: "證據來源" },
+  { href: "/", label: "今日總覽" },
+  { href: "/market", label: "即時震源" },
+  { href: "/technical", label: "大盤技術" },
+  { href: "/opportunities", label: "小火苗" },
+  { href: "/themes", label: "題材庫" },
+  { href: "/map", label: "脈絡地圖" },
 ];
 
 export function SiteHeader() {
@@ -44,6 +44,15 @@ export function SiteHeader() {
           </button>
         </form>
       </div>
+      <nav className="mobile-route-nav" aria-label="手機分頁導覽">
+        <div className="container">
+          {nav.map((item) => (
+            <Link href={item.href} key={item.href}>
+              {item.label}
+            </Link>
+          ))}
+        </div>
+      </nav>
     </header>
   );
 }

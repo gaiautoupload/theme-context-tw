@@ -3702,6 +3702,39 @@ a {
   color: #35f0b2;
 }
 
+.mobile-route-nav {
+  display: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.mobile-route-nav > div {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding-block: 9px;
+  scrollbar-width: none;
+}
+
+.mobile-route-nav > div::-webkit-scrollbar {
+  display: none;
+}
+
+.mobile-route-nav a {
+  flex: 0 0 auto;
+  padding: 7px 11px;
+  color: #aeb8c6;
+  border: 1px solid #303846;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.mobile-route-nav a:hover {
+  color: #07100d;
+  background: #35f0b2;
+  border-color: #35f0b2;
+}
+
 .alert-home {
   color: #f7f7f8;
   background:
@@ -3717,6 +3750,181 @@ a {
   font-size: 11px;
   font-weight: 900;
   letter-spacing: 0.17em;
+}
+
+/* Multi-page research navigation */
+.research-page {
+  min-height: 72vh;
+  color: #f2f5f8;
+  background:
+    radial-gradient(circle at 82% 0%, rgba(71, 116, 216, 0.12), transparent 32rem),
+    #080b11;
+}
+
+.route-hero {
+  padding-block: 72px 50px;
+  border-bottom: 1px solid #27303d;
+}
+
+.route-hero h1 {
+  max-width: 900px;
+  margin: 0;
+  color: #ffffff;
+  font-family: "Noto Serif TC", "Songti TC", Georgia, serif;
+  font-size: clamp(42px, 5.8vw, 72px);
+  line-height: 1.05;
+  letter-spacing: -0.045em;
+}
+
+.route-hero > p:last-child {
+  max-width: 760px;
+  margin: 24px 0 0;
+  color: #9eabba;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.route-hero-compact {
+  padding-bottom: 34px;
+}
+
+.research-portals {
+  padding-block: 58px 14px;
+}
+
+.portal-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
+  align-items: end;
+  gap: 48px;
+  margin-bottom: 24px;
+}
+
+.portal-heading h2 {
+  max-width: 720px;
+  margin: 0;
+  color: #ffffff;
+  font-family: "Noto Serif TC", "Songti TC", Georgia, serif;
+  font-size: clamp(30px, 4vw, 48px);
+  line-height: 1.14;
+  letter-spacing: -0.035em;
+}
+
+.portal-heading > p {
+  margin: 0;
+  color: #94a0b0;
+  line-height: 1.75;
+}
+
+.portal-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.portal-grid > a {
+  min-height: 240px;
+  display: flex;
+  flex-direction: column;
+  padding: 23px;
+  background: linear-gradient(155deg, #151b25, #0d121a);
+  border: 1px solid #2a3442;
+  border-radius: 8px;
+  transition: border-color 160ms ease, transform 160ms ease;
+}
+
+.portal-grid > a:hover {
+  border-color: #55d8b4;
+  transform: translateY(-3px);
+}
+
+.portal-grid span {
+  color: #69a1ff;
+  font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+}
+
+.portal-grid strong {
+  margin-top: 28px;
+  color: #ffffff;
+  font-size: 24px;
+}
+
+.portal-grid p {
+  margin: 12px 0 22px;
+  color: #9ca8b6;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.portal-grid b {
+  margin-top: auto;
+  color: #49d6af;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.map-page-body {
+  padding-block: 44px 86px;
+}
+
+.map-page-body .signal-map {
+  margin-top: 0;
+}
+
+.map-page-body .evidence-section {
+  margin-top: 72px;
+}
+
+.opportunity-depth {
+  padding-bottom: 84px;
+}
+
+.opportunity-depth .quick-board {
+  margin-top: 70px;
+}
+
+@media (max-width: 1040px) {
+  .mobile-route-nav {
+    display: block;
+  }
+
+  .portal-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 760px) {
+  .header-inner {
+    min-height: 66px;
+  }
+
+  .header-search {
+    display: none;
+  }
+
+  .route-hero {
+    padding-block: 46px 34px;
+  }
+
+  .route-hero h1 {
+    font-size: clamp(38px, 12vw, 54px);
+  }
+
+  .portal-heading,
+  .portal-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .portal-heading {
+    gap: 16px;
+  }
+
+  .portal-grid > a {
+    min-height: 190px;
+  }
 }
 
 .alert-hero {

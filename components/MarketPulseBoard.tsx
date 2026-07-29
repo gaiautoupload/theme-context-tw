@@ -4,7 +4,6 @@ import type {
   MarketSignalFreshness,
   ResearchData,
 } from "@/lib/types";
-import { IndexTechnicalPanel } from "@/components/IndexTechnicalPanel";
 
 const freshnessLabel: Record<MarketSignalFreshness, string> = {
   breaking: "剛剛發生",
@@ -108,9 +107,11 @@ function SignalCard({
 export function MarketPulseBoard({
   data,
   formattedDate,
+  view = "full",
 }: {
   data: ResearchData;
   formattedDate: string;
+  view?: "full" | "hero" | "details";
 }) {
   const shock = data.marketSignals.find((signal) => signal.kind === "market_shock");
   const leaders = data.marketSignals.filter(
@@ -121,10 +122,12 @@ export function MarketPulseBoard({
     (signal) => signal.kind === "company_release",
   );
   const prioritySignals = [...leaders, ...(rateDecision ? [rateDecision] : [])];
+  const showHero = view !== "details";
+  const showDetails = view !== "hero";
 
   return (
     <>
-      <section className="pulse-hero" id="alerts">
+      {showHero ? <section className="pulse-hero" id="alerts">
         <div className="container pulse-statusbar">
           <span className="pulse-live"><i aria-hidden="true" /> 市場震源</span>
           <span>資料截至 {formattedDate}</span>
@@ -150,8 +153,8 @@ export function MarketPulseBoard({
               <p><span>Codex 推論</span> 高估值與擁擠部位放大同方向賣壓，不視為單一原因</p>
             </div>
             <div className="pulse-hero-actions">
-              <a href="#market-shocks">看真正的新訊號</a>
-              <a href="#company-wire">看公司剛發布什麼</a>
+              <Link href="/market#market-shocks">看真正的新訊號</Link>
+              <Link href="/market#company-wire">看公司剛發布什麼</Link>
             </div>
           </div>
 
@@ -164,9 +167,9 @@ export function MarketPulseBoard({
               </div>
             </div>
             {prioritySignals.map((signal, index) => (
-              <a
+              <Link
                 className={`pulse-command-item pulse-command-${signal.severity}`}
-                href={signal.kind === "rate_decision" ? "#rate-watch" : "#leader-watch"}
+                href={signal.kind === "rate_decision" ? "/market#rate-watch" : "/market#leader-watch"}
                 key={signal.id}
               >
                 <span>{String(index + 1).padStart(2, "0")}</span>
@@ -175,16 +178,16 @@ export function MarketPulseBoard({
                   <strong>{signal.headline}</strong>
                   <p>{signal.status}</p>
                 </div>
-              </a>
+              </Link>
             ))}
             <p className="pulse-disclaimer">
               關聯股是新聞傳導的研究排序，不是漲停預測或買進指令。
             </p>
           </aside>
         </div>
-      </section>
+      </section> : null}
 
-      <section className="container market-shocks" id="market-shocks">
+      {showDetails ? <><section className="container market-shocks" id="market-shocks">
         <div className="pulse-section-heading">
           <div>
             <p className="pulse-eyebrow">WHAT MOVES PRICE NOW</p>
@@ -222,8 +225,6 @@ export function MarketPulseBoard({
         </div>
       </section>
 
-      <IndexTechnicalPanel data={data} />
-
       <section className="company-wire" id="company-wire">
         <div className="container">
           <div className="pulse-section-heading">
@@ -240,6 +241,7 @@ export function MarketPulseBoard({
           </div>
         </div>
       </section>
+      </> : null}
     </>
   );
 }
