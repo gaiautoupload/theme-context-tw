@@ -18,6 +18,7 @@ export async function getPublishedData(): Promise<ResearchData> {
     if (!row?.payload) return seedData;
     const parsed = JSON.parse(row.payload) as Partial<ResearchData>;
     if (
+      !Array.isArray(parsed.marketSignals) ||
       !Array.isArray(parsed.materialSignals) ||
       !Array.isArray(parsed.themes) ||
       parsed.themes.some((theme) => !theme.lifecycle)

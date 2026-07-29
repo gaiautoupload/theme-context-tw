@@ -43,6 +43,26 @@ export const events = sqliteTable("events", {
   sourceIds: text("source_ids").notNull(),
 });
 
+export const marketSignals = sqliteTable("market_signals", {
+  id: text("id").primaryKey(),
+  runId: text("run_id").notNull(),
+  kind: text("kind").notNull(),
+  headline: text("headline").notNull(),
+  actor: text("actor").notNull(),
+  quote: text("quote"),
+  occurredAt: text("occurred_at").notNull(),
+  freshness: text("freshness").notNull(),
+  severity: text("severity").notNull(),
+  direction: text("direction").notNull(),
+  status: text("status").notNull(),
+  marketMove: text("market_move").notNull(),
+  whyItMatters: text("why_it_matters").notNull(),
+  affectedThemeIds: text("affected_theme_ids").notNull(),
+  affectedTickers: text("affected_tickers").notNull(),
+  nextWatch: text("next_watch").notNull(),
+  sourceIds: text("source_ids").notNull(),
+});
+
 export const themes = sqliteTable("themes", {
   id: text("id").primaryKey(),
   runId: text("run_id").notNull(),

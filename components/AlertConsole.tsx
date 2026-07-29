@@ -17,9 +17,11 @@ function relatedStocks(data: ResearchData, theme: Theme, limit = 3) {
 export function AlertConsole({
   data,
   formattedDate,
+  showHero = true,
 }: {
   data: ResearchData;
   formattedDate: string;
+  showHero?: boolean;
 }) {
   const spark = [...data.themes]
     .filter((theme) => theme.lifecycle === "spark")
@@ -40,7 +42,7 @@ export function AlertConsole({
 
   return (
     <>
-      <section className="alert-hero" id="alerts">
+      {showHero ? <section className="alert-hero" id="legacy-alerts">
         <div className="container alert-category-row" aria-label="訊號分類">
           <a className="active" href="#triggered-alerts">全部快訊</a>
           <a href="#spark-radar-title">小火苗</a>
@@ -112,13 +114,13 @@ export function AlertConsole({
             </div>
           </div>
         </div>
-      </section>
+      </section> : null}
 
       <section className="container triggered-alerts" id="triggered-alerts" aria-labelledby="triggered-title">
         <div className="alert-section-heading">
           <div>
-            <p className="alert-kicker">TRIGGERED NOW</p>
-            <h2 id="triggered-title">{`現在只處理這 ${triggeredCount} 件事`}</h2>
+            <p className="alert-kicker">SECOND LAYER · THEME TRACKING</p>
+            <h2 id="triggered-title">市場震源之後，再看中線題材</h2>
           </div>
           <p>先看觸發原因，再看最直接的股票；關聯度不是漲停機率，也不是買進指令。</p>
         </div>

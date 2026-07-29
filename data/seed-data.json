@@ -1,37 +1,270 @@
 {
   "run": {
-    "id": "2026-07-28-close-v3",
-    "asOf": "2026-07-28T18:30:00+08:00",
+    "id": "2026-07-29-noon-v4",
+    "asOf": "2026-07-29T12:00:00+08:00",
     "status": "published",
-    "contentHash": "research-20260728-close-v3-lifecycle"
+    "contentHash": "research-20260729-noon-v4-market-signals"
   },
   "dailyReport": {
-    "id": "daily-2026-07-28-v3",
-    "title": "AI 需求仍有數字支撐，但資金結構、先進封裝量產與供應韌性成為新分水嶺",
-    "eyebrow": "2026.07.28｜收盤後投資敘事",
-    "narrative": "亞洲晶片股因中國供應鏈競爭與 AI 基礎設施融資疑慮急跌，台股同步出現歷史級跌點；但台積電第二季營運與力成法說仍提供需求及量產路線的基本面證據。研究焦點因此由全面追逐 AI 曝險，收斂到三項可驗證能力：先進製程與封裝的實際營收、FOPLP／光通訊的量產里程碑，以及電網與廠區中斷後的復原速度。熊本強震已觸發 JASM 人員疏散，尚無產能影響的官方結論。",
+    "id": "daily-2026-07-29-v4",
+    "title": "台股重挫 2,030 點後，先看晶片重估、川普伊朗言論與今晚 FOMC",
+    "eyebrow": "2026.07.29｜午間市場震源",
+    "narrative": "昨天台股收跌 2,030.83 點、跌幅 4.65%，不是新的長線題材，而是正在發生的風險重定價。已確認的是指數與成交數字；多家媒體共同歸因於亞洲晶片股賣壓、AI 基礎設施投資可持續性疑慮，以及中國記憶體與半導體設備競爭。今天更要盯三個會改變價格的即時節點：川普對伊朗由談判轉向強硬警告所造成的油價與避險資產擺動、尚未公布結果的 FOMC，以及 Cadence、KLA、NXP 最新財報對半導體需求的交叉驗證。",
     "changes": [
-      "新增力成 FOPLP、光學引擎與 CPO 的分段量產時程，並把設備交期與新產品認證列為必要閘門。",
-      "新增熊本強震與 JASM 疏散事件；在公司公布復工、晶圓報廢或出貨影響前，不推定產能損失。",
-      "雙北老舊配電設備汰換提供本地電網更新的具體數量，但不直接等同個別重電廠商訂單。",
-      "低軌衛星與台塑轉型因近 24 小時沒有新增達標訊息，移出今日主題排序，保留於後續觀察。"
+      "首頁改為市場震源：先解釋台股大跌，再顯示大人物言論、央行狀態與公司公告。",
+      "川普伊朗談話在不到 24 小時內由談判可能轉為強硬警告，油價、航運與通膨預期需同步追蹤。",
+      "FOMC 尚未公布結果，只標示為排程事件，不預判升息或降息。",
+      "KLA、Cadence、NXP 最新財報列為半導體需求讀數；供應鏈連結是研究映射，不等同直接訂單。"
     ],
     "signals": [
-      "JASM 完成人員清點後的復工時間、設備校正、晶圓報廢與客戶交期說明",
-      "力成 FOPLP 設備到位、NPI 認證與 2027 年中量產進度",
-      "台積電先進製程營收占比與第三季 446 億至 458 億美元營收指引",
-      "AI 資料中心融資擔保是否獲輝達、OpenAI 或監管文件正式確認",
-      "台電配電變壓器與線路汰換的招標、決標與施工里程碑"
+      "7 月 29 日 FOMC 決策與鮑威爾記者會，台北時間約 7 月 30 日凌晨公布",
+      "荷莫茲海峽安全情勢、Brent 油價與川普下一次公開發言",
+      "台股外資賣超是否縮小、半導體權值是否止跌、跌停家數是否收斂",
+      "KLA 對 2026 下半年至 2027 年晶圓廠設備需求的訂單與指引",
+      "Cadence 與 NXP 上修或強勁指引能否向台灣設計、製造與伺服器供應鏈傳導"
     ],
     "risks": [
-      "AI 基礎設施以供應商擔保或長期租約支撐，可能放大客戶信用與資本效率風險",
-      "中國記憶體與設備擴產壓低成熟產品價格，並使估值更依賴技術差異化",
-      "先進封裝設備交期、良率與客戶認證延後量產",
-      "熊本餘震、廠務檢查或供應中斷影響 JASM 復工",
-      "把電網更新政策直接外推為單一台廠訂單，可能高估題材兌現速度"
+      "把市場大跌歸因成單一新聞，忽略估值、槓桿部位與區域晶片賣壓的共同作用",
+      "川普或伊朗的新一句話使油價、航運與通膨交易再次反向",
+      "FOMC 聲明與記者會比利率數字更鷹派，壓縮高估值科技股評價",
+      "國際半導體財報強勁，但台灣個股未必取得同等訂單或毛利",
+      "反彈量價不足、外資賣壓延續，使短線抄底風險高於題材想像"
     ]
   },
+  "marketSignals": [
+    {
+      "id": "signal-taiex-crash-20260728",
+      "kind": "market_shock",
+      "headline": "台股一天跌 2,030.83 點：先處理晶片股風險重定價",
+      "actor": "台灣加權指數",
+      "quote": null,
+      "occurredAt": "2026-07-28T13:30:00+08:00",
+      "freshness": "today",
+      "severity": "critical",
+      "direction": "risk_off",
+      "status": "收盤數字已確認；原因屬多來源市場歸因",
+      "marketMove": "收 41,603.36 點，跌 2,030.83 點（-4.65%）；成交值約 8,095 億元，54 家跌停。",
+      "whyItMatters": "多家媒體共同指向亞洲晶片股賣壓、AI 資本支出可持續性疑慮與中國記憶體／設備競爭；這是估值與部位共同重定價，不能簡化成單一利空。",
+      "affectedThemeIds": [
+        "ai-capital-discipline-advanced-nodes",
+        "memory-price-upcycle"
+      ],
+      "affectedTickers": [
+        "2330",
+        "3711",
+        "2308",
+        "2317"
+      ],
+      "nextWatch": "看 7/29 外資賣超是否縮小、半導體權值能否止跌，以及跌停家數是否明顯收斂。",
+      "sourceIds": [
+        "src-edn-taiex-20260728",
+        "src-sbs-asia-chip-20260728",
+        "src-pts-taiex-20260728",
+        "src-cna-twse-rout"
+      ]
+    },
+    {
+      "id": "signal-trump-iran-whipsaw-20260729",
+      "kind": "leader_statement",
+      "headline": "川普伊朗口風一天轉硬，油價與避險交易可能再翻向",
+      "actor": "Donald Trump",
+      "quote": "若談不成，伊朗知道我們會「完成任務」。",
+      "occurredAt": "2026-07-29T02:00:00+08:00",
+      "freshness": "breaking",
+      "severity": "critical",
+      "direction": "mixed",
+      "status": "談判仍未有協議，軍事衝突風險重新升高",
+      "marketMove": "前一日因美伊暫停攻擊，Brent 曾跌 6.3% 至每桶 85.87 美元、WTI 跌 7.5%；其後攻擊再起，油價方向對新言論高度敏感。",
+      "whyItMatters": "一句話會同時改變原油、航運、通膨與利率預期；對台股而言，油價上行先壓運輸與製造成本，也可能延後全球降息想像。",
+      "affectedThemeIds": [
+        "ai-power-grid-resilience"
+      ],
+      "affectedTickers": [
+        "2308",
+        "2317"
+      ],
+      "nextWatch": "盯荷莫茲海峽通行、Brent 是否重返 90 美元，以及白宮／伊朗是否確認新一輪談判或攻擊。",
+      "sourceIds": [
+        "src-ap-trump-iran-pause-20260727",
+        "src-reuters-trump-iran-talks-20260727",
+        "src-ap-trump-iran-flare-20260728"
+      ]
+    },
+    {
+      "id": "signal-fomc-20260729",
+      "kind": "rate_decision",
+      "headline": "今晚不是猜升降息：FOMC 結果尚未公布",
+      "actor": "美國聯準會 FOMC",
+      "quote": null,
+      "occurredAt": "2026-07-30T02:00:00+08:00",
+      "freshness": "scheduled",
+      "severity": "critical",
+      "direction": "mixed",
+      "status": "7 月 28–29 日會議進行中，結果與鮑威爾記者會待公布",
+      "marketMove": "目前聯邦基金利率目標區間為 3.50%–3.75%；市場同時消化油價與政策不確定性。",
+      "whyItMatters": "對高本益比科技股，真正會動價格的是聲明措辭、對通膨與成長的判斷，以及鮑威爾是否打開升息或降息空間。",
+      "affectedThemeIds": [
+        "ai-capital-discipline-advanced-nodes",
+        "foplp-cpo-advanced-packaging"
+      ],
+      "affectedTickers": [
+        "2330",
+        "3711",
+        "6669",
+        "3017"
+      ],
+      "nextWatch": "台北時間 7/30 凌晨確認利率決定、聲明差異與鮑威爾回答；公布前維持「排程中」，不寫成已升息或已降息。",
+      "sourceIds": [
+        "src-fed-implementation-20260617",
+        "src-fed-minutes-20260617",
+        "src-ap-fed-preview-20260728"
+      ]
+    },
+    {
+      "id": "signal-trump-tariff-20260723",
+      "kind": "policy_action",
+      "headline": "白宮新一輪 301 關稅仍在生效：台灣輸美成本要重新算",
+      "actor": "Donald Trump／白宮",
+      "quote": null,
+      "occurredAt": "2026-07-23T12:00:00-04:00",
+      "freshness": "active",
+      "severity": "high",
+      "direction": "risk_off",
+      "status": "政策已公布並持續生效，台灣列入 60 個經濟體",
+      "marketMove": "白宮文件對台灣與歐盟採用含既有最惠國稅率在內、總稅率上限 10% 的安排。",
+      "whyItMatters": "組裝、網通與伺服器供應鏈的報價、產地配置與客戶轉嫁能力會成為下一輪財測差異；政策仍有效，所以雖超過 72 小時仍保留。",
+      "affectedThemeIds": [
+        "ai-capital-discipline-advanced-nodes"
+      ],
+      "affectedTickers": [
+        "2317",
+        "3231",
+        "6669",
+        "6285"
+      ],
+      "nextWatch": "確認企業法說是否量化關稅成本、轉單與產地移轉，以及行政細則是否再變更。",
+      "sourceIds": [
+        "src-whitehouse-section301-20260723",
+        "src-ap-section301-20260723"
+      ]
+    },
+    {
+      "id": "signal-kla-q4-20260728",
+      "kind": "company_release",
+      "headline": "KLA 財報：晶圓廠設備動能加速，不等於台廠全面受惠",
+      "actor": "KLA Corporation",
+      "quote": "成長趨勢正在增強，動能將於 2026 下半年延續至 2027 年。",
+      "occurredAt": "2026-07-28T16:05:00-07:00",
+      "freshness": "today",
+      "severity": "high",
+      "direction": "risk_on",
+      "status": "公司官方財報已公布",
+      "marketMove": "2026 會計年度第四季營收 36.6 億美元；管理層指出晶圓廠製程控制需求轉強。",
+      "whyItMatters": "它提供先進製程與設備循環的需求讀數，可用來反查台積電、封測與載板鏈；但必須等待台廠訂單與營收證明，不能直接當成受惠名單。",
+      "affectedThemeIds": [
+        "ai-capital-discipline-advanced-nodes",
+        "foplp-cpo-advanced-packaging"
+      ],
+      "affectedTickers": [
+        "2330",
+        "3711",
+        "3037"
+      ],
+      "nextWatch": "追蹤 KLA 訂單與下季指引，並對照台積電資本支出、設備商接單及封測利用率。",
+      "sourceIds": [
+        "src-kla-q4-2026"
+      ]
+    },
+    {
+      "id": "signal-cadence-q2-20260727",
+      "kind": "company_release",
+      "headline": "Cadence 上修全年展望：AI 設計需求仍有數字",
+      "actor": "Cadence Design Systems",
+      "quote": null,
+      "occurredAt": "2026-07-27T16:05:00-07:00",
+      "freshness": "recent",
+      "severity": "high",
+      "direction": "risk_on",
+      "status": "公司官方財報已公布",
+      "marketMove": "第二季營收 15.84 億美元、年增約 24%；積壓訂單 81 億美元，並上修 2026 全年營收成長展望至約 19%。",
+      "whyItMatters": "EDA 是晶片設計前端需求的領先讀數；強勁積壓訂單能反駁「AI 需求立即消失」，但不能消除估值、融資與供應競爭風險。",
+      "affectedThemeIds": [
+        "ai-capital-discipline-advanced-nodes"
+      ],
+      "affectedTickers": [
+        "2330",
+        "3711"
+      ],
+      "nextWatch": "把 Cadence 的訂單增長與晶圓投片、先進製程占比、封測利用率做跨季對照。",
+      "sourceIds": [
+        "src-cadence-q2-2026"
+      ]
+    },
+    {
+      "id": "signal-nxp-q2-20260728",
+      "kind": "company_release",
+      "headline": "NXP Q2 年增 19%：實體 AI 與資料中心仍是需求分支",
+      "actor": "NXP Semiconductors",
+      "quote": null,
+      "occurredAt": "2026-07-28T16:05:00-04:00",
+      "freshness": "today",
+      "severity": "watch",
+      "direction": "risk_on",
+      "status": "公司官方財報已公布",
+      "marketMove": "第二季營收 35 億美元、年增 19%、季增 10%；第三季營收指引為 36.5 億至 38.5 億美元。",
+      "whyItMatters": "車用、工業與實體 AI 若持續復甦，可分散市場只押資料中心 GPU 的風險；台灣相關股仍須用實際訂單驗證。",
+      "affectedThemeIds": [
+        "ai-capital-discipline-advanced-nodes"
+      ],
+      "affectedTickers": [
+        "2317",
+        "3231",
+        "6285"
+      ],
+      "nextWatch": "看 NXP 下季實際營收是否落在指引中高段，以及台灣 ODM／網通公司是否揭露相同終端需求。",
+      "sourceIds": [
+        "src-nxp-q2-2026"
+      ]
+    }
+  ],
   "events": [
+    {
+      "id": "event-trump-iran-whipsaw-20260729",
+      "title": "川普伊朗談話由談判可能轉為強硬警告",
+      "summary": "美伊暫停攻擊曾使油價大跌，但攻擊再起後，川普警告若無協議將完成任務，重新拉高能源與地緣政治風險。",
+      "region": "美國／中東",
+      "happenedAt": "2026-07-29",
+      "impact": "油價、航運與利率預期擺動",
+      "sourceIds": [
+        "src-ap-trump-iran-pause-20260727",
+        "src-reuters-trump-iran-talks-20260727",
+        "src-ap-trump-iran-flare-20260728"
+      ]
+    },
+    {
+      "id": "event-fomc-20260729",
+      "title": "FOMC 7 月會議結果尚未公布",
+      "summary": "聯準會 7 月 28 至 29 日開會；截至本次資料時間，利率決定與鮑威爾記者會均尚未公布。",
+      "region": "美國／全球",
+      "happenedAt": "2026-07-29",
+      "impact": "全球利率與科技股估值待定",
+      "sourceIds": [
+        "src-fed-minutes-20260617",
+        "src-ap-fed-preview-20260728"
+      ]
+    },
+    {
+      "id": "event-section301-taiwan-20260723",
+      "title": "美國新一輪 301 關稅把台灣列入範圍",
+      "summary": "白宮政策文件把台灣列入 60 個經濟體，台灣輸美商品採用含既有最惠國稅率在內、總稅率上限 10% 的安排。",
+      "region": "美國／台灣",
+      "happenedAt": "2026-07-23",
+      "impact": "輸美成本與供應鏈配置重算",
+      "sourceIds": [
+        "src-whitehouse-section301-20260723",
+        "src-ap-section301-20260723"
+      ]
+    },
     {
       "id": "event-asia-ai-reset-20260728",
       "title": "AI 融資與中國競爭疑慮引發亞洲晶片股重估",
@@ -662,6 +895,146 @@
   ],
   "sources": [
     {
+      "id": "src-edn-taiex-20260728",
+      "title": "台股重挫逾2,000點、失守42,000點",
+      "publisher": "經濟日報",
+      "url": "https://money.udn.com/money/story/12509/9655935?from=edn_newestlist_rank",
+      "publishedAt": "2026-07-28T14:08:00+08:00",
+      "retrievedAt": "2026-07-29T12:00:00+08:00",
+      "sourceType": "news_derived",
+      "quality": "台灣財經媒體；提供收盤指數、點數、跌幅、成交值、漲跌家數與台積電收盤數字。"
+    },
+    {
+      "id": "src-sbs-asia-chip-20260728",
+      "title": "Asian chip shares tumble as AI infrastructure doubts deepen",
+      "publisher": "SBS News",
+      "url": "https://news.sbs.co.kr/amp/news.amp?news_id=N1008678697",
+      "publishedAt": "2026-07-28T16:00:00+10:00",
+      "retrievedAt": "2026-07-29T12:00:00+08:00",
+      "sourceType": "news_derived",
+      "quality": "國際媒體；用於交叉確認亞洲半導體賣壓與 AI 基礎設施可持續性疑慮的市場歸因。"
+    },
+    {
+      "id": "src-pts-taiex-20260728",
+      "title": "中國記憶體與設備競爭疑慮衝擊亞股",
+      "publisher": "公視新聞網",
+      "url": "https://news.pts.org.tw/article/819699",
+      "publishedAt": "2026-07-28T19:30:00+08:00",
+      "retrievedAt": "2026-07-29T12:00:00+08:00",
+      "sourceType": "news_derived",
+      "quality": "台灣公共媒體；補充中國記憶體與半導體設備競爭對美國、韓國、日本及台灣晶片股的傳導。"
+    },
+    {
+      "id": "src-ap-trump-iran-pause-20260727",
+      "title": "Stocks rise and oil plunges after US and Iran pause attacks",
+      "publisher": "Associated Press",
+      "url": "https://apnews.com/article/stocks-oil-rates-markets-cxmt-2b81f0e01bb318ae8d4281964f89f2f1",
+      "publishedAt": "2026-07-27T16:30:00-04:00",
+      "retrievedAt": "2026-07-29T12:00:00+08:00",
+      "sourceType": "news_derived",
+      "quality": "國際通訊社；提供美伊暫停攻擊後 Brent 與 WTI 的實際跌幅。"
+    },
+    {
+      "id": "src-reuters-trump-iran-talks-20260727",
+      "title": "Trump says US is talking with Iran right now",
+      "publisher": "Reuters（Investing.com 轉載）",
+      "url": "https://www.investing.com/news/world-news/trump-says-us-is-talking-with-iran-right-now-4814806",
+      "publishedAt": "2026-07-27T13:05:00-04:00",
+      "retrievedAt": "2026-07-29T12:00:00+08:00",
+      "sourceType": "news_derived",
+      "quality": "國際通訊社；記錄川普表示美國正與伊朗談判、協議可能性存在的原話。"
+    },
+    {
+      "id": "src-ap-trump-iran-flare-20260728",
+      "title": "US thwarts Iranian missile barrage as attacks resume",
+      "publisher": "Associated Press",
+      "url": "https://apnews.com/article/iran-war-us-trump-saudi-houthis-iraq-8d2ae29300a8dc5495a4ce56c5312bf1",
+      "publishedAt": "2026-07-28T18:40:00-04:00",
+      "retrievedAt": "2026-07-29T12:00:00+08:00",
+      "sourceType": "news_derived",
+      "quality": "國際通訊社；記錄攻擊再起及川普對伊朗的最新強硬警告。"
+    },
+    {
+      "id": "src-whitehouse-section301-20260723",
+      "title": "Actions by the United States in Section 301 investigations of 60 economies",
+      "publisher": "The White House",
+      "url": "https://www.whitehouse.gov/presidential-actions/2026/07/actions-by-the-united-states-in-the-investigations-under-section-301-of-the-trade-act-of-1974-of-the-acts-policies-and-practices-of-60-economies-related-to-the-failure-of-each-economy-to-impose-and/",
+      "publishedAt": "2026-07-23T12:00:00-04:00",
+      "retrievedAt": "2026-07-29T12:00:00+08:00",
+      "sourceType": "official",
+      "quality": "美國政府政策原文；用於確認台灣列入範圍及總稅率上限安排。"
+    },
+    {
+      "id": "src-ap-section301-20260723",
+      "title": "Trump announces new tariffs after Section 301 investigations",
+      "publisher": "Associated Press",
+      "url": "https://apnews.com/article/4ea091eeee3fa1bfbe55af3f482e6bc1",
+      "publishedAt": "2026-07-23T18:00:00-04:00",
+      "retrievedAt": "2026-07-29T12:00:00+08:00",
+      "sourceType": "news_derived",
+      "quality": "國際通訊社；補充政策範圍與市場背景，具體稅率仍以白宮文件為準。"
+    },
+    {
+      "id": "src-fed-implementation-20260617",
+      "title": "Federal Reserve issues FOMC implementation note",
+      "publisher": "Federal Reserve",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617a1.htm",
+      "publishedAt": "2026-06-17T14:00:00-04:00",
+      "retrievedAt": "2026-07-29T12:00:00+08:00",
+      "sourceType": "official",
+      "quality": "聯準會官方文件；確認現行聯邦基金利率目標區間為 3.50% 至 3.75%。"
+    },
+    {
+      "id": "src-fed-minutes-20260617",
+      "title": "Minutes of the Federal Open Market Committee, June 16–17, 2026",
+      "publisher": "Federal Reserve",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260617.htm",
+      "publishedAt": "2026-07-08T14:00:00-04:00",
+      "retrievedAt": "2026-07-29T12:00:00+08:00",
+      "sourceType": "official",
+      "quality": "聯準會官方會議紀錄；確認下次會議為 7 月 28 至 29 日及前次政策措辭背景。"
+    },
+    {
+      "id": "src-ap-fed-preview-20260728",
+      "title": "Fed faces pressure as officials meet on interest rates",
+      "publisher": "Associated Press",
+      "url": "https://apnews.com/article/6a7e8b53a187b1193a0ee7b58df680c2",
+      "publishedAt": "2026-07-28T12:00:00-04:00",
+      "retrievedAt": "2026-07-29T12:00:00+08:00",
+      "sourceType": "news_derived",
+      "quality": "國際通訊社會前報導；只用於描述市場背景，不代表會議結果。"
+    },
+    {
+      "id": "src-cadence-q2-2026",
+      "title": "Cadence Reports Second Quarter 2026 Financial Results",
+      "publisher": "Cadence Design Systems",
+      "url": "https://www.cadence.com/en_US/home/company/newsroom/press-releases/pr-ir/2026/cadence-reports-second-quarter-2026-financial-results.html",
+      "publishedAt": "2026-07-27T16:05:00-07:00",
+      "retrievedAt": "2026-07-29T12:00:00+08:00",
+      "sourceType": "official",
+      "quality": "公司官方財報；營收、積壓訂單與全年指引採此來源。"
+    },
+    {
+      "id": "src-kla-q4-2026",
+      "title": "KLA Corporation Reports Fiscal 2026 Fourth Quarter and Full Year Results",
+      "publisher": "KLA Corporation",
+      "url": "https://ir.kla.com/news-events/press-releases/detail/518/kla-corporation-reports-fiscal-2026-fourth-quarter-and-full",
+      "publishedAt": "2026-07-28T16:05:00-07:00",
+      "retrievedAt": "2026-07-29T12:00:00+08:00",
+      "sourceType": "official",
+      "quality": "公司官方財報；季度營收與管理層對 2026 下半年至 2027 年動能的說法採此來源。"
+    },
+    {
+      "id": "src-nxp-q2-2026",
+      "title": "NXP Semiconductors Reports Second Quarter 2026 Results",
+      "publisher": "NXP Semiconductors",
+      "url": "https://investors.nxp.com/news-releases/news-release-details/nxp-semiconductors-reports-second-quarter-2026-results/",
+      "publishedAt": "2026-07-28T16:05:00-04:00",
+      "retrievedAt": "2026-07-29T12:00:00+08:00",
+      "sourceType": "official",
+      "quality": "公司官方財報；季度營收、年季增幅與第三季指引採此來源。"
+    },
+    {
       "id": "src-reuters-asia-ai-rout",
       "title": "AI anxiety sparks tech rout, broad selloff in Asian markets",
       "publisher": "Reuters（Investing.com 轉載）",
@@ -833,6 +1206,100 @@
     }
   ],
   "claims": [
+    {
+      "id": "claim-market-shock-20260728",
+      "entityType": "event",
+      "entityId": "event-asia-ai-reset-20260728",
+      "statement": "台股 7 月 28 日收 41,603.36 點、下跌 2,030.83 點或 4.65%，成交值約 8,095 億元，54 家跌停。",
+      "confidence": "high",
+      "sourceType": "news_derived",
+      "sourceIds": [
+        "src-edn-taiex-20260728",
+        "src-cna-twse-rout"
+      ]
+    },
+    {
+      "id": "claim-market-shock-attribution-20260728",
+      "entityType": "event",
+      "entityId": "event-asia-ai-reset-20260728",
+      "statement": "亞洲半導體賣壓、AI 基礎設施可持續性疑慮及中國記憶體／設備競爭是多家媒體共同提出的市場歸因，但不是經官方證明的唯一原因。",
+      "confidence": "medium",
+      "sourceType": "news_derived",
+      "sourceIds": [
+        "src-sbs-asia-chip-20260728",
+        "src-pts-taiex-20260728",
+        "src-reuters-asia-ai-rout"
+      ]
+    },
+    {
+      "id": "claim-trump-iran-whipsaw-20260729",
+      "entityType": "event",
+      "entityId": "event-trump-iran-whipsaw-20260729",
+      "statement": "川普先表示美國正與伊朗談判，攻擊恢復後又警告若無協議將完成任務；同一事件的口風轉換使油價與避險交易反覆。",
+      "confidence": "high",
+      "sourceType": "news_derived",
+      "sourceIds": [
+        "src-reuters-trump-iran-talks-20260727",
+        "src-ap-trump-iran-flare-20260728"
+      ]
+    },
+    {
+      "id": "claim-fomc-not-yet-released-20260729",
+      "entityType": "event",
+      "entityId": "event-fomc-20260729",
+      "statement": "截至 2026 年 7 月 29 日台北時間中午，7 月 FOMC 利率決定與記者會尚未公布；現行目標區間仍為 3.50% 至 3.75%。",
+      "confidence": "high",
+      "sourceType": "official",
+      "sourceIds": [
+        "src-fed-implementation-20260617",
+        "src-fed-minutes-20260617"
+      ]
+    },
+    {
+      "id": "claim-section301-taiwan-20260723",
+      "entityType": "event",
+      "entityId": "event-section301-taiwan-20260723",
+      "statement": "白宮 7 月 23 日文件將台灣列入 60 個經濟體，並對台灣採用含既有最惠國稅率在內、總稅率上限 10% 的安排。",
+      "confidence": "high",
+      "sourceType": "official",
+      "sourceIds": [
+        "src-whitehouse-section301-20260723",
+        "src-ap-section301-20260723"
+      ]
+    },
+    {
+      "id": "claim-kla-q4-2026",
+      "entityType": "theme",
+      "entityId": "ai-capital-discipline-advanced-nodes",
+      "statement": "KLA 2026 會計年度第四季營收 36.6 億美元，管理層表示成長動能預期在 2026 下半年至 2027 年加速。",
+      "confidence": "high",
+      "sourceType": "official",
+      "sourceIds": [
+        "src-kla-q4-2026"
+      ]
+    },
+    {
+      "id": "claim-cadence-q2-2026",
+      "entityType": "theme",
+      "entityId": "ai-capital-discipline-advanced-nodes",
+      "statement": "Cadence 第二季營收 15.84 億美元、積壓訂單 81 億美元，並把 2026 全年營收成長展望上修至約 19%。",
+      "confidence": "high",
+      "sourceType": "official",
+      "sourceIds": [
+        "src-cadence-q2-2026"
+      ]
+    },
+    {
+      "id": "claim-nxp-q2-2026",
+      "entityType": "theme",
+      "entityId": "ai-capital-discipline-advanced-nodes",
+      "statement": "NXP 第二季營收 35 億美元、年增 19%，第三季營收指引為 36.5 億至 38.5 億美元。",
+      "confidence": "high",
+      "sourceType": "official",
+      "sourceIds": [
+        "src-nxp-q2-2026"
+      ]
+    },
     {
       "id": "claim-asia-ai-rout",
       "entityType": "event",

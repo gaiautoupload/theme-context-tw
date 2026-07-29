@@ -5,6 +5,7 @@ import { ConfidenceBadge, SourceTypeBadge } from "@/components/Badges";
 import { SparkRadar } from "@/components/SparkRadar";
 import { QuickDecisionBoard } from "@/components/QuickDecisionBoard";
 import { AlertConsole } from "@/components/AlertConsole";
+import { MarketPulseBoard } from "@/components/MarketPulseBoard";
 import { getPublishedData } from "@/lib/data";
 
 export const metadata: Metadata = {
@@ -24,7 +25,8 @@ export default async function Home() {
 
   return (
     <div className="alert-home">
-      <AlertConsole data={data} formattedDate={date} />
+      <MarketPulseBoard data={data} formattedDate={date} />
+      <AlertConsole data={data} formattedDate={date} showHero={false} />
 
       <div className="container">
         <QuickDecisionBoard data={data} />

@@ -34,6 +34,7 @@ export function validateResearchData(input: unknown): {
     "sources",
     "claims",
     "materialSignals",
+    "marketSignals",
   ] as const;
   for (const key of requiredArrays) {
     if (!Array.isArray(data[key])) errors.push(`${key} must be an array`);
@@ -68,6 +69,38 @@ export function validateResearchData(input: unknown): {
   const themeIds = new Set(data.themes!.map((theme) => theme.id));
   const tickers = new Set(data.companies!.map((company) => company.ticker));
   const groupIds = new Set(data.groups!.map((group) => group.id));
+
+  for (const signal of data.marketSignals!) {
+    if (
+      !["market_shock", "leader_statement", "policy_action", "rate_decision", "company_release"].includes(
+        signal.kind,
+      )
+    ) {
+      errors.push(`market signal ${signal.id} has invalid kind`);
+    }
+    if (!["breaking", "today", "recent", "scheduled", "active"].includes(signal.freshness)) {
+      errors.push(`market signal ${signal.id} has invalid freshness`);
+    }
+    if (!["critical", "high", "watch"].includes(signal.severity)) {
+      errors.push(`market signal ${signal.id} has invalid severity`);
+    }
+    if (!signal.occurredAt || !signal.marketMove || !signal.whyItMatters || !signal.nextWatch) {
+      errors.push(`market signal ${signal.id} is incomplete`);
+    }
+    for (const sourceId of signal.sourceIds) {
+      if (!sourceIds.has(sourceId)) errors.push(`market signal ${signal.id} references missing source`);
+    }
+    for (const themeId of signal.affectedThemeIds) {
+      if (!themeIds.has(themeId)) {
+        errors.push(`market signal ${signal.id} references missing theme ${themeId}`);
+      }
+    }
+    for (const ticker of signal.affectedTickers) {
+      if (!tickers.has(ticker)) {
+        errors.push(`market signal ${signal.id} references missing ticker ${ticker}`);
+      }
+    }
+  }
 
   for (const theme of data.themes!) {
     if (theme.score < 0 || theme.score > 100) {

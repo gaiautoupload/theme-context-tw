@@ -30,6 +30,14 @@ CREATE TABLE IF NOT EXISTS events (
   id TEXT PRIMARY KEY, run_id TEXT NOT NULL, title TEXT NOT NULL, summary TEXT NOT NULL,
   region TEXT NOT NULL, happened_at TEXT NOT NULL, impact TEXT NOT NULL, source_ids TEXT NOT NULL
 );
+CREATE TABLE IF NOT EXISTS market_signals (
+  id TEXT PRIMARY KEY, run_id TEXT NOT NULL, kind TEXT NOT NULL, headline TEXT NOT NULL,
+  actor TEXT NOT NULL, quote TEXT, occurred_at TEXT NOT NULL, freshness TEXT NOT NULL,
+  severity TEXT NOT NULL, direction TEXT NOT NULL, status TEXT NOT NULL,
+  market_move TEXT NOT NULL, why_it_matters TEXT NOT NULL,
+  affected_theme_ids TEXT NOT NULL, affected_tickers TEXT NOT NULL,
+  next_watch TEXT NOT NULL, source_ids TEXT NOT NULL
+);
 CREATE TABLE IF NOT EXISTS themes (
   id TEXT PRIMARY KEY, run_id TEXT NOT NULL, name TEXT NOT NULL, kicker TEXT NOT NULL,
   score INTEGER NOT NULL, stage TEXT NOT NULL, direction TEXT NOT NULL, thesis TEXT NOT NULL,
@@ -105,7 +113,7 @@ try:
             connection.execute(f"ALTER TABLE themes ADD COLUMN {column} {definition}")
     connection.execute("BEGIN IMMEDIATE")
     for table in (
-        "sources", "claims", "events", "themes", "companies", "corporate_groups",
+        "sources", "claims", "events", "market_signals", "themes", "companies", "corporate_groups",
         "group_memberships", "theme_company_links", "daily_reports", "material_signals"
     ):
         connection.execute(f"DELETE FROM {table}")
@@ -142,6 +150,19 @@ try:
                 item["happenedAt"], item["impact"], packed(item["sourceIds"]),
             )
             for item in data["events"]
+        ],
+    )
+    connection.executemany(
+        "INSERT INTO market_signals VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+        [
+            (
+                item["id"], run_id, item["kind"], item["headline"], item["actor"],
+                item.get("quote"), item["occurredAt"], item["freshness"], item["severity"],
+                item["direction"], item["status"], item["marketMove"], item["whyItMatters"],
+                packed(item["affectedThemeIds"]), packed(item["affectedTickers"]),
+                item["nextWatch"], packed(item["sourceIds"]),
+            )
+            for item in data["marketSignals"]
         ],
     )
     connection.executemany(

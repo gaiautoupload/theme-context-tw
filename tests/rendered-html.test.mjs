@@ -39,11 +39,17 @@ test("server-renders the final research homepage", async () => {
   assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
   const html = await response.text();
   assert.match(html, /題材脈絡/);
-  assert.match(html, /AI 需求仍有數字支撐/);
+  assert.match(html, /先回答昨天為什麼跌/);
   assert.match(html, /國際事件/);
   assert.match(html, /投資主題/);
-  assert.match(html, /小火苗剛冒煙，/);
-  assert.match(html, /現在只處理這 3 件事/);
+  assert.match(html, /台股一天跌/);
+  assert.match(html, /2,030.83/);
+  assert.match(html, /大人物一句話/);
+  assert.match(html, /沒公布，就不先猜答案/);
+  assert.match(html, /公司剛發布什麼/);
+  assert.match(html, /川普伊朗口風一天轉硬/);
+  assert.match(html, /FOMC 結果尚未公布/);
+  assert.match(html, /市場震源之後，再看中線題材/);
   assert.match(html, /設定你要等的訊號/);
   assert.match(html, /先行分數 ≥ 80/);
   assert.match(html, /市場還沒燒起來，證據先冒煙/);
@@ -66,6 +72,7 @@ test("public APIs expose the current snapshot and search", async () => {
   const report = await latest.json();
   assert.equal(report.run.id, seed.run.id);
   assert.equal(report.topThemes.length, seed.themes.length);
+  assert.equal(report.marketSignals.length, seed.marketSignals.length);
 
   const search = await worker.fetch(
     new Request("http://localhost/api/search?q=台積電"),

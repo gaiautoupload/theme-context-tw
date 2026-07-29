@@ -47,6 +47,34 @@ export interface EventItem {
   sourceIds: string[];
 }
 
+export type MarketSignalKind =
+  | "market_shock"
+  | "leader_statement"
+  | "policy_action"
+  | "rate_decision"
+  | "company_release";
+
+export type MarketSignalFreshness = "breaking" | "today" | "recent" | "scheduled" | "active";
+
+export interface MarketSignal {
+  id: string;
+  kind: MarketSignalKind;
+  headline: string;
+  actor: string;
+  quote: string | null;
+  occurredAt: string;
+  freshness: MarketSignalFreshness;
+  severity: "critical" | "high" | "watch";
+  direction: "risk_on" | "risk_off" | "mixed";
+  status: string;
+  marketMove: string;
+  whyItMatters: string;
+  affectedThemeIds: string[];
+  affectedTickers: string[];
+  nextWatch: string;
+  sourceIds: string[];
+}
+
 export interface Theme {
   id: string;
   name: string;
@@ -144,4 +172,5 @@ export interface ResearchData {
   sources: Source[];
   claims: Claim[];
   materialSignals: MaterialSignal[];
+  marketSignals: MarketSignal[];
 }

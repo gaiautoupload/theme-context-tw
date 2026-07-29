@@ -11,6 +11,24 @@ test("current published research set meets minimum scope", () => {
   assert.ok(data.groups.length >= 2);
   assert.ok(data.companies.length >= 3);
   assert.ok(data.events.length >= 1);
+  assert.ok(data.marketSignals.length >= 4);
+});
+
+test("market signals are fresh, sourced, and decision-oriented", () => {
+  const sourceIds = new Set(data.sources.map((source) => source.id));
+  const allowedFreshness = new Set(["breaking", "today", "recent", "scheduled", "active"]);
+  assert.ok(data.marketSignals.some((signal) => signal.kind === "market_shock"));
+  assert.ok(data.marketSignals.some((signal) => signal.kind === "leader_statement"));
+  assert.ok(data.marketSignals.some((signal) => signal.kind === "rate_decision"));
+  assert.ok(data.marketSignals.some((signal) => signal.kind === "company_release"));
+  for (const signal of data.marketSignals) {
+    assert.ok(allowedFreshness.has(signal.freshness));
+    assert.ok(signal.marketMove.length > 0);
+    assert.ok(signal.whyItMatters.length > 0);
+    assert.ok(signal.nextWatch.length > 0);
+    assert.ok(signal.sourceIds.length > 0);
+    assert.ok(signal.sourceIds.every((id) => sourceIds.has(id)));
+  }
 });
 
 test("identifiers, sources, and relationships are internally consistent", () => {

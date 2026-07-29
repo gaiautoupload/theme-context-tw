@@ -1,10 +1,10 @@
 import Link from "next/link";
 
 const nav = [
-  { href: "/#alerts", label: "題材快訊" },
-  { href: "/#spark-radar-title", label: "小火苗" },
-  { href: "/themes", label: "投資主題" },
-  { href: "/groups", label: "企業集團" },
+  { href: "/#market-shocks", label: "市場震源" },
+  { href: "/#leader-watch", label: "大人物言論" },
+  { href: "/#company-wire", label: "公司公告" },
+  { href: "/themes", label: "中線題材" },
   { href: "/sources", label: "證據來源" },
 ];
 

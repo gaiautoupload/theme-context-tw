@@ -86,6 +86,7 @@ export async function POST(request: Request) {
       "sources",
       "claims",
       "events",
+      "market_signals",
       "themes",
       "companies",
       "corporate_groups",
@@ -141,6 +142,31 @@ export async function POST(request: Request) {
           event.happenedAt,
           event.impact,
           json(event.sourceIds),
+        ),
+    ),
+    ...data.marketSignals.map((signal) =>
+      binding
+        .prepare(
+          "INSERT INTO market_signals (id, run_id, kind, headline, actor, quote, occurred_at, freshness, severity, direction, status, market_move, why_it_matters, affected_theme_ids, affected_tickers, next_watch, source_ids) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+        )
+        .bind(
+          signal.id,
+          data.run.id,
+          signal.kind,
+          signal.headline,
+          signal.actor,
+          signal.quote,
+          signal.occurredAt,
+          signal.freshness,
+          signal.severity,
+          signal.direction,
+          signal.status,
+          signal.marketMove,
+          signal.whyItMatters,
+          json(signal.affectedThemeIds),
+          json(signal.affectedTickers),
+          signal.nextWatch,
+          json(signal.sourceIds),
         ),
     ),
     ...data.themes.map((theme) =>
