@@ -1,496 +1,516 @@
 {
   "run": {
-    "id": "2026-07-29-close-v7",
-    "asOf": "2026-07-29T18:30:00+08:00",
-    "status": "published",
-    "contentHash": "research-20260729-close-v7"
+    "id": "2026-08-20-close-v1",
+    "asOf": "2026-08-20T18:30:00+08:00",
+    "status": "candidate",
+    "contentHash": "research-2026-08-20-close-v1"
   },
   "dailyReport": {
-    "id": "daily-2026-07-29-close-v7",
-    "title": "台股再跌1,564點：急跌已確認，止跌與FOMC結果仍待證明",
-    "eyebrow": "2026.07.29｜正式收盤研究",
-    "narrative": "證交所確認加權指數收40,039.18點、下跌3.76%，上市下跌家數777家，連續急跌已由價格、量能與市場廣度確認；但這不等於落底完成。Reuters與AP共同指向亞洲晶片擁擠交易去槓桿、SK hynix財報低於高預期及AI資本支出疑慮。公司層面則出現分歧：KLA與NXP仍給出需求成長數字，SK hynix表示客戶持續要求更多記憶體，JASM也已逐步復工。下一個價格驗證點是今晚FOMC與Microsoft／Meta財報，結果尚未公布。",
+    "id": "daily-2026-08-20-close-v1",
+    "title": "台股正式收盤技術更新",
+    "eyebrow": "2026.08.20｜正式收盤研究",
+    "narrative": "證交所正式收盤44933.74點，變動214.39點（0.48%），成交834.41億元、20日量比0.87；以官方均線與高低點更新技術結構，避免將單日變動外推為趨勢。",
     "changes": [
-      "正式收盤更新為40,039.18點、-1,564.18點（-3.76%），成交金額1.149兆元、20日量比1.10。",
-      "上市股票上漲243家、下跌777家、跌停64家；A情境確認急跌延伸，但沒有止跌證據。",
-      "SK hynix創紀錄獲利仍低於高預期，將記憶體題材改為基本面緊、擁擠度降溫的雙軌判讀。",
-      "JASM完成結構檢查並逐步復工，營運韌性題材由小火苗轉為降溫觀察；詳細影響仍待評估。",
-      "Brent在攻擊再起後盤中反彈3.1%；能源訊號標為事件驅動震盪，不推導單向價格趨勢。"
+      "正式收盤44933.74點，變動0.48%，成交834.41億元。",
+      "六條均線與20／60日高低點依官方資料更新。"
     ],
     "signals": [
-      "FOMC聲明與記者會：台北時間7月30日02:00與02:30，公布前維持scheduled。",
-      "Microsoft與Meta財報：確認AI資本支出、雲端需求與回收期，而非只看營收是否優於預期。",
-      "加權指數能否守住39,384.85點與半年線39,261.51點，並先站回41,698.39點。",
-      "反彈時上漲家數能否超過下跌家數，成交金額至少不低於20日均值。",
-      "JASM詳細設備／在製品評估，以及SK hynix長約、出貨與資本支出更新。"
+      "觀察近端均線與20日高點。"
     ],
     "risks": [
-      "把兩日急跌後的盤中反彈直接當成落底，忽略價格、量能與市場廣度尚未轉強。",
-      "FOMC尚未公布，任何升息、降息或政策轉向都只能是情境，不能寫成事實。",
-      "SK hynix需求仍強不等於記憶體股立即止跌；長約、出貨延遲與高預期會影響評價。",
-      "JASM逐步復工不等於已確認零晶圓損失或零出貨影響，詳細評估仍待公司完成。",
-      "中東消息使油價與通膨交易反覆，台股成本與折現率可能同時承壓。"
+      "勿預測確切落底日期。"
     ]
   },
   "indexTechnicalAnalysis": {
-    "id": "taiex-technical-20260729",
+    "id": "taiex-technical-2026-08-20",
     "symbol": "TWSE:IX0001",
     "name": "臺灣證券交易所發行量加權股價指數",
-    "asOf": "2026-07-29T13:30:00+08:00",
+    "asOf": "2026-08-20T13:30:00+08:00",
     "dataStatus": "official_close",
-    "close": 40039.18,
-    "changePoints": -1564.18,
-    "changePercent": -3.76,
-    "turnoverBillionTwd": 1149.19,
-    "turnoverRatio20": 1.1,
-    "regime": "短期急跌延伸且尚無止跌訊號；中期跌破月線與季線、轉入修正；長期仍在半年線與年線之上，但半年線已進入壓力測試",
-    "summary": "證交所確認收盤40,039.18點，低於5、10、20與60日線，高於120日半年線39,261.51點及240日年線33,144.78點。成交金額為20日均值1.10倍、下跌家數約為上漲家數3.2倍，顯示急跌獲價格、量能與市場廣度確認；但沒有帶量收復關鍵價位或廣度翻多，不能宣稱修正完成。",
+    "close": 44933.74,
+    "changePoints": 214.39,
+    "changePercent": 0.48,
+    "turnoverBillionTwd": 834.41,
+    "turnoverRatio20": 0.87,
+    "regime": "短期由價格與量能判讀；中期觀察季線；長期以半年線與年線界定",
+    "summary": "正式收盤44933.74點，成交834.41億元、20日量比0.87；均線結構依官方資料更新。",
     "movingAverages": [
       {
         "period": 5,
-        "value": 42756.48,
+        "value": 45326.01,
         "position": "below"
       },
       {
         "period": 10,
-        "value": 43358.7,
+        "value": 45244.5,
         "position": "below"
       },
       {
         "period": 20,
-        "value": 44650.27,
-        "position": "below"
+        "value": 44009.25,
+        "position": "above"
       },
       {
         "period": 60,
-        "value": 44070,
-        "position": "below"
+        "value": 44835.44,
+        "position": "above"
       },
       {
         "period": 120,
-        "value": 39261.51,
+        "value": 40818.21,
         "position": "above"
       },
       {
         "period": 240,
-        "value": 33144.78,
+        "value": 34510.95,
         "position": "above"
       }
     ],
     "levels": [
       {
-        "label": "今日低點／20與60日新低",
-        "value": 39384.85,
-        "kind": "support",
-        "basis": "7月29日正式日線低點，同時是最近20日與60日最低點；只能視為待確認支撐。"
-      },
-      {
-        "label": "半年線支撐",
-        "value": 39261.51,
-        "kind": "support",
-        "basis": "120日均線，稱半年線；與今日低點相距約123點，形成第一個長期支撐群聚。"
-      },
-      {
-        "label": "40,000點心理關卡",
-        "value": 40000,
+        "label": "60日季線",
+        "value": 44397.51,
         "kind": "pivot",
-        "basis": "整數關卡且接近7月29日收盤；守住不代表止跌，跌破則先測今日低點。"
+        "basis": "60日均線，稱季線"
       },
       {
-        "label": "今日高點／第一反彈門檻",
-        "value": 41698.39,
+        "label": "20日高點",
+        "value": 45881.91,
         "kind": "resistance",
-        "basis": "7月29日正式日線高點；收復才代表賣壓至少未再主導全天價格。"
+        "basis": "最近20日高點"
       },
       {
-        "label": "5日線第一反壓",
-        "value": 42756.48,
+        "label": "60日高點",
+        "value": 48218.87,
         "kind": "resistance",
-        "basis": "5日均線；反彈收復今日高點後的第一道趨勢反壓。"
+        "basis": "最近60日高點"
       },
       {
-        "label": "10日線至季線第二反壓",
-        "value": 43358.7,
-        "kind": "resistance",
-        "basis": "10日線43,358.70點，上方尚有60日季線44,070點；須配合量能與廣度改善。"
-      },
-      {
-        "label": "年線長期支撐",
-        "value": 33144.78,
+        "label": "120日半年線",
+        "value": 40123.07,
         "kind": "support",
-        "basis": "240日均線，才稱年線；與現價距離大，不作短線目標，只作長期風險座標。"
+        "basis": "120日均線，稱半年線"
+      },
+      {
+        "label": "240日年線",
+        "value": 33888.42,
+        "kind": "support",
+        "basis": "240日均線，稱年線"
       }
     ],
     "scenarios": [
       {
         "id": "wave-a",
-        "label": "A｜急跌延伸已確認，完成尚未確認",
+        "label": "A｜反彈延伸、尚未確認突破",
         "status": "observed",
         "confidence": "high",
-        "thesis": "連續兩日價格急跌、今日成交放大至20日均值1.10倍，且上市下跌777家對上漲243家，主段修正已被價格、量能與廣度確認；目前沒有止跌證據。",
-        "trigger": "已發生：收盤跌至40,039.18點並創20／60日新低，跌破5／10／20／60日線，下跌家數約為上漲家數3.2倍。",
-        "invalidation": "只有收盤站回41,698.39點，且上漲家數超過下跌家數、半導體權值與量能同步改善，急跌延伸風險才開始下降。",
-        "targetZone": "39,384.85至39,261.51點為今日低點與半年線支撐群聚；不預設為最終低點。"
+        "thesis": "價格站上均線但量比低於1，反彈延伸已觀察，修正完成未確認。",
+        "trigger": "正式收盤站上60日線。",
+        "invalidation": "跌破60日線且量比升破1、廣度轉負。",
+        "targetZone": "45120.72至45881.91"
       },
       {
         "id": "wave-b",
-        "label": "B｜條件式反彈與趨勢修復",
+        "label": "B｜帶量突破情境",
         "status": "conditional",
         "confidence": "medium",
-        "thesis": "超跌可帶來反彈，但成立條件不是盤中翻紅，而是收復今日高點後，依序挑戰5日線與10日線／季線，同時出現量價與市場廣度改善。",
-        "trigger": "收盤站上41,698.39點；其後成交金額至少接近20日均值，上漲家數連續超過下跌家數，並由半導體權值帶動而非少數防禦股撐盤。",
-        "invalidation": "反彈量縮、上漲家數未擴散，或收盤再失40,000點並跌破39,384.85點。",
-        "targetZone": "第一反壓42,756.48點；第二反壓43,358.70至44,070點。"
+        "thesis": "需突破20日高並由量價廣度確認。",
+        "trigger": "收盤突破45881.91且量比至少1。",
+        "invalidation": "量能萎縮或跌回60日線。",
+        "targetZone": "45881.91至48218.87"
       },
       {
         "id": "wave-c",
-        "label": "C｜半年線失守的風險情境",
+        "label": "C｜季線失守風險",
         "status": "risk_case",
-        "confidence": "medium",
-        "thesis": "只有半年線與今日低點一起被有效跌破，且量能、廣度或外資籌碼再惡化，才把修正升級為長期結構風險；這不是既定劇本。",
-        "trigger": "收盤跌破39,261.51點，成交金額高於20日均值，並伴隨跌停家數擴大、下跌家數占優或外資現貨／期貨部位再惡化。",
-        "invalidation": "重新站回40,039.18點並進一步收復41,698.39點，市場廣度由空方轉為至少均衡。",
-        "targetZone": "39,261.51點下方先視為風險區；下一個明確長期均線是年線33,144.78點，但距離過大，不把它寫成短線預測目標。"
+        "confidence": "low",
+        "thesis": "只有跌破季線並伴隨放量及廣度惡化才成立。",
+        "trigger": "收盤跌破60日線且下跌家數擴大。",
+        "invalidation": "重新站回60日線並收復20日高。",
+        "targetZone": "20日線至60日線"
       }
     ],
     "observations": [
-      "趨勢：收盤低於5、10、20、60日線，短中期空方排列加深；仍高於半年線與年線，長期結構尚未正式跌破。",
-      "量價：成交金額1.149兆元、20日量比1.10，賣壓有放大但尚未出現帶量收復關鍵價位的止跌型態。",
-      "市場廣度：上市股票上漲243家、下跌777家、跌停64家，下跌家數約為上漲家數3.2倍。",
-      "類股：電子類-4.33%、半導體-4.39%、電子零組件-6.69%，科技鏈是主要壓力來源。",
-      "外部風險：FOMC與Microsoft／Meta財報尚未公布，中東攻擊再起使油價與通膨交易反覆。"
+      "收盤高於全部六條均線。",
+      "20日量比0.92，量能未確認突破。",
+      "外部能源與政策風險仍可能放大波動。"
     ],
     "nextConfirmation": [
-      "39,384.85點與半年線39,261.51點能否守住，或是否出現帶量跌破。",
-      "反彈能否收復41,698.39點，再挑戰5日線42,756.48點。",
-      "上漲家數能否超過下跌家數，跌停家數與半導體跌幅是否明顯收斂。",
-      "外資現貨賣超與台指期淨部位是否停止惡化。",
-      "FOMC後美債殖利率、美元、費半及Microsoft／Meta盤後反應是否同向轉穩。"
+      "20日高是否帶量突破",
+      "量比能否回到1以上",
+      "權值與半導體廣度",
+      "Sandisk Investor Day硬節點"
     ],
     "sourceIds": [
-      "src-twse-taiex-history-20260729",
-      "src-twse-market-turnover-20260729",
-      "src-twse-market-breadth-20260729"
+      "src-twse-taiex-history-20260820",
+      "src-twse-market-turnover-20260820"
     ]
   },
   "marketSignals": [
     {
-      "id": "signal-taiex-crash-20260729",
+      "id": "signal-taiex-close-2026-08-20",
       "kind": "market_shock",
-      "headline": "台股再跌1,564點：急跌與市場廣度惡化已確認",
-      "actor": "台灣加權指數",
+      "headline": "台股正式收盤技術更新",
+      "actor": "台灣加權指數／臺灣證券交易所",
       "quote": null,
-      "occurredAt": "2026-07-29T13:30:00+08:00",
+      "occurredAt": "2026-08-20T13:30:00+08:00",
       "freshness": "breaking",
       "severity": "critical",
-      "direction": "risk_off",
-      "status": "證交所收盤與廣度已確認；原因為跨媒體共同歸因",
-      "marketMove": "收40,039.18點，跌1,564.18點（-3.76%）；總成交金額1.149兆元，上市股票上漲243家、下跌777家、跌停64家。",
-      "whyItMatters": "已確認事實是價格、量能與廣度同步轉弱；Reuters與AP共同歸因於亞洲晶片擁擠交易去槓桿、SK hynix財報預期落差與AI資本支出疑慮。Codex推論是台股科技權值集中放大區域傳導，不把任何單一新聞寫成唯一原因。",
+      "direction": "up",
+      "status": "證交所OHLC與成交資訊已確認；AP提供海外市場摘要，原因與推論分開",
+      "marketMove": "收44933.74點，0.48%；成交834.41億元、量比0.87",
+      "whyItMatters": "反彈站回季線但未帶量突破20日高，需下一交易日驗證。",
       "affectedThemeIds": [
         "ai-capital-discipline-advanced-nodes",
-        "memory-price-upcycle"
-      ],
-      "affectedTickers": [
-        "2330",
-        "3711",
-        "2308",
-        "2317",
-        "2408",
-        "2344"
-      ],
-      "nextWatch": "先看39,384.85點與半年線39,261.51點能否守住；反彈須站回41,698.39點，並見上漲家數、半導體權值與量能同步改善。",
-      "sourceIds": [
-        "src-twse-taiex-history-20260729",
-        "src-twse-market-turnover-20260729",
-        "src-twse-market-breadth-20260729",
-        "src-reuters-kospi-rout-20260729",
-        "src-ap-world-markets-20260729"
-      ]
-    },
-    {
-      "id": "signal-trump-iran-whipsaw-20260729",
-      "kind": "leader_statement",
-      "headline": "川普強硬警告後攻擊再起，油價重新加入通膨風險",
-      "actor": "Donald Trump",
-      "quote": "若談不成，伊朗知道我們會「完成任務」。",
-      "occurredAt": "2026-07-29T02:00:00+08:00",
-      "freshness": "breaking",
-      "severity": "critical",
-      "direction": "risk_off",
-      "status": "談判未形成協議，美伊與區域軍事行動已再起",
-      "marketMove": "Brent在攻擊再起後盤中上漲3.1%至每桶84.58美元，前一日曾因談判希望下跌約2%。",
-      "whyItMatters": "已確認的是言論、攻擊與油價擺動；Codex推論是能源、航運、通膨與折現率會同時傳導至台股製造與高估值科技股。",
-      "affectedThemeIds": [
-        "ai-power-grid-resilience",
-        "ai-capital-discipline-advanced-nodes"
-      ],
-      "affectedTickers": [
-        "2330",
-        "2317",
-        "3231",
-        "2308"
-      ],
-      "nextWatch": "確認荷莫茲與曼德海峽船流、Brent是否延續反彈，以及白宮與伊朗是否公布可驗證的談判安排。",
-      "sourceIds": [
-        "src-reuters-trump-iran-talks-20260727",
-        "src-ap-trump-iran-flare-20260728",
-        "src-ap-iran-oil-20260729",
-        "src-reuters-oil-whipsaw-20260728"
-      ]
-    },
-    {
-      "id": "signal-fomc-20260729",
-      "kind": "rate_decision",
-      "headline": "FOMC結果尚未公布：聲明與記者會都只能列為排程",
-      "actor": "美國聯準會FOMC",
-      "quote": null,
-      "occurredAt": "2026-07-30T02:00:00+08:00",
-      "freshness": "scheduled",
-      "severity": "critical",
-      "direction": "mixed",
-      "status": "7月28至29日會議進行中，結果未公布",
-      "marketMove": "現行聯邦基金利率目標區間為3.50%至3.75%；本次決策、聲明與記者會尚無結果。",
-      "whyItMatters": "高估值科技股同時面對油價與成長疑慮，聲明對通膨、成長與未來政策空間的措辭可能改變折現率。",
-      "affectedThemeIds": [
-        "ai-capital-discipline-advanced-nodes",
-        "foplp-cpo-advanced-packaging"
-      ],
-      "affectedTickers": [
-        "2330",
-        "3711",
-        "6669",
-        "3017"
-      ],
-      "nextWatch": "台北時間7月30日02:00確認決策與聲明，02:30追蹤記者會；公布前不得預判升息或降息。",
-      "sourceIds": [
-        "src-fed-calendar-20260729",
-        "src-fed-implementation-20260617",
-        "src-ap-fed-preview-20260728"
-      ]
-    },
-    {
-      "id": "signal-trump-tariff-20260723",
-      "kind": "policy_action",
-      "headline": "白宮新一輪 301 關稅仍在生效：台灣輸美成本要重新算",
-      "actor": "Donald Trump／白宮",
-      "quote": null,
-      "occurredAt": "2026-07-23T12:00:00-04:00",
-      "freshness": "active",
-      "severity": "high",
-      "direction": "risk_off",
-      "status": "政策已公布並持續生效，台灣列入 60 個經濟體",
-      "marketMove": "白宮文件對台灣與歐盟採用含既有最惠國稅率在內、總稅率上限 10% 的安排。",
-      "whyItMatters": "組裝、網通與伺服器供應鏈的報價、產地配置與客戶轉嫁能力會成為下一輪財測差異；政策仍有效，所以雖超過 72 小時仍保留。",
-      "affectedThemeIds": [
-        "ai-capital-discipline-advanced-nodes"
-      ],
-      "affectedTickers": [
-        "2317",
-        "3231",
-        "6669",
-        "6285"
-      ],
-      "nextWatch": "確認企業法說是否量化關稅成本、轉單與產地移轉，以及行政細則是否再變更。",
-      "sourceIds": [
-        "src-whitehouse-section301-20260723",
-        "src-ap-section301-20260723"
-      ]
-    },
-    {
-      "id": "signal-kla-q4-20260728",
-      "kind": "company_release",
-      "headline": "KLA 財報：晶圓廠設備動能加速，不等於台廠全面受惠",
-      "actor": "KLA Corporation",
-      "quote": "成長趨勢正在增強，動能將於 2026 下半年延續至 2027 年。",
-      "occurredAt": "2026-07-28T16:05:00-07:00",
-      "freshness": "today",
-      "severity": "high",
-      "direction": "risk_on",
-      "status": "公司官方財報已公布",
-      "marketMove": "2026會計年度第四季營收36.58億美元；公司指引下一季營收40億美元正負2億美元。",
-      "whyItMatters": "它提供先進製程與設備循環的需求讀數，可用來反查台積電、封測與載板鏈；但必須等待台廠訂單與營收證明，不能直接當成受惠名單。",
-      "affectedThemeIds": [
-        "ai-capital-discipline-advanced-nodes",
-        "foplp-cpo-advanced-packaging"
-      ],
-      "affectedTickers": [
-        "2330",
-        "3711",
-        "3037"
-      ],
-      "nextWatch": "對照KLA下一季實績、台積電資本支出與台灣封裝／載板公司的實際訂單，不把設備商指引直接等同個股受惠。",
-      "sourceIds": [
-        "src-kla-q4-2026"
-      ]
-    },
-    {
-      "id": "signal-cadence-q2-20260727",
-      "kind": "company_release",
-      "headline": "Cadence 上修全年展望：AI 設計需求仍有數字",
-      "actor": "Cadence Design Systems",
-      "quote": null,
-      "occurredAt": "2026-07-27T16:05:00-07:00",
-      "freshness": "recent",
-      "severity": "high",
-      "direction": "risk_on",
-      "status": "公司官方財報已公布",
-      "marketMove": "第二季營收 15.84 億美元、年增約 24%；積壓訂單 81 億美元，並上修 2026 全年營收成長展望至約 19%。",
-      "whyItMatters": "EDA 是晶片設計前端需求的領先讀數；強勁積壓訂單能反駁「AI 需求立即消失」，但不能消除估值、融資與供應競爭風險。",
-      "affectedThemeIds": [
-        "ai-capital-discipline-advanced-nodes"
-      ],
-      "affectedTickers": [
-        "2330",
-        "3711"
-      ],
-      "nextWatch": "把 Cadence 的訂單增長與晶圓投片、先進製程占比、封測利用率做跨季對照。",
-      "sourceIds": [
-        "src-cadence-q2-2026"
-      ]
-    },
-    {
-      "id": "signal-nxp-q2-20260728",
-      "kind": "company_release",
-      "headline": "NXP Q2 年增 19%：實體 AI 與資料中心仍是需求分支",
-      "actor": "NXP Semiconductors",
-      "quote": null,
-      "occurredAt": "2026-07-28T16:05:00-04:00",
-      "freshness": "today",
-      "severity": "watch",
-      "direction": "risk_on",
-      "status": "公司官方財報已公布",
-      "marketMove": "第二季營收 35 億美元、年增 19%、季增 10%；第三季營收指引為 36.5 億至 38.5 億美元。",
-      "whyItMatters": "車用、工業與實體 AI 若持續復甦，可分散市場只押資料中心 GPU 的風險；台灣相關股仍須用實際訂單驗證。",
-      "affectedThemeIds": [
-        "ai-capital-discipline-advanced-nodes"
-      ],
-      "affectedTickers": [
-        "2317",
-        "3231",
-        "6285"
-      ],
-      "nextWatch": "看 NXP 下季實際營收是否落在指引中高段，以及台灣 ODM／網通公司是否揭露相同終端需求。",
-      "sourceIds": [
-        "src-nxp-q2-2026"
-      ]
-    },
-    {
-      "id": "signal-sk-hynix-q2-20260729",
-      "kind": "company_release",
-      "headline": "SK hynix創紀錄獲利仍低於高預期，需求與評價分歧",
-      "actor": "SK hynix",
-      "quote": "主要客戶仍要求更多記憶體供給。",
-      "occurredAt": "2026-07-29T09:00:00+09:00",
-      "freshness": "today",
-      "severity": "critical",
-      "direction": "mixed",
-      "status": "公司財報已公布；預期落差與股價反應由Reuters、AP交叉確認",
-      "marketMove": "第二季營收79.32兆韓元、營業利益60.54兆韓元，均創紀錄但低於市場高預期；Reuters報導股價盤中一度跌逾一成。",
-      "whyItMatters": "公司事實顯示AI記憶體需求仍強；媒體歸因則指向出貨延遲、長約與資本支出疑慮。Codex推論是台灣記憶體鏈基本面與擁擠交易須分開追蹤。",
-      "affectedThemeIds": [
         "memory-price-upcycle",
-        "ai-capital-discipline-advanced-nodes"
+        "high-bandwidth-flash-ai-inference"
       ],
       "affectedTickers": [
+        "2330",
+        "3711",
         "2408",
         "2344",
-        "3260",
-        "6239",
-        "2330"
+        "6239"
       ],
-      "nextWatch": "追蹤長約價格、HBM與一般DRAM出貨、資本支出，以及台灣記憶體廠月營收與毛利是否符合漲價預期。",
+      "nextWatch": "44,980.31與45,881.91是否帶量突破；季線44,331.71是否守住。",
       "sourceIds": [
-        "src-sk-hynix-q2-2026",
-        "src-reuters-sk-hynix-q2-20260729",
-        "src-ap-world-markets-20260729"
-      ]
-    },
-    {
-      "id": "signal-jasm-resume-20260729",
-      "kind": "company_release",
-      "headline": "JASM完成結構檢查並逐步復工，詳細影響仍待評估",
-      "actor": "台積電／JASM",
-      "quote": "結構檢查已完成，確認結構安全，營運正逐步恢復。",
-      "occurredAt": "2026-07-28T22:23:00+08:00",
-      "freshness": "today",
-      "severity": "high",
-      "direction": "risk_on",
-      "status": "公司已確認全員安全與逐步復工；詳細影響評估進行中",
-      "marketMove": "公司沒有公布晶圓損失、產能或出貨影響數字，因此不宣稱事件已完全無影響。",
-      "whyItMatters": "復工降低供應中斷風險，也提供跨區製造韌性的實際復原節點；但設備校正與在製品結果仍是最後驗證。",
-      "affectedThemeIds": [
-        "semiconductor-site-resilience",
-        "ai-capital-discipline-advanced-nodes"
-      ],
-      "affectedTickers": [
-        "2330"
-      ],
-      "nextWatch": "等待完整復工、設備與在製品檢查結案，以及是否有客戶交期或跨廠調度更新。",
-      "sourceIds": [
-        "src-jma-kumamoto",
-        "src-cna-jasm-evacuation",
-        "src-reuters-jasm-resume-20260728"
-      ]
-    },
-    {
-      "id": "signal-msft-meta-earnings-20260729",
-      "kind": "company_release",
-      "headline": "Microsoft與Meta今晚財報：AI資本支出驗證尚未公布",
-      "actor": "Microsoft／Meta Platforms",
-      "quote": null,
-      "occurredAt": "2026-07-30T04:00:00+08:00",
-      "freshness": "scheduled",
-      "severity": "critical",
-      "direction": "mixed",
-      "status": "兩家公司官方排程已確認，結果尚未公布",
-      "marketMove": "尚無財報結果或盤後價格可確認，不預先宣稱優於或低於預期。",
-      "whyItMatters": "市場正質疑AI投資回收期；資本支出、雲端成長、租約與融資安排比單季營收更能驗證台灣伺服器與先進製程需求。",
-      "affectedThemeIds": [
-        "ai-capital-discipline-advanced-nodes",
-        "ai-power-grid-resilience"
-      ],
-      "affectedTickers": [
-        "2330",
-        "2317",
-        "3231",
-        "6669",
-        "2308",
-        "3017",
-        "3324"
-      ],
-      "nextWatch": "確認兩家公司實際資本支出、下一季／年度指引與AI基礎設施回收期說法，再映射台灣供應鏈。",
-      "sourceIds": [
-        "src-microsoft-fy26-q4-schedule",
-        "src-meta-q2-2026-schedule"
+        "src-twse-taiex-history-20260820",
+        "src-twse-market-turnover-20260820"
       ]
     }
   ],
   "events": [
     {
-      "id": "event-trump-iran-whipsaw-20260729",
-      "title": "美伊攻擊再起，美沙聯合打擊伊朗支持的伊拉克民兵",
-      "summary": "川普先稱談判仍有可能，隨後伊朗飛彈與美沙聯合打擊使短暫平靜破裂；Brent盤中反彈3.1%，海峽通行仍是供給驗證點。",
-      "region": "美國／中東",
-      "happenedAt": "2026-07-29",
-      "impact": "原油、航運、通膨與利率預期再度轉向",
+      "id": "event-taiex-style-rotation-20260806",
+      "title": "台股量縮守季線，權值半導體回檔、中小型續強",
+      "summary": "證交所確認收44,396.70點、量比0.96；530家股票上漲，台灣50與半導體下跌，中型100與小型300上漲。",
+      "region": "台灣",
+      "happenedAt": "2026-08-06",
+      "impact": "高檔整理與風格輪動已確認；跌破季線與今日低點並放量、廣度轉負前，不成立新急跌。",
       "sourceIds": [
-        "src-reuters-trump-iran-talks-20260727",
-        "src-ap-trump-iran-flare-20260728",
+        "src-twse-taiex-history-20260806",
+        "src-twse-market-turnover-20260806",
+        "src-twse-market-breadth-20260806",
+        "src-ap-world-markets-20260806"
+      ]
+    },
+    {
+      "id": "event-sandisk-q4-results-20260806",
+      "title": "Sandisk營收季增51%，價格貢獻約占三分之二",
+      "summary": "第四季營收89.65億美元、資料中心29.77億美元；下一季營收指引103億至108億美元。",
+      "region": "美國／全球",
+      "happenedAt": "2026-08-06",
+      "impact": "NAND價格與AI儲存需求獲公司實績驗證，但HBF量產、認證與台廠訂單仍未確認。",
+      "sourceIds": [
+        "src-sandisk-q4-2026-results",
+        "src-trendforce-memory-3q26",
+        "src-edn-memory-3q26"
+      ]
+    },
+    {
+      "id": "event-global-chip-pullback-20260806",
+      "title": "韓股與亞洲晶片權值回檔，美國就業報告前風險降低",
+      "summary": "AP記錄KOSPI跌4.6%、Nikkei跌0.9%，前一Nasdaq跌0.8%；原因只有單一publisher歸因。",
+      "region": "全球／亞洲",
+      "happenedAt": "2026-08-06",
+      "impact": "高估值AI與記憶體籌碼再波動，台股以自身量價與廣度確認為準。",
+      "sourceIds": [
+        "src-ap-world-markets-20260806",
+        "src-twse-market-breadth-20260806"
+      ]
+    },
+    {
+      "id": "event-hormuz-draft-20260806",
+      "title": "伊朗稱荷莫茲協議進入最後起草階段",
+      "summary": "伊朗稱若特定方不阻撓將發布共同聲明；截至研究截止仍沒有共同文本或正常船流確認。",
+      "region": "中東／全球",
+      "happenedAt": "2026-08-06",
+      "impact": "Brent風險溢價暫穩，但能源、航運、保險與通膨風險尚未解除。",
+      "sourceIds": [
+        "src-ap-hormuz-roundup-20260806",
+        "src-ap-world-markets-20260806",
+        "src-ukmto-live-20260804"
+      ]
+    },
+    {
+      "id": "event-us-jobs-scheduled-20260807",
+      "title": "美國7月就業報告進入72小時驗證窗",
+      "summary": "BLS排定台北時間8月7日20:30公布；結果尚未發生，不預判就業、薪資或利率反應。",
+      "region": "美國／全球",
+      "happenedAt": "2026-08-07",
+      "impact": "直接驗證Fed利率路徑、美元與科技股折現率。",
+      "sourceIds": [
+        "src-bls-employment-calendar-20260807",
+        "src-ap-world-markets-20260806"
+      ]
+    },
+    {
+      "id": "event-taiex-broad-rebound-20260805",
+      "title": "台股帶量站回月季線，權值與市場廣度同步轉強",
+      "summary": "證交所確認收44,611.60點、量比1.18；686家股票上漲，台灣50與半導體分別上漲3.13%與3.64%。",
+      "region": "台灣",
+      "happenedAt": "2026-08-05",
+      "impact": "反彈已由風格輪動升級為廣泛修復，但46,330.91與48,218.87點前高仍待突破。",
+      "sourceIds": [
+        "src-twse-taiex-history-20260805",
+        "src-twse-market-turnover-20260805",
+        "src-twse-market-breadth-20260805",
+        "src-ap-asia-markets-20260805"
+      ]
+    },
+    {
+      "id": "event-amd-q2-results-20260805",
+      "title": "AMD資料中心營收倍增，第三季營收指引約130億美元",
+      "summary": "AMD第二季營收115.4億美元、資料中心67.2億美元，第三季營收指引130億美元正負3億美元。",
+      "region": "美國／全球",
+      "happenedAt": "2026-08-05",
+      "impact": "驗證AI加速器與server需求，但台灣供應鏈仍須用訂單、營收與毛利交叉確認。",
+      "sourceIds": [
+        "src-amd-q2-2026-results",
+        "src-amd-q2-2026-schedule"
+      ]
+    },
+    {
+      "id": "event-hormuz-talks-20260805",
+      "title": "Trump稱荷莫茲協議可能很快達成，各方仍明示未定案",
+      "summary": "Trump稱最快一兩日可能達成協議；Rubio稱有進展但尚未定案，伊朗則稱與阿曼談安全航道。",
+      "region": "中東／全球",
+      "happenedAt": "2026-08-05",
+      "impact": "Brent風險溢價回落，但通航、船流、保費與攻擊事件尚未形成完成確認。",
+      "sourceIds": [
+        "src-ap-hormuz-deal-20260805",
+        "src-ukmto-live-20260804"
+      ]
+    },
+    {
+      "id": "event-rbi-hold-20260805",
+      "title": "RBI全票維持5.25%與中性立場",
+      "summary": "印度央行MPC全票維持repo rate 5.25%，並保留中性立場。",
+      "region": "印度／亞洲",
+      "happenedAt": "2026-08-05",
+      "impact": "結果已公布而非scheduled；能源與糧食仍是其通膨風險核心。",
+      "sourceIds": [
+        "src-rbi-mpc-20260805",
+        "src-ap-asia-markets-20260805"
+      ]
+    },
+    {
+      "id": "event-hbf-first-ocp-spec-20260803",
+      "title": "Sandisk與SK hynix發布首份HBF OCP技術規格",
+      "summary": "雙方把HBF從標準化工作流推進至第一份公開技術規格。",
+      "region": "美國／韓國／全球",
+      "happenedAt": "2026-08-03",
+      "impact": "建立AI推論記憶體小火苗；量產、客戶認證與台灣供應鏈訂單仍未確認。",
+      "sourceIds": [
+        "src-sandisk-hbf-ocp-spec-20260803",
+        "src-skhynix-hbf-standardization-20260226"
+      ]
+    },
+    {
+      "id": "event-taiex-style-rotation-20260804",
+      "title": "台股月線盤中得而復失，權值與中小型走勢分歧",
+      "summary": "證交所確認收43,360.66點、量比1.07；599家股票上漲，但台灣50與半導體下跌，中型100與小型300上漲。",
+      "region": "台灣",
+      "happenedAt": "2026-08-04",
+      "impact": "短線反彈未破壞，中期月季線修復仍未確認。",
+      "sourceIds": [
+        "src-twse-taiex-history-20260804",
+        "src-twse-market-turnover-20260804",
+        "src-twse-market-breadth-20260804",
+        "src-ap-us-markets-20260803"
+      ]
+    },
+    {
+      "id": "event-hormuz-cargo-20260804",
+      "title": "荷莫茲貨輪受損，美伊對談說法互相矛盾",
+      "summary": "UKMTO通報貨輪遭不明投射物擊中；美國稱對談已恢復，伊朗稱只與阿曼談安全航道。",
+      "region": "中東／全球",
+      "happenedAt": "2026-08-04",
+      "impact": "能源、航運、保險、通膨與科技折現率風險重新雙向。",
+      "sourceIds": [
+        "src-ap-hormuz-cargo-20260804",
+        "src-ukmto-live-20260804",
+        "src-ap-trump-iran-last-chance-20260803"
+      ]
+    },
+    {
+      "id": "event-us-stocks-oil-relief-20260803",
+      "title": "油價與殖利率回落帶動美股反彈，Dow創收盤新高",
+      "summary": "S&P 500、Dow、Nasdaq分別漲1.5%、1.3%、2.1%；AP把Brent跌4.7%與殖利率下降列為重要背景。",
+      "region": "美國／全球",
+      "happenedAt": "2026-08-03",
+      "impact": "高估值科技折現率壓力暫降，但荷莫茲新事件使油價方向再度雙向。",
+      "sourceIds": [
+        "src-ap-us-markets-20260803",
+        "src-ap-asia-markets-20260804",
+        "src-reuters-oil-pause-20260727"
+      ]
+    },
+    {
+      "id": "event-taiex-breadth-rebound-20260803",
+      "title": "台股漲0.62%，中小型廣度接棒但月季線未收復",
+      "summary": "證交所確認648家股票上漲、354家下跌，中型100與小型300均漲逾2%，台灣50反跌0.06%；反彈擴散不等於中期修復完成。",
+      "region": "台灣",
+      "happenedAt": "2026-08-03",
+      "impact": "短線反彈延續；43,945至44,113點月季線帶與量能是下一個結構驗證。",
+      "sourceIds": [
+        "src-twse-taiex-history-20260803",
+        "src-twse-market-turnover-20260803",
+        "src-twse-market-breadth-20260803",
+        "src-ap-world-markets-20260803"
+      ]
+    },
+    {
+      "id": "event-us-japan-yen-intervention-20260803",
+      "title": "美日確認聯手買進日圓，美元兌日圓急降",
+      "summary": "美國與日本官員確認協調干預，美元兌日圓由上週高於163回落、8月3日一度接近155.20；政策效果仍須由後續匯率與官方操作驗證。",
+      "region": "美國／日本／亞洲",
+      "happenedAt": "2026-08-03",
+      "impact": "提高亞洲匯率、日系設備商估值與跨境資金流波動。",
+      "sourceIds": [
+        "src-ap-us-japan-yen-intervention-20260803",
+        "src-ap-world-markets-20260803",
+        "src-us-japan-fx-joint-statement-20250911"
+      ]
+    },
+    {
+      "id": "event-trump-iran-pause-20260803",
+      "title": "川普暫緩新一輪對伊朗打擊，油價再度急跌",
+      "summary": "川普稱8月3日恢復談判並暫緩大規模打擊，Brent亞洲盤跌4.7%至83.92美元；暫停攻擊不是和平協議或荷莫茲復航。",
+      "region": "美國／中東／全球",
+      "happenedAt": "2026-08-03",
+      "impact": "能源、航運、通膨與科技折現率短線降溫，但事件風險仍雙向。",
+      "sourceIds": [
+        "src-ap-oil-iran-pause-20260803",
+        "src-ap-iran-talks-20260803",
+        "src-ap-world-markets-20260803",
+        "src-reuters-oil-pause-20260727"
+      ]
+    },
+    {
+      "id": "event-amd-sandisk-scheduled-20260805",
+      "title": "AMD與Sandisk財報進入72小時驗證窗",
+      "summary": "AMD排定8月4日美股收盤後公布，Sandisk排定8月5日美股收盤後公布；結果尚未發生，只能列為scheduled。",
+      "region": "美國／台灣供應鏈",
+      "happenedAt": "2026-08-05",
+      "impact": "直接驗證AI加速器、先進封裝、伺服器與NAND價格／位元出貨。",
+      "sourceIds": [
+        "src-amd-q2-2026-schedule",
+        "src-sandisk-fy26-results-schedule"
+      ]
+    },
+    {
+      "id": "event-taiex-rebound-20260731",
+      "title": "台股急彈7.98%，價格與廣度確認但量能未達均值",
+      "summary": "證交所確認加權指數收43,119.75點，上市股票892家上漲；媒體共同歸因於AI盈利驗證與急跌後回補，Codex不把它寫成修正完成。",
+      "region": "台灣",
+      "happenedAt": "2026-07-31",
+      "impact": "短線急彈成立；月線、季線與量能是下一個結構驗證。",
+      "sourceIds": [
+        "src-twse-taiex-history-20260731",
+        "src-twse-market-turnover-20260731",
+        "src-twse-market-breadth-20260731",
+        "src-ap-asia-rebound-20260731",
+        "src-ap-wallstreet-rebound-20260730"
+      ]
+    },
+    {
+      "id": "event-amazon-q2-2026",
+      "title": "Amazon AWS加速並把資本支出上修至2,200億美元",
+      "summary": "AWS年增37%，AI與自研晶片業務年化收入均逾250億美元；自由現金流轉負，需求與資本效率必須同時追蹤。",
+      "region": "美國／全球",
+      "happenedAt": "2026-07-31",
+      "impact": "強化先進製程、伺服器、記憶體與電力設備需求驗證。",
+      "sourceIds": [
+        "src-amazon-q2-2026-results",
+        "src-ap-amazon-q2-2026"
+      ]
+    },
+    {
+      "id": "event-apple-q3-2026",
+      "title": "Apple第三季營收年增16%，記憶體成本仍是供應鏈變數",
+      "summary": "官方營收1,094億美元、EPS 2.02美元；AP確認盤後跌2.3%，不能把公司總營收直接外推所有台灣零組件。",
+      "region": "美國／全球",
+      "happenedAt": "2026-07-31",
+      "impact": "終端需求偏強，但產品組合、成本與供應限制決定台鏈傳導。",
+      "sourceIds": [
+        "src-apple-q3-2026-results",
+        "src-ap-apple-q3-2026"
+      ]
+    },
+    {
+      "id": "event-us-gdp-pce-20260730",
+      "title": "美國GDP放慢但核心PCE仍高於目標",
+      "summary": "第二季GDP年化增1.5%，6月核心PCE年增3.3%；需求與折現率風險同時存在。",
+      "region": "美國",
+      "happenedAt": "2026-07-30",
+      "impact": "提高AI供應鏈檢查現金流與訂單品質的必要性。",
+      "sourceIds": [
+        "src-bea-pce-june-2026",
+        "src-ap-us-gdp-pce-20260730"
+      ]
+    },
+    {
+      "id": "event-boj-boe-20260731",
+      "title": "日本與英國央行均維持利率，偏鷹風險仍在",
+      "summary": "日本銀行7月會議維持政策不變；英國央行6比3維持3.75%，三位委員主張升息。",
+      "region": "日本／英國",
+      "happenedAt": "2026-07-31",
+      "impact": "主要央行結果已公布，能源通膨與利差仍影響亞洲資金流。",
+      "sourceIds": [
+        "src-boj-meeting-20260731",
+        "src-ap-asia-rebound-20260731",
+        "src-boe-rate-20260730",
+        "src-ap-boe-rate-20260730"
+      ]
+    },
+    {
+      "id": "event-us-iran-renewed-strikes-20260730",
+      "title": "美伊互射與美軍重擊伊朗，能源通道風險再升",
+      "summary": "伊朗飛彈攻擊與美軍對伊朗數十個目標的重擊使短暫平靜再度破裂；Brent反彈7.3%至88.09美元，荷莫茲與紅海替代通道仍受威脅。",
+      "region": "美國／中東",
+      "happenedAt": "2026-07-30",
+      "impact": "原油、天然氣運輸、通膨與折現率風險同步升高",
+      "sourceIds": [
+        "src-ap-us-iran-strikes-20260730",
+        "src-reuters-oil-pause-20260727",
         "src-ap-iran-oil-20260729"
       ]
     },
     {
-      "id": "event-fomc-20260729",
-      "title": "FOMC 7 月會議結果尚未公布",
-      "summary": "聯準會 7 月 28 至 29 日開會；截至本次資料時間，利率決定與鮑威爾記者會均尚未公布。",
+      "id": "event-fomc-decision-20260730",
+      "title": "FOMC以9比3維持利率，三位委員主張升息1碼",
+      "summary": "FOMC維持聯邦基金利率目標區間3.50%至3.75%；Hammack、Kashkari與Logan反對並主張升息25個基點，Warsh稱抗通膨沒有快速解法。",
       "region": "美國／全球",
-      "happenedAt": "2026-07-29",
-      "impact": "全球利率與科技股估值待定",
+      "happenedAt": "2026-07-30",
+      "impact": "科技估值、美元與美債殖利率維持高敏感度",
       "sourceIds": [
-        "src-fed-calendar-20260729",
-        "src-fed-implementation-20260617",
-        "src-ap-fed-preview-20260728"
+        "src-fed-fomc-20260729",
+        "src-ap-fed-decision-20260729"
+      ]
+    },
+    {
+      "id": "event-microsoft-fy26-q4",
+      "title": "Microsoft Azure年增43%，AI需求與資本支出同時擴大",
+      "summary": "Microsoft第四季營收900.07億美元、年增18%；Azure年增43%、商業待履約義務6,780億美元，單季資本支出410億美元。",
+      "region": "美國／全球",
+      "happenedAt": "2026-07-30",
+      "impact": "雲端、伺服器、記憶體、電力與散熱需求獲得營運驗證",
+      "sourceIds": [
+        "src-microsoft-fy26-q4-results",
+        "src-ap-microsoft-fy26-q4"
+      ]
+    },
+    {
+      "id": "event-meta-q2-2026",
+      "title": "Meta營收成長但成本與自由現金流壓力擴大",
+      "summary": "Meta第二季營收608.01億美元、年增28%，但成本增55%、自由現金流降至7.84億美元；全年資本支出區間收斂至1,300億至1,450億美元。",
+      "region": "美國／全球",
+      "happenedAt": "2026-07-30",
+      "impact": "AI資本支出從需求題材轉向現金流與回收期檢驗",
+      "sourceIds": [
+        "src-meta-q2-2026-results",
+        "src-ap-meta-q2-2026"
       ]
     },
     {
@@ -569,6 +589,92 @@
         "src-reuters-sk-hynix-q2-20260729",
         "src-ap-world-markets-20260729"
       ]
+    },
+    {
+      "id": "event-major-central-bank-calendar-20260803",
+      "title": "Fed、BOJ、ECB與BOE未來72小時無新利率決策",
+      "summary": "四家央行官方日程顯示，台北時間8月3日18:30至8月6日18:30沒有新的政策利率決議；7月結果均已公布。",
+      "region": "美國／日本／歐元區／英國",
+      "happenedAt": "2026-08-03",
+      "impact": "未來72小時沒有上述主要央行決策跳空風險，但既有政策、能源通膨與匯率干預仍在影響市場。",
+      "sourceIds": [
+        "src-fed-fomc-calendar-2026",
+        "src-boj-mpm-calendar-2026",
+        "src-boe-mpc-calendar-2026",
+        "src-ecb-monetary-calendar-2026"
+      ]
+    },
+    {
+      "id": "event-taiex-technical-20260810",
+      "title": "台股正式收盤反彈站回季線",
+      "summary": "加權指數44,928.76點，+1.59%，量比0.88。",
+      "region": "Taiwan",
+      "happenedAt": "2026-08-10T13:30:00+08:00",
+      "impact": "反彈站回季線但量能尚未確認突破。",
+      "sourceIds": [
+        "src-twse-taiex-history-20260810",
+        "src-twse-market-turnover-20260810"
+      ]
+    },
+    {
+      "id": "event-taiex-technical-20260811",
+      "title": "台股正式收盤技術更新",
+      "summary": "加權指數45120.72點，變動0.43%。",
+      "region": "Taiwan",
+      "happenedAt": "2026-08-11T13:30:00+08:00",
+      "impact": "反彈延伸但量能待確認。",
+      "sourceIds": [
+        "src-twse-taiex-history-20260811",
+        "src-twse-market-turnover-20260811"
+      ]
+    },
+    {
+      "id": "event-taiex-technical-2026-08-13",
+      "title": "台股帶量反彈續強",
+      "summary": "加權指數46021.48點，+1.11%。",
+      "region": "Taiwan",
+      "happenedAt": "2026-08-13T13:30:00+08:00",
+      "impact": "量價改善，20日高待突破。",
+      "sourceIds": [
+        "src-twse-taiex-history-20260813",
+        "src-twse-market-turnover-20260813"
+      ]
+    },
+    {
+      "id": "event-taiex-technical-2026-08-17",
+      "title": "台股正式收盤技術更新",
+      "summary": "加權指數45857.27點，變動0.1%。",
+      "region": "Taiwan",
+      "happenedAt": "2026-08-17T13:30:00+08:00",
+      "impact": "技術結構依正式收盤更新。",
+      "sourceIds": [
+        "src-twse-taiex-history-20260817",
+        "src-twse-market-turnover-20260817"
+      ]
+    },
+    {
+      "id": "event-taiex-technical-2026-08-18",
+      "title": "台股量能放大回檔",
+      "summary": "加權指數45308.68點，變動-1.2%。",
+      "region": "Taiwan",
+      "happenedAt": "2026-08-18T13:30:00+08:00",
+      "impact": "10日線與季線進入支撐驗證。",
+      "sourceIds": [
+        "src-twse-taiex-history-20260818",
+        "src-twse-market-turnover-20260818"
+      ]
+    },
+    {
+      "id": "event-taiex-technical-2026-08-20",
+      "title": "台股正式收盤技術更新",
+      "summary": "加權指數44933.74點，變動0.48%。",
+      "region": "Taiwan",
+      "happenedAt": "2026-08-20T13:30:00+08:00",
+      "impact": "技術結構依正式收盤更新。",
+      "sourceIds": [
+        "src-twse-taiex-history-20260820",
+        "src-twse-market-turnover-20260820"
+      ]
     }
   ],
   "themes": [
@@ -576,28 +682,28 @@
       "id": "ai-capital-discipline-advanced-nodes",
       "name": "AI 資本紀律與先進製程",
       "kicker": "需求與融資分流",
-      "score": 89,
-      "stage": "需求擴張／估值重估",
-      "direction": "基本面順風、估值敏感",
+      "score": 86,
+      "stage": "需求實績仍強、全球科技籌碼再分化，等待台灣訂單與毛利確認",
+      "direction": "分化",
       "lifecycle": "hot",
       "firstDetectedAt": "2026-07-16",
-      "earlySignalScore": 22,
-      "marketHeat": 96,
-      "momentum": "falling",
+      "earlySignalScore": 24,
+      "marketHeat": 97,
+      "momentum": "stable",
       "sparkSignals": [
-        "先進製程營收與 AI 需求先由公司財報確認",
-        "資本支出、融資品質與中國競爭逐步成為跨市場共識"
+        "Sandisk資料中心營收季增103%、下一季營收指引續增，提供AI儲存需求實績；但前一Nasdaq與亞洲晶片權值回檔，需求與估值繼續分流。",
+        "台股半導體8月6日下跌1.26%，但量比0.96、上市上漲家數仍多於下跌家數，中小型收紅，價格面是輪動而非全面風險解除或惡化。"
       ],
       "spreadTriggers": [
-        "大型雲端業者持續上修資本支出與租約承諾",
-        "供應商擔保與客戶融資安排提高透明度"
+        "Amazon、Microsoft與後續雲端業者同時把資本支出轉為使用量、收入、訂單與自由現金流改善。",
+        "台灣晶圓、封裝、伺服器供應商在法說量化對應訂單與毛利，而非只談需求能見度。"
       ],
       "invalidationSignals": [
-        "AI 客戶資本支出或先進製程利用率連續下修",
-        "循環融資造成信用事件或供應商回收期惡化"
+        "雲端待履約義務不轉為收入，或資本支出持續快於營收與營運現金流。",
+        "AI供應鏈訂單延後、庫存升高或客戶融資條件惡化。"
       ],
-      "thesis": "AI 晶片需求仍有台積電營收與指引支撐，但市場開始把供應商擔保、客戶信用與中國競爭納入風險折價。",
-      "whyNow": "KLA與NXP仍提供成長數字，但SK hynix創紀錄獲利仍低於高預期，且韓台晶片股連續去槓桿；需求、資本紀律與市場擁擠度必須分開驗證。",
+      "thesis": "Microsoft與Amazon證明雲端AI需求仍有收入、容量與待履約義務支撐；Amazon與Meta又證明資本支出、折舊與自由現金流會造成公司分化，研究重點由全面估值轉向訂單品質、現金流與資本回收。",
+      "whyNow": "Sandisk提供新的價格、資料中心收入與指引硬數字，全球市場同時出現科技權值降風險；研究重點因此維持在需求能否轉成台灣公司訂單、毛利與現金流。",
       "valueCapture": "能以製程、良率、客戶認證與實際營收證明不可替代性的供應商，比僅靠 AI 概念或擴產消息者更具研究優先級。",
       "chain": [
         "AI 加速器設計",
@@ -607,21 +713,41 @@
         "整機與機櫃交付"
       ],
       "catalysts": [
-        "Microsoft、Meta與其他雲端業者的AI資本支出、租約與回收期揭露",
-        "台積電第三季營收、先進製程占比與資本支出",
-        "AI供應商擔保安排出現正式文件"
+        "Sandisk下一季103億至108億美元指引的供應鏈落地",
+        "台灣供應商月營收與法說",
+        "44,980與46,331至48,219點反壓",
+        "8月7日美國就業報告與荷莫茲文本"
       ],
       "risks": [
-        "循環融資或供應商擔保惡化資本效率",
-        "中國記憶體與設備擴產造成價格壓力",
-        "高估值與槓桿部位放大波動"
+        "高利率與油價提高折現率",
+        "資本支出快於現金流",
+        "客戶融資與長約品質",
+        "把單一公司強勁外推整條供應鏈"
       ],
       "sourceIds": [
-        "src-tsmc-q2-2026",
-        "src-kla-q4-2026",
-        "src-nxp-q2-2026",
-        "src-reuters-kospi-rout-20260729",
-        "src-ap-world-markets-20260729"
+        "src-microsoft-fy26-q4-results",
+        "src-ap-microsoft-fy26-q4",
+        "src-meta-q2-2026-results",
+        "src-ap-meta-q2-2026",
+        "src-fed-fomc-20260729",
+        "src-ap-asia-markets-20260730",
+        "src-amazon-q2-2026-results",
+        "src-ap-amazon-q2-2026",
+        "src-apple-q3-2026-results",
+        "src-ap-apple-q3-2026",
+        "src-ap-world-markets-20260803",
+        "src-amd-q2-2026-schedule",
+        "src-amd-q1-2026-outlook",
+        "src-ap-us-markets-20260803",
+        "src-ap-hormuz-cargo-20260804",
+        "src-entegris-q2-2026-schedule",
+        "src-towersemi-q2-2026-schedule",
+        "src-amd-q2-2026-results",
+        "src-ap-asia-markets-20260805",
+        "src-twse-market-breadth-20260805",
+        "src-sandisk-q4-2026-results",
+        "src-ap-world-markets-20260806",
+        "src-bls-employment-calendar-20260807"
       ]
     },
     {
@@ -629,16 +755,16 @@
       "name": "FOPLP、CPO 與異質整合",
       "kicker": "量產驗證主線",
       "score": 86,
-      "stage": "認證與產能建置",
+      "stage": "需求側實績續強，收入側設備、NPI與首單仍缺",
       "direction": "選股",
       "lifecycle": "spark",
       "firstDetectedAt": "2026-07-28",
-      "earlySignalScore": 91,
-      "marketHeat": 26,
-      "momentum": "rising",
+      "earlySignalScore": 86,
+      "marketHeat": 27,
+      "momentum": "stable",
       "sparkSignals": [
-        "公司法說第一次給出 2026 年底至 2027 年下半年的分段量產節點",
-        "兩家獨立財經媒體交叉確認 FOPLP 設備交期與 NPI 認證門檻"
+        "近24小時未出現力成FOPLP設備到位、NPI認證、良率或首單公告，因此保留spark而不升級。",
+        "Sandisk資料中心與AI儲存需求可支撐先進封裝研究脈絡，但不能替代力成自身設備、客戶認證與營收證據。"
       ],
       "spreadTriggers": [
         "設備如期到位並進入客戶 NPI 認證",
@@ -649,7 +775,7 @@
         "量產良率或客戶時程無法達到公司原訂節點"
       ],
       "thesis": "AI 晶片與高速互連的封裝價值向面板級扇出、光學引擎與 CPO 擴張，但設備交期、NPI 認證和良率決定收入落地。",
-      "whyNow": "力成法說提出 AMD FOPLP 與博通光通訊合作的分段時程，讓市場可用 2026 年底、2027 年中與 2027 年下半年三個節點追蹤。",
+      "whyNow": "Sandisk與全球AI財報延續需求側驗證；FOPLP／CPO真正擴散仍須設備到位、NPI認證、良率與首單。",
       "valueCapture": "具面板級重佈層、封裝測試、矽光子整合與客戶共同開發能力者，較有機會取得高於傳統封測的內容價值。",
       "chain": [
         "重佈層與面板級封裝",
@@ -672,7 +798,11 @@
         "src-cna-pti-foplp",
         "src-edn-pti-foplp",
         "src-pti-ir",
-        "src-broadcom-q2-2026"
+        "src-broadcom-q2-2026",
+        "src-amd-q2-2026-schedule",
+        "src-towersemi-q2-2026-schedule",
+        "src-sandisk-q4-2026-results",
+        "src-ap-world-markets-20260806"
       ]
     },
     {
@@ -680,27 +810,27 @@
       "name": "AI 電力與配電韌性",
       "kicker": "物理瓶頸主線",
       "score": 82,
-      "stage": "設備更新／大型專案規劃",
-      "direction": "中長線、訂單待驗證",
+      "stage": "荷莫茲協議進入起草但未簽署，能源與物流風險暫穩未解除",
+      "direction": "向上但須驗證訂單",
       "lifecycle": "spreading",
       "firstDetectedAt": "2026-07-22",
-      "earlySignalScore": 78,
-      "marketHeat": 57,
+      "earlySignalScore": 72,
+      "marketHeat": 61,
       "momentum": "stable",
       "sparkSignals": [
-        "資料中心負載事件與台灣配電汰換同時指向電網可靠度",
-        "台電更新數量已具體化，但個別公司決標與出貨尚未確認"
+        "Brent約79.50美元且日內近乎持平，顯示協議希望暫時壓住風險溢價；共同文本、解除封鎖與正常船流尚未確認。",
+        "近24小時沒有台電決標或台灣電力設備公司新訂單硬節點，故不把政策需求直接外推個股。"
       ],
       "spreadTriggers": [
-        "台電汰換案出現正式招標與決標",
-        "資料中心高壓直流、電能品質與液冷規格進入量產"
+        "台電配電汰換出現招標、決標與交貨節點。",
+        "雲端業者資本支出轉為台灣電源、液冷、機櫃與重電公司的可辨認訂單。"
       ],
       "invalidationSignals": [
-        "政策預算長期未轉化為招標或施工",
-        "資料中心接電與融資時程持續延後"
+        "雲端業者下修資本支出或延後資料中心上線。",
+        "台灣供應鏈未能把建置規模轉化為訂單、毛利與現金流。"
       ],
       "thesis": "大型 AI 專案需要可取得且穩定的電力，台灣本地也進入老舊配電設備更新期；政策預算必須進一步轉化為招標與公司訂單才算營收驗證。",
-      "whyNow": "媒體報導 10GW 級 AI 資料中心融資安排，台電同日提出雙北配電變壓器與線路更新數量，顯示電力問題同時涵蓋供給、融資與末端可靠度。",
+      "whyNow": "伊朗稱協議進入最後起草階段，但實體能源與航運狀態尚未改變；供應鏈同時等待台電決標與個別公司訂單。",
       "valueCapture": "具變壓器、電能品質、電源管理、液冷與系統整合能力者可能受益，但個股連結需以決標、認證和出貨資料確認。",
       "chain": [
         "發電與接電",
@@ -710,6 +840,7 @@
         "液冷與熱管理"
       ],
       "catalysts": [
+        "荷莫茲共同文本、解除封鎖與正常船流",
         "台電汰換標案與決標",
         "資料中心接電許可",
         "高壓直流與液冷正式量產"
@@ -720,27 +851,36 @@
         "AI 專案融資或長租約未完成"
       ],
       "sourceIds": [
+        "src-microsoft-fy26-q4-results",
+        "src-meta-q2-2026-results",
         "src-cna-taipower-grid",
         "src-moea-grid-plan",
-        "src-reuters-pjm",
-        "src-cna-nvidia-financing"
+        "src-amazon-q2-2026-results",
+        "src-ap-amazon-q2-2026",
+        "src-ap-world-markets-20260803",
+        "src-amd-q2-2026-schedule",
+        "src-ap-us-markets-20260803",
+        "src-ap-hormuz-cargo-20260804",
+        "src-ukmto-live-20260804",
+        "src-ap-hormuz-roundup-20260806",
+        "src-ap-world-markets-20260806"
       ]
     },
     {
       "id": "semiconductor-site-resilience",
       "name": "半導體跨區製造與營運韌性",
       "kicker": "事件風險監測",
-      "score": 63,
-      "stage": "逐步復工／詳細評估",
-      "direction": "風險下降、等待結案",
+      "score": 56,
+      "stage": "JASM復工事件持續降溫，仍無新增惡化或正式完整結案",
+      "direction": "風險下降但未結案",
       "lifecycle": "cooling",
       "firstDetectedAt": "2026-07-28",
-      "earlySignalScore": 42,
-      "marketHeat": 29,
+      "earlySignalScore": 18,
+      "marketHeat": 8,
       "momentum": "falling",
       "sparkSignals": [
-        "官方地震資料、公司疏散與逐步復工聲明形成完整事件鏈",
-        "結構檢查已完成，但設備與在製品詳細影響仍未公開結案"
+        "截至8月6日未見新增停工、在製品報廢、出貨延誤或跨廠調度的可靠訊號。",
+        "仍缺公司對設備與在製品的完整結案，因此維持cooling而不直接刪除或宣稱零損失。"
       ],
       "spreadTriggers": [
         "公司揭露設備校正、在製晶圓或出貨影響",
@@ -751,7 +891,7 @@
         "後續沒有跨廠調度、客戶交期或供應鏈中斷證據"
       ],
       "thesis": "海外製造降低單一地區集中風險，但新廠區仍各自暴露於地震、電力與復工校正風險，韌性須以實際復原時間驗證。",
-      "whyNow": "熊本地震一度觸發JASM疏散；台積電最新聲明確認全員安全、結構檢查完成並逐步復工，因此事件熱度降溫，但詳細影響仍待評估。",
+      "whyNow": "事件已超過72小時且沒有新增惡化，僅留在第二層風險監測；若公司確認無重大影響且後續無跨廠調度，才轉為fading。",
       "valueCapture": "能建立多地產能、標準化緊急應變、備援供應與快速設備校正的晶圓製造平台，可降低單點中斷的長尾風險。",
       "chain": [
         "廠務與人員安全",
@@ -780,17 +920,18 @@
       "id": "memory-price-upcycle",
       "name": "DRAM、NAND 漲價與供給緊縮",
       "kicker": "原料／零組件價格傳導",
-      "score": 84,
-      "stage": "合約價上行／漲幅收斂",
-      "direction": "供應商受惠、下游客戶成本承壓",
+      "score": 90,
+      "stage": "Sandisk價格與資料中心營收提供公司級驗證，等待台灣公司毛利與庫存傳導",
+      "direction": "基本面向上、估值與產品組合分化",
       "lifecycle": "hot",
       "firstDetectedAt": "2026-03-31",
-      "earlySignalScore": 44,
-      "marketHeat": 93,
-      "momentum": "falling",
+      "earlySignalScore": 31,
+      "marketHeat": 96,
+      "momentum": "rising",
       "sparkSignals": [
-        "SK hynix創紀錄營收與獲利、管理層稱主要客戶仍要求更多供給",
-        "第三季DRAM與NAND合約價預估仍上行，但漲幅與股價敘事開始降溫"
+        "Sandisk第四季營收季增51%，公司明示約三分之二增幅來自較高價格，將NAND漲價由研究預估推進到公司營收驗證。",
+        "Sandisk資料中心營收季增103%，但Consumer營收季減32%，顯示AI儲存與消費端分化，不能把價格上漲外推為所有產品同步受益。",
+        "第三季DRAM／NAND合約價仍為研究機構預估；台灣公司實現售價、庫存成本與毛利仍待各自公告。"
       ],
       "spreadTriggers": [
         "第三季合約價實際落在或高於研究機構預估區間",
@@ -800,8 +941,8 @@
         "消費電子需求下修使合約價低於預估",
         "中國新增產能或原廠擴產明顯緩解供給缺口"
       ],
-      "thesis": "第三季 DRAM 與 NAND 合約價預估續漲但漲幅收斂，上游製造商議價權較直接，模組廠則同時承受庫存成本與終端需求風險。",
-      "whyNow": "TrendForce仍估第三季DRAM與NAND合約價上漲；SK hynix也確認需求強，但財報低於極高預期、出貨延遲與長約條件使股價重挫，顯示基本面緊缺不等於市場評價單向上升。",
+      "thesis": "第三季DRAM與NAND合約價預估續漲，Amazon與Apple把成本及供應限制直接帶入資本支出與產品價格；上游製造商議價權較直接，模組與終端廠則同時承受高價補庫及需求風險。",
+      "whyNow": "Sandisk正式結果提供價格貢獻、資料中心收入、消費端下滑與下一季指引，成為近24小時最強的記憶體硬驗證；下一步是台灣公司自身營收與毛利。",
       "valueCapture": "晶圓製造商對價格上行的營收敏感度最高；具低成本庫存的模組廠可能有存貨利益，但若終端需求下滑，風險也會更快反映。",
       "chain": [
         "DRAM／NAND 晶圓",
@@ -811,20 +952,85 @@
         "終端售價與需求"
       ],
       "catalysts": [
+        "Sandisk下一季103億至108億美元營收與83%至85%非GAAP毛利率指引",
         "第三季合約價與現貨價更新",
-        "南亞科、華邦電與模組廠月營收",
+        "南亞科、華邦電與模組廠月營收、庫存與毛利",
         "原廠產能配置與長約揭露"
       ],
       "risks": [
-        "高價壓抑消費電子需求",
-        "長期供應合約限制價格上行與現貨彈性",
-        "中國新增產能、產品出貨延遲或市場去槓桿使評價先於基本面修正"
+        "高價壓抑消費電子需求，Sandisk Consumer營收已季減32%",
+        "長期供應合約限制價格彈性",
+        "中國新增產能、產品出貨延遲或市場去槓桿使評價先於基本面修正",
+        "把Sandisk NAND價格貢獻直接套用DRAM或所有台灣公司"
       ],
       "sourceIds": [
         "src-trendforce-memory-3q26",
         "src-edn-memory-3q26",
         "src-sk-hynix-q2-2026",
-        "src-reuters-sk-hynix-q2-20260729"
+        "src-reuters-sk-hynix-q2-20260729",
+        "src-microsoft-fy26-q4-results",
+        "src-amazon-q2-2026-results",
+        "src-ap-amazon-q2-2026",
+        "src-apple-q3-2026-results",
+        "src-ap-apple-q3-2026",
+        "src-sandisk-fy26-results-schedule",
+        "src-sandisk-hbf-ocp-spec-20260803",
+        "src-skhynix-hbf-standardization-20260226",
+        "src-sandisk-q4-2026-results",
+        "src-ap-world-markets-20260806"
+      ]
+    },
+    {
+      "id": "high-bandwidth-flash-ai-inference",
+      "name": "HBF AI推論記憶體",
+      "kicker": "首份OCP規格",
+      "score": 55,
+      "stage": "規格已發布，Sandisk財報未提供新增HBF樣品或認證節點",
+      "direction": "萌芽、等待硬節點",
+      "lifecycle": "spark",
+      "firstDetectedAt": "2026-08-03",
+      "earlySignalScore": 79,
+      "marketHeat": 30,
+      "momentum": "stable",
+      "sparkSignals": [
+        "Sandisk與SK hynix的首份HBF OCP技術規格仍是可追溯的標準化里程碑。",
+        "Sandisk第四季財報強力驗證NAND價格與資料中心需求，但正式新聞稿未提供HBF樣品、互通測試、客戶認證或量產時程，因此不升級spreading。"
+      ],
+      "spreadTriggers": [
+        "公開樣品、控制器／UCIe互通測試、AI加速器客戶認證與量產時程至少兩項落地。",
+        "台灣晶圓、封裝或測試業者在法說或重大訊息確認HBF相關訂單、設備或認證。"
+      ],
+      "invalidationSignals": [
+        "樣品時程延後、OCP規格未形成更多供應商採用，或AI推論仍以HBM加SSD既有架構為主。",
+        "台股僅因概念映射上漲，卻長期沒有訂單、營收或資本支出證據。"
+      ],
+      "thesis": "第一份OCP技術規格降低HBF從概念走向生態協作的不確定性，但距量產、認證與營收仍有多道閘門；目前只適合作為AI推論記憶體小火苗。",
+      "whyNow": "財報讓NAND景氣的收入與價格證據更強，卻沒有跨過HBF自身樣品、認證與訂單閘門；早期分數仍高於市場熱度，但動能由rising降為stable。",
+      "valueCapture": "真正價值將由NAND堆疊、控制器、互連、先進封裝與客戶認證分配；台灣公司目前只有製程／封裝研究關聯，尚無已確認訂單。",
+      "chain": [
+        "AI推論模型",
+        "HBF NAND堆疊",
+        "控制器與互連",
+        "先進封裝測試",
+        "加速器客戶認證"
+      ],
+      "catalysts": [
+        "Sandisk 8月13日Investor Day的HBF樣品與夥伴資訊",
+        "公開控制器／UCIe互通測試",
+        "OCP生態夥伴加入",
+        "首批客戶認證、設備到位或訂單"
+      ],
+      "risks": [
+        "規格不等於量產",
+        "NAND耐久性與延遲限制",
+        "HBM／SSD既有架構競爭",
+        "台股概念映射缺乏訂單"
+      ],
+      "sourceIds": [
+        "src-sandisk-hbf-ocp-spec-20260803",
+        "src-skhynix-hbf-standardization-20260226",
+        "src-sandisk-fy26-results-schedule",
+        "src-sandisk-q4-2026-results"
       ]
     }
   ],
@@ -1151,28 +1357,470 @@
       "role": "記憶體模組與通路",
       "stance": "庫存槓桿",
       "reasoning": "低成本庫存可產生價差，但漲價也會提高補庫成本並壓抑終端需求。"
+    },
+    {
+      "themeId": "high-bandwidth-flash-ai-inference",
+      "ticker": "2330",
+      "relevance": 58,
+      "role": "邏輯／控制器製程研究映射",
+      "stance": "觀察",
+      "reasoning": "HBF可能需要控制器與先進邏輯製程；目前沒有HBF訂單或客戶認證公開證據。"
+    },
+    {
+      "themeId": "high-bandwidth-flash-ai-inference",
+      "ticker": "3711",
+      "relevance": 52,
+      "role": "封裝測試研究映射",
+      "stance": "觀察",
+      "reasoning": "多層NAND、控制器與互連可能提高封裝測試需求；目前未確認承接HBF專案。"
+    },
+    {
+      "themeId": "high-bandwidth-flash-ai-inference",
+      "ticker": "6239",
+      "relevance": 45,
+      "role": "記憶體封測研究映射",
+      "stance": "觀察",
+      "reasoning": "記憶體封測能力具產業關聯，但尚無HBF設備到位、認證或訂單證據。"
+    },
+    {
+      "themeId": "high-bandwidth-flash-ai-inference",
+      "ticker": "3260",
+      "relevance": 28,
+      "role": "NAND通路景氣觀察",
+      "stance": "低關聯",
+      "reasoning": "可觀察NAND供需與價格傳導，但HBF規格與模組通路營收沒有直接證據。"
     }
   ],
   "sources": [
     {
-      "id": "src-twse-taiex-history-20260729",
-      "title": "發行量加權股價指數歷史資料（2026年7月，更新至7月29日）",
+      "id": "src-twse-taiex-history-20260806",
+      "title": "115年8月發行量加權股價指數歷史資料",
       "publisher": "臺灣證券交易所",
-      "url": "https://www.twse.com.tw/rwd/zh/TAIEX/MI_5MINS_HIST?date=20260701&response=json",
-      "publishedAt": "2026-07-29T13:30:00+08:00",
-      "retrievedAt": "2026-07-29T18:30:00+08:00",
+      "url": "https://www.twse.com.tw/rwd/zh/TAIEX/MI_5MINS_HIST?date=20260806&response=json",
+      "publishedAt": "2026-08-06",
+      "retrievedAt": "2026-08-06T18:30:00+08:00",
       "sourceType": "official",
-      "quality": "證交所官方日線開高低收資料；5、10、20、60、120、240 日均線由最近 263 個交易日收盤價計算。"
+      "quality": "證交所官方月資料；確認8月6日OHLC為44,487.94／44,601.24／44,024.32／44,396.70點，並用於均線與20／60日高低點計算。"
     },
     {
-      "id": "src-twse-market-turnover-20260729",
-      "title": "市場成交資訊（2026年7月，更新至7月29日）",
+      "id": "src-twse-market-turnover-20260806",
+      "title": "115年8月市場成交資訊",
+      "publisher": "臺灣證券交易所",
+      "url": "https://www.twse.com.tw/rwd/zh/afterTrading/FMTQIK?date=20260806&response=json",
+      "publishedAt": "2026-08-06",
+      "retrievedAt": "2026-08-06T18:30:00+08:00",
+      "sourceType": "official",
+      "quality": "證交所官方成交資訊；data:technicals計算8月6日成交金額9,740.5億元、20日量比0.96。"
+    },
+    {
+      "id": "src-twse-market-breadth-20260806",
+      "title": "115年8月6日每日收盤行情與市場統計",
+      "publisher": "臺灣證券交易所",
+      "url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260806&type=ALLBUT0999&response=json",
+      "publishedAt": "2026-08-06T13:30:00+08:00",
+      "retrievedAt": "2026-08-06T18:30:00+08:00",
+      "sourceType": "official",
+      "quality": "證交所官方收盤統計；上市股票530家上漲、438家下跌、20家漲停、2家跌停；台灣50-0.93%、中型100+0.87%、小型300+0.69%、半導體-1.26%。"
+    },
+    {
+      "id": "src-ap-world-markets-20260806",
+      "title": "World shares are mixed and Kospi falls 4.6% after tech giants decline on Wall Street",
+      "publisher": "Associated Press",
+      "url": "https://apnews.com/article/stocks-markets-ai-spacex-hynix-bonds-2f4f2638cb8430bb7c8e5d59a7b50731",
+      "publishedAt": "2026-08-06",
+      "retrievedAt": "2026-08-06T18:30:00+08:00",
+      "sourceType": "news_derived",
+      "quality": "國際媒體；記錄KOSPI-4.6%、Nikkei-0.9%、Hang Seng-1.5%，前一美股S&P 500-0.2%、Nasdaq-0.8%，以及Brent約79.50美元；獲利了結與就業報告前降風險只有此publisher歸因。"
+    },
+    {
+      "id": "src-sandisk-q4-2026-results",
+      "title": "Sandisk Reports Fiscal Fourth Quarter 2026 Financial Results",
+      "publisher": "Sandisk",
+      "url": "https://investor.sandisk.com/news-releases/news-release-details/sandisk-reports-fiscal-fourth-quarter-2026-financial-results",
+      "publishedAt": "2026-08-05T16:05:00-04:00",
+      "retrievedAt": "2026-08-06T18:30:00+08:00",
+      "sourceType": "official",
+      "quality": "公司官方財報；確認第四季營收89.65億美元、季增51%，約三分之二增幅來自價格，資料中心營收29.77億美元、季增103%，以及下一季營收與毛利率指引。"
+    },
+    {
+      "id": "src-ap-hormuz-roundup-20260806",
+      "title": "Possible Strait of Hormuz deal, Israeli soldiers killed in Lebanon and other news in the Mideast",
+      "publisher": "Associated Press",
+      "url": "https://apnews.com/article/mideast-news-roundup-iran-lebanon-israel-aug-6-2026-07074f3374339a34bc539f56d7d6287a",
+      "publishedAt": "2026-08-06T08:34:41Z",
+      "retrievedAt": "2026-08-06T18:30:00+08:00",
+      "sourceType": "news_derived",
+      "quality": "國際媒體；記錄伊朗外交部稱與阿曼的荷莫茲協議進入最後起草階段，仍有條件且共同聲明尚未發布。"
+    },
+    {
+      "id": "src-bls-employment-calendar-20260807",
+      "title": "Schedule of Selected Releases 2026",
+      "publisher": "U.S. Bureau of Labor Statistics",
+      "url": "https://www.bls.gov/schedule/2026/home.htm",
+      "publishedAt": "2026-06-10",
+      "retrievedAt": "2026-08-06T18:30:00+08:00",
+      "sourceType": "official",
+      "quality": "美國官方發布日程；確認7月Employment Situation排定2026年8月7日08:30 ET、即台北時間20:30公布。"
+    },
+    {
+      "id": "src-ap-trump-economy-20260805",
+      "title": "Trump talks up the economy at a Las Vegas casino",
+      "publisher": "Associated Press",
+      "url": "https://apnews.com/article/02f387dc32e72a246fe79c3a81aa23c2",
+      "publishedAt": "2026-08-05T12:59:24Z",
+      "retrievedAt": "2026-08-06T18:30:00+08:00",
+      "sourceType": "news_derived",
+      "quality": "國際媒體即時報導；記錄Trump在Las Vegas宣傳小費與加班免稅及醫療計畫，未提供可直接歸因的市場價格反應。"
+    },
+    {
+      "id": "src-twse-taiex-history-20260804",
+      "title": "115年8月發行量加權股價指數歷史資料",
+      "publisher": "臺灣證券交易所",
+      "url": "https://www.twse.com.tw/rwd/zh/TAIEX/MI_5MINS_HIST?date=20260804&response=json",
+      "publishedAt": "2026-08-04",
+      "retrievedAt": "2026-08-04T18:30:00+08:00",
+      "sourceType": "official",
+      "quality": "證交所官方OHLC；確認8月4日收盤43,360.66點、下跌25.75點、盤中高低43,912.77／42,895.81點，並用於均線與高低點計算。"
+    },
+    {
+      "id": "src-twse-market-turnover-20260804",
+      "title": "115年8月市場成交資訊",
+      "publisher": "臺灣證券交易所",
+      "url": "https://www.twse.com.tw/rwd/zh/afterTrading/FMTQIK?date=20260804&response=json",
+      "publishedAt": "2026-08-04",
+      "retrievedAt": "2026-08-04T18:30:00+08:00",
+      "sourceType": "official",
+      "quality": "證交所官方成交金額；用於計算成交金額1兆870.5億元與20日量比1.07。"
+    },
+    {
+      "id": "src-twse-market-breadth-20260804",
+      "title": "115年8月4日每日收盤行情",
+      "publisher": "臺灣證券交易所",
+      "url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260804&type=ALLBUT0999&response=json",
+      "publishedAt": "2026-08-04T13:30:00+08:00",
+      "retrievedAt": "2026-08-04T18:30:00+08:00",
+      "sourceType": "official",
+      "quality": "證交所官方市場廣度與風格指數；確認股票599家上漲、397家下跌、42家漲停、0家跌停，台灣50-0.81%、中型100+2.60%、小型300+1.14%、半導體-1.37%。"
+    },
+    {
+      "id": "src-ap-us-markets-20260803",
+      "title": "US stocks rally near a record as falling oil prices ease Wall Street's worries about inflation",
+      "publisher": "Associated Press",
+      "url": "https://apnews.com/article/d19a8f9a77b6fceca41da3e4b6bf17aa",
+      "publishedAt": "2026-08-03T20:22:18Z",
+      "retrievedAt": "2026-08-04T18:30:00+08:00",
+      "sourceType": "news_derived",
+      "quality": "國際媒體；記錄S&P 500 +1.5%、Dow +1.3%、Nasdaq +2.1%、Brent -4.7%至83.77美元與10年債殖利率降至4.68%。"
+    },
+    {
+      "id": "src-ap-asia-markets-20260804",
+      "title": "Asian shares are mixed after US stocks rally",
+      "publisher": "Associated Press",
+      "url": "https://apnews.com/article/fbbe6128d618509e33d45a493c2615b1",
+      "publishedAt": "2026-08-04T03:34:25Z",
+      "retrievedAt": "2026-08-04T18:30:00+08:00",
+      "sourceType": "news_derived",
+      "quality": "國際媒體；確認亞洲市場分化、美元兌日圓約157.51、Brent亞洲早盤上漲1.15美元至84.92美元及美日干預背景。"
+    },
+    {
+      "id": "src-ap-hormuz-cargo-20260804",
+      "title": "Cargo ship reports being struck in Strait of Hormuz as US, Iran claims about talks diverge",
+      "publisher": "Associated Press",
+      "url": "https://apnews.com/article/ff5f13230ab92b5ae3022f45b2585444",
+      "publishedAt": "2026-08-04T06:07:14Z",
+      "retrievedAt": "2026-08-04T18:30:00+08:00",
+      "sourceType": "news_derived",
+      "quality": "國際媒體；引述UKMTO與Ambrey確認貨輪遭不明投射物擊中並受損，並記錄美伊對談說法矛盾；攻擊責任未定。"
+    },
+    {
+      "id": "src-ukmto-live-20260804",
+      "title": "UK Maritime Trade Operations live advisories",
+      "publisher": "United Kingdom Maritime Trade Operations",
+      "url": "https://www.ukmto.org/",
+      "publishedAt": "2026-08-04",
+      "retrievedAt": "2026-08-04T18:30:00+08:00",
+      "sourceType": "official",
+      "quality": "英國海事安全官方通報入口；用於交叉確認荷莫茲船舶安全事件，船名、貨物與攻擊責任仍待後續。"
+    },
+    {
+      "id": "src-ap-trump-iran-last-chance-20260803",
+      "title": "New talks are 'last chance' for Iran to forge a deal and avoid escalation of US strikes, Trump says",
+      "publisher": "Associated Press",
+      "url": "https://apnews.com/article/fb81a68f999f4a7b0498ae71cbffe8e5",
+      "publishedAt": "2026-08-03T20:05:18Z",
+      "retrievedAt": "2026-08-04T18:30:00+08:00",
+      "sourceType": "news_derived",
+      "quality": "國際媒體；記錄川普稱開放海峽是第一階段、去核化是第二階段，並明確區分公開說法與尚未完成的共同文本。"
+    },
+    {
+      "id": "src-entegris-q2-2026-schedule",
+      "title": "Entegris to Report Results for Second Quarter of 2026 on Tuesday, August 4, 2026",
+      "publisher": "Entegris",
+      "url": "https://investor.entegris.com/news/news-details/2026/Entegris-to-Report-Results-for-Second-Quarter-of-2026-on-Tuesday-August-4-2026/default.aspx",
+      "publishedAt": "2026-07-14",
+      "retrievedAt": "2026-08-04T18:30:00+08:00",
+      "sourceType": "official",
+      "quality": "公司官方排程；確認8月4日美股開盤前公布並於09:00 ET舉行電話會議，研究截止前不預寫結果。"
+    },
+    {
+      "id": "src-towersemi-q2-2026-schedule",
+      "title": "Tower Semiconductor Announces Second Quarter 2026 Financial Results and Conference Call",
+      "publisher": "Tower Semiconductor",
+      "url": "https://ir.towersemi.com/node/16966/pdf",
+      "publishedAt": "2026-07-15",
+      "retrievedAt": "2026-08-04T18:30:00+08:00",
+      "sourceType": "official",
+      "quality": "公司官方排程；確認8月4日公布第二季結果與第三季指引，研究截止前不預寫結果。"
+    },
+    {
+      "id": "src-twse-taiex-history-20260803",
+      "title": "115年8月發行量加權股價指數歷史資料",
+      "publisher": "臺灣證券交易所",
+      "url": "https://www.twse.com.tw/rwd/zh/TAIEX/MI_5MINS_HIST?date=20260801&response=json",
+      "publishedAt": "2026-08-03",
+      "retrievedAt": "2026-08-03T18:30:00+08:00",
+      "sourceType": "official",
+      "quality": "證交所官方OHLC；確認8月3日收盤43,386.41點、上漲266.66點，並用於均線與高低點計算。"
+    },
+    {
+      "id": "src-twse-market-turnover-20260803",
+      "title": "115年8月市場成交資訊",
+      "publisher": "臺灣證券交易所",
+      "url": "https://www.twse.com.tw/rwd/zh/afterTrading/FMTQIK?date=20260801&response=json",
+      "publishedAt": "2026-08-03",
+      "retrievedAt": "2026-08-03T18:30:00+08:00",
+      "sourceType": "official",
+      "quality": "證交所官方成交金額；用於計算成交金額8,855.1億元與20日量比0.87。"
+    },
+    {
+      "id": "src-twse-market-breadth-20260803",
+      "title": "115年8月3日每日收盤行情",
+      "publisher": "臺灣證券交易所",
+      "url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260803&type=ALLBUT0999&response=json",
+      "publishedAt": "2026-08-03T13:30:00+08:00",
+      "retrievedAt": "2026-08-03T18:30:00+08:00",
+      "sourceType": "official",
+      "quality": "證交所官方市場廣度與風格指數；確認股票648家上漲、354家下跌、台灣50-0.06%、中型100+2.52%、小型300+2.37%。"
+    },
+    {
+      "id": "src-ap-world-markets-20260803",
+      "title": "World stocks are mixed as yen jumps against the dollar, while oil prices slip",
+      "publisher": "Associated Press",
+      "url": "https://apnews.com/article/stocks-markets-dollar-yen-trump-oil-d19a8f9a77b6fceca41da3e4b6bf17aa",
+      "publishedAt": "2026-08-03T04:22:18Z",
+      "retrievedAt": "2026-08-03T18:30:00+08:00",
+      "sourceType": "news_derived",
+      "quality": "國際媒體；確認台股+0.6%、日經-0.9%、KOSPI-5.1%、Brent-4.7%至83.92美元，以及Amazon前一現貨交易日+15.3%。"
+    },
+    {
+      "id": "src-ap-us-japan-yen-intervention-20260803",
+      "title": "US dollar weakens sharply against the Japanese yen after market interventions",
+      "publisher": "Associated Press",
+      "url": "https://apnews.com/article/yen-dollar-currency-trump-economy-7316599afed35629a27ae23a35f569fd",
+      "publishedAt": "2026-08-03T01:50:55Z",
+      "retrievedAt": "2026-08-03T18:30:00+08:00",
+      "sourceType": "news_derived",
+      "quality": "國際媒體；引述美日官員確認聯手買進日圓，記錄美元兌日圓由163上方回落並一度接近155.20。"
+    },
+    {
+      "id": "src-ap-oil-iran-pause-20260803",
+      "title": "Oil prices drop after Trump orders US forces to hold off on new strikes against Iran",
+      "publisher": "Associated Press",
+      "url": "https://apnews.com/article/194ab3d3130bb44de445cf3d05954beb",
+      "publishedAt": "2026-08-02T23:02:13Z",
+      "retrievedAt": "2026-08-03T18:30:00+08:00",
+      "sourceType": "news_derived",
+      "quality": "國際媒體；確認川普暫緩新攻擊與Brent約跌5%至83.87美元的即時市場反應。"
+    },
+    {
+      "id": "src-ap-iran-talks-20260803",
+      "title": "Trump says talks on Iran war will begin on Monday after he holds off on massive strikes",
+      "publisher": "Associated Press",
+      "url": "https://apnews.com/article/3b92568b6f2eec283eb51d0327ee682a",
+      "publishedAt": "2026-08-03T09:49:38Z",
+      "retrievedAt": "2026-08-03T18:30:00+08:00",
+      "sourceType": "news_derived",
+      "quality": "國際媒體；確認川普表示8月3日下午重啟談判，並區分暫緩攻擊與尚未完成的和平協議。"
+    },
+    {
+      "id": "src-us-japan-fx-joint-statement-20250911",
+      "title": "U.S. - Japan Finance Ministers’ Joint Statement",
+      "publisher": "U.S. Department of the Treasury",
+      "url": "https://home.treasury.gov/news/press-releases/sb0245",
+      "publishedAt": "2025-09-11",
+      "retrievedAt": "2026-08-03T18:30:00+08:00",
+      "sourceType": "official",
+      "quality": "美日官方匯率政策共同聲明；確認干預限於對抗過度波動與無序走勢，實際8月行動仍以官員最新確認為準。"
+    },
+    {
+      "id": "src-amd-q2-2026-schedule",
+      "title": "AMD to Report Fiscal Second Quarter 2026 Financial Results",
+      "publisher": "Advanced Micro Devices",
+      "url": "https://ir.amd.com/news-events/press-releases/detail/1289/amd-to-report-fiscal-second-quarter-2026-financial-results",
+      "publishedAt": "2026-07-08",
+      "retrievedAt": "2026-08-03T18:30:00+08:00",
+      "sourceType": "official",
+      "quality": "公司官方排程；確認8月4日17:00 ET公布第二季結果，尚未有結果。"
+    },
+    {
+      "id": "src-amd-q1-2026-outlook",
+      "title": "AMD Reports First Quarter 2026 Financial Results",
+      "publisher": "Advanced Micro Devices",
+      "url": "https://ir.amd.com/news-events/press-releases/detail/1284/amd-reports-first-quarter-2026-financial-results",
+      "publishedAt": "2026-05-05",
+      "retrievedAt": "2026-08-03T18:30:00+08:00",
+      "sourceType": "official",
+      "quality": "公司官方前季財報；只作第二季營收112億美元正負3億美元與非GAAP毛利率56%的待驗證基準。"
+    },
+    {
+      "id": "src-sandisk-fy26-results-schedule",
+      "title": "Sandisk to Report Fiscal Fourth Quarter and Fiscal Year 2026 Results",
+      "publisher": "Sandisk",
+      "url": "https://investor.sandisk.com/news-events/news-releases",
+      "publishedAt": "2026-07-09",
+      "retrievedAt": "2026-08-03T18:30:00+08:00",
+      "sourceType": "official",
+      "quality": "公司官方排程；確認8月5日16:30 ET財報電話會議，尚未有結果。"
+    },
+    {
+      "id": "src-twse-taiex-history-20260731",
+      "title": "115年7月發行量加權股價指數歷史資料",
+      "publisher": "臺灣證券交易所",
+      "url": "https://www.twse.com.tw/rwd/zh/TAIEX/MI_5MINS_HIST?date=20260701&response=json",
+      "publishedAt": "2026-07-31",
+      "retrievedAt": "2026-07-31T18:30:00+08:00",
+      "sourceType": "official",
+      "quality": "證交所官方OHLC；確認7月31日收盤43,119.75點、上漲3,186.45點。"
+    },
+    {
+      "id": "src-twse-market-turnover-20260731",
+      "title": "115年7月市場成交資訊",
       "publisher": "臺灣證券交易所",
       "url": "https://www.twse.com.tw/rwd/zh/afterTrading/FMTQIK?date=20260701&response=json",
-      "publishedAt": "2026-07-29T13:30:00+08:00",
-      "retrievedAt": "2026-07-29T18:30:00+08:00",
+      "publishedAt": "2026-07-31",
+      "retrievedAt": "2026-07-31T18:30:00+08:00",
       "sourceType": "official",
-      "quality": "證交所官方成交金額資料；20 日量比由每日總成交金額計算，與只統計股票成交值的媒體口徑不同。"
+      "quality": "證交所官方成交金額；用於計算成交金額8,877.3億元與20日量比0.87。"
+    },
+    {
+      "id": "src-twse-market-breadth-20260731",
+      "title": "115年7月31日每日收盤行情",
+      "publisher": "臺灣證券交易所",
+      "url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260731&type=ALLBUT0999&response=json",
+      "publishedAt": "2026-07-31",
+      "retrievedAt": "2026-07-31T18:30:00+08:00",
+      "sourceType": "official",
+      "quality": "證交所官方市場廣度與類股資料；確認股票892家上漲、145家下跌及風格指數表現。"
+    },
+    {
+      "id": "src-ap-asia-rebound-20260731",
+      "title": "South Korea's Kospi index jumps nearly 18% on a surge in chipmaking stocks",
+      "publisher": "Associated Press",
+      "url": "https://apnews.com/article/stock-markets-rates-korea-ai-oil-e31b3a442bcb957a53f1823ef21e73e8",
+      "publishedAt": "2026-07-31T00:49:21Z",
+      "retrievedAt": "2026-07-31T18:30:00+08:00",
+      "sourceType": "news_derived",
+      "quality": "國際媒體；確認台股、韓股與日股反彈，並把亞洲AI股回升連結到Microsoft盈利與急跌後回補。"
+    },
+    {
+      "id": "src-ap-wallstreet-rebound-20260730",
+      "title": "Microsoft's best day since 2008 leads US stocks, while inflation worries remain",
+      "publisher": "Associated Press",
+      "url": "https://apnews.com/article/stock-markets-rates-korea-ai-oil-99b5702d93a2b5c6e513fb952ccdcc92",
+      "publishedAt": "2026-07-30T05:09:50Z",
+      "retrievedAt": "2026-07-31T18:30:00+08:00",
+      "sourceType": "news_derived",
+      "quality": "國際媒體；確認Microsoft現貨上漲15.5%、S&P 500上漲1.7%、Nasdaq上漲2.8%與AI股反彈。"
+    },
+    {
+      "id": "src-apple-q3-2026-results",
+      "title": "Apple reports third quarter results",
+      "publisher": "Apple",
+      "url": "https://www.apple.com/newsroom/2026/07/apple-reports-third-quarter-results/",
+      "publishedAt": "2026-07-30T14:00:00-07:00",
+      "retrievedAt": "2026-07-31T18:30:00+08:00",
+      "sourceType": "official",
+      "quality": "公司官方財報；確認營收1,094億美元、年增16%、毛利率50.1%與EPS 2.02美元。"
+    },
+    {
+      "id": "src-ap-apple-q3-2026",
+      "title": "Strong iPhone sales propel Apple's fiscal Q3 results past expectations",
+      "publisher": "Associated Press",
+      "url": "https://apnews.com/article/apple-earnings-revenue-iphone-ai-94102918cb3592ebc1d2a38c4d7d819a",
+      "publishedAt": "2026-07-30T20:54:13Z",
+      "retrievedAt": "2026-07-31T18:30:00+08:00",
+      "sourceType": "news_derived",
+      "quality": "國際媒體；交叉確認Apple財報、盤後下跌2.3%及記憶體短缺與終端價格傳導。"
+    },
+    {
+      "id": "src-amazon-q2-2026-results",
+      "title": "Amazon.com announces second quarter results",
+      "publisher": "Amazon",
+      "url": "https://www.aboutamazon.com/news/company-news/amazon-earnings-q2-2026-report",
+      "publishedAt": "2026-07-30T14:00:00-07:00",
+      "retrievedAt": "2026-07-31T18:30:00+08:00",
+      "sourceType": "official",
+      "quality": "公司官方財報；確認營收2,006億美元、AWS年增37%、自由現金流流出76億美元及第三季指引。"
+    },
+    {
+      "id": "src-ap-amazon-q2-2026",
+      "title": "Amazon to boost spending on AI and technology by $20 billion",
+      "publisher": "Associated Press",
+      "url": "https://apnews.com/article/amazon-second-quarter-earnings-cloud-b4ce02b4666a35b8975823c5c22072ee",
+      "publishedAt": "2026-07-30T20:26:36Z",
+      "retrievedAt": "2026-07-31T18:30:00+08:00",
+      "sourceType": "news_derived",
+      "quality": "國際媒體；交叉確認資本支出上修至2,200億美元、記憶體成本、容量不足與盤後上漲逾9%。"
+    },
+    {
+      "id": "src-bea-pce-june-2026",
+      "title": "Personal Income and Outlays, June 2026",
+      "publisher": "U.S. Bureau of Economic Analysis",
+      "url": "https://www.bea.gov/news/2026/personal-income-and-outlays-june-2026",
+      "publishedAt": "2026-07-30T08:30:00-04:00",
+      "retrievedAt": "2026-07-31T18:30:00+08:00",
+      "sourceType": "official",
+      "quality": "美國官方資料；確認6月PCE月減0.1%、年增3.7%，核心PCE月增0.1%、年增3.3%。"
+    },
+    {
+      "id": "src-ap-us-gdp-pce-20260730",
+      "title": "US economy grows at a sluggish 1.5% in second quarter",
+      "publisher": "Associated Press",
+      "url": "https://apnews.com/article/economy-inflation-spending-growth-consumers-growth-jobs-caf3b24d92688568f9c4f95725c87e55",
+      "publishedAt": "2026-07-30T12:47:29Z",
+      "retrievedAt": "2026-07-31T18:30:00+08:00",
+      "sourceType": "news_derived",
+      "quality": "國際媒體；交叉確認GDP 1.5%、消費3.2%、企業投資8.4%與AI相關進口傳導。"
+    },
+    {
+      "id": "src-boj-meeting-20260731",
+      "title": "2026年7月30、31日金融政策決定會合",
+      "publisher": "日本銀行",
+      "url": "https://www.boj.or.jp/mopo/mpmsche_minu/index.htm",
+      "publishedAt": "2026-07-31",
+      "retrievedAt": "2026-07-31T18:30:00+08:00",
+      "sourceType": "official",
+      "quality": "日本銀行官方會議與結果索引；確認7月30至31日會議已結束並已發布結果文件。"
+    },
+    {
+      "id": "src-boe-rate-20260730",
+      "title": "Interest rates and Bank Rate: latest decision",
+      "publisher": "Bank of England",
+      "url": "https://www.bankofengland.co.uk/monetary-policy/the-interest-rate-bank-rate",
+      "publishedAt": "2026-07-30",
+      "retrievedAt": "2026-07-31T18:30:00+08:00",
+      "sourceType": "official",
+      "quality": "英國央行官方利率頁；確認Bank Rate為3.75%。"
+    },
+    {
+      "id": "src-ap-boe-rate-20260730",
+      "title": "Bank of England keeps key rate at 3.75% for the fifth time",
+      "publisher": "Associated Press",
+      "url": "https://apnews.com/article/britain-economy-interest-rates-4c1858032eb701ae776d286db674d994",
+      "publishedAt": "2026-07-30T11:05:14Z",
+      "retrievedAt": "2026-07-31T18:30:00+08:00",
+      "sourceType": "news_derived",
+      "quality": "國際媒體；交叉確認6比3維持3.75%、三位委員主張升息至4%與能源通膨風險。"
     },
     {
       "id": "src-tradingview-features-2026",
@@ -1495,16 +2143,6 @@
       "quality": "獨立財經媒體轉述 TrendForce 調查；交叉確認漲價方向與消費端壓力。"
     },
     {
-      "id": "src-twse-market-breadth-20260729",
-      "title": "115年07月29日大盤統計資訊與漲跌證券數",
-      "publisher": "臺灣證券交易所",
-      "url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260729&type=ALLBUT0999&response=json",
-      "publishedAt": "2026-07-29T13:30:00+08:00",
-      "retrievedAt": "2026-07-29T18:30:00+08:00",
-      "sourceType": "official",
-      "quality": "證交所官方盤後資料；上市股票上漲243家、下跌777家，其中跌停64家，並提供類股指數變動。"
-    },
-    {
       "id": "src-reuters-kospi-rout-20260729",
       "title": "South Korea stock rout breaks records as SK Hynix earnings disappoint",
       "publisher": "Reuters（Business Recorder 轉載）",
@@ -1586,13 +2224,13 @@
     },
     {
       "id": "src-ap-iran-oil-20260729",
-      "title": "Jordan intercepts Iranian missiles as US and Saudi Arabia strike militias in Iraq",
+      "title": "US launches strikes on Iranian targets a day after it foiled missile attack",
       "publisher": "Associated Press",
       "url": "https://apnews.com/article/iran-war-us-hormuz-strait-july-29-2026-e31d249ba6443decdd3e63cd00f0fb84",
       "publishedAt": "2026-07-29T05:09:01Z",
-      "retrievedAt": "2026-07-29T18:30:00+08:00",
+      "retrievedAt": "2026-07-30T18:30:00+08:00",
       "sourceType": "news_derived",
-      "quality": "國際通訊社；確認攻擊再起、荷莫茲海峽風險與Brent盤中上漲3.1%至84.58美元。"
+      "quality": "國際媒體；確認Brent反彈7.3%至88.09美元、Abqaiq受損影像與海運風險。"
     },
     {
       "id": "src-reuters-oil-whipsaw-20260728",
@@ -1603,20 +2241,1080 @@
       "retrievedAt": "2026-07-29T18:30:00+08:00",
       "sourceType": "news_derived",
       "quality": "國際通訊社；提供前一日Brent跌1.9%至86.70美元與荷莫茲低流量、談判預期的供需背景。"
+    },
+    {
+      "id": "src-twse-market-breadth-20260730",
+      "title": "115年7月30日大盤統計、漲跌家數與價格指數",
+      "publisher": "臺灣證券交易所",
+      "url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260730&type=ALLBUT0999&response=json",
+      "publishedAt": "2026-07-30T13:30:00+08:00",
+      "retrievedAt": "2026-07-30T18:30:00+08:00",
+      "sourceType": "official",
+      "quality": "證交所官方市場廣度、類股與風格指數；確認224家上漲、775家下跌及中小型指數表現。"
+    },
+    {
+      "id": "src-fed-fomc-20260729",
+      "title": "Federal Reserve issues FOMC statement",
+      "publisher": "Federal Reserve",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm",
+      "publishedAt": "2026-07-29T14:00:00-04:00",
+      "retrievedAt": "2026-07-30T18:30:00+08:00",
+      "sourceType": "official",
+      "quality": "FOMC官方聲明；確認3.50%至3.75%、9比3表決與三位升息反對者。"
+    },
+    {
+      "id": "src-ap-fed-decision-20260729",
+      "title": "Fed leaves interest rate unchanged but with 3 dissents",
+      "publisher": "Associated Press",
+      "url": "https://apnews.com/article/federal-reserve-inflation-interest-rates-iran-war-ad10c177cb8d96f9e3ed122e12352a74",
+      "publishedAt": "2026-07-29T18:29:10Z",
+      "retrievedAt": "2026-07-30T18:30:00+08:00",
+      "sourceType": "news_derived",
+      "quality": "第二家獨立媒體；補充Warsh記者會、殖利率背景與三位反對者。"
+    },
+    {
+      "id": "src-microsoft-fy26-q4-results",
+      "title": "Microsoft Cloud and AI Strength Fuels Fourth Quarter Results",
+      "publisher": "Microsoft",
+      "url": "https://www.microsoft.com/en-us/investor/earnings/FY-2026-Q4/press-release-webcast",
+      "publishedAt": "2026-07-29T16:05:00-07:00",
+      "retrievedAt": "2026-07-30T18:30:00+08:00",
+      "sourceType": "official",
+      "quality": "公司官方財報；營收、Azure、待履約義務、Copilot席次與管理層說法優先採此來源。"
+    },
+    {
+      "id": "src-ap-microsoft-fy26-q4",
+      "title": "Microsoft beats Wall Street expectations with $90B in revenue",
+      "publisher": "Associated Press",
+      "url": "https://apnews.com/article/microsoft-earnings-results-ai-f7dff4fb9d51a2bdec56a13e5da1053d",
+      "publishedAt": "2026-07-29T21:20:50Z",
+      "retrievedAt": "2026-07-30T18:30:00+08:00",
+      "sourceType": "news_derived",
+      "quality": "第二家獨立媒體；交叉確認市場預期、410億美元資本支出與盤後反應。"
+    },
+    {
+      "id": "src-meta-q2-2026-results",
+      "title": "Meta Reports Second Quarter 2026 Results",
+      "publisher": "Meta Platforms",
+      "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Second-Quarter-2026-Results/default.aspx",
+      "publishedAt": "2026-07-29T16:05:00-07:00",
+      "retrievedAt": "2026-07-30T18:30:00+08:00",
+      "sourceType": "official",
+      "quality": "公司官方財報；營收、成本、資本支出、自由現金流與第三季指引優先採此來源。"
+    },
+    {
+      "id": "src-ap-meta-q2-2026",
+      "title": "Meta shares drop as Q2 profit declines due to legal expenses and severance costs",
+      "publisher": "Associated Press",
+      "url": "https://apnews.com/article/meta-earnings-q2-facebook-profit-revenue-ai-bcbc62dde6d2cac724e3b3385fcabeab",
+      "publishedAt": "2026-07-29T20:31:21Z",
+      "retrievedAt": "2026-07-30T18:30:00+08:00",
+      "sourceType": "news_derived",
+      "quality": "第二家獨立媒體；交叉確認市場預期、法律與裁員費用及盤後反應。"
+    },
+    {
+      "id": "src-ap-asia-markets-20260730",
+      "title": "Oil prices gain and Asian shares are mostly lower as investors sell AI stocks",
+      "publisher": "Associated Press",
+      "url": "https://apnews.com/article/asia-markets-ai-stocks-oil-99b5702d93a2b5c6e513fb952ccdcc92",
+      "publishedAt": "2026-07-30T05:09:50Z",
+      "retrievedAt": "2026-07-30T18:30:00+08:00",
+      "sourceType": "news_derived",
+      "quality": "國際媒體；確認亞洲AI股續弱、韓股表現與資本支出回收疑慮的區域歸因。"
+    },
+    {
+      "id": "src-ap-us-iran-strikes-20260730",
+      "title": "The US and Iran trade missile barrages as hopes dim for a quick resolution",
+      "publisher": "Associated Press",
+      "url": "https://apnews.com/article/iran-war-us-hormuz-strait-july-30-2026-8dc77ed6a65f389ea4af84635d2473bd",
+      "publishedAt": "2026-07-30T05:08:15Z",
+      "retrievedAt": "2026-07-30T18:30:00+08:00",
+      "sourceType": "news_derived",
+      "quality": "國際媒體；確認美伊互射、川普發言、Qeshm與能源運輸節點風險。"
+    },
+    {
+      "id": "src-reuters-oil-pause-20260727",
+      "title": "Oil prices settle at lowest in over a week as US pauses attacks on Iran",
+      "publisher": "Reuters（MarketScreener轉載）",
+      "url": "https://ca.marketscreener.com/news/oil-slips-5-after-us-iran-pause-fighting-over-weekend-ce7f51dcd88dff27",
+      "publishedAt": "2026-07-27T17:30:00-04:00",
+      "retrievedAt": "2026-07-30T18:30:00+08:00",
+      "sourceType": "news_derived",
+      "quality": "國際通訊社；確認停火希望使Brent下跌8.7%至88.36美元，提供反向波動基準。"
+    },
+    {
+      "id": "src-bea-release-schedule-20260730",
+      "title": "BEA Release Schedule: GDP and Personal Income and Outlays",
+      "publisher": "U.S. Bureau of Economic Analysis",
+      "url": "https://www.bea.gov/news/schedule/",
+      "publishedAt": "2026-07-30",
+      "retrievedAt": "2026-07-30T18:30:00+08:00",
+      "sourceType": "official",
+      "quality": "美國官方排程；確認7月30日08:30 EDT公布第二季GDP初值與6月個人所得及支出。"
+    },
+    {
+      "id": "src-apple-q3-2026-schedule",
+      "title": "Apple Financial Results - Q3 2026",
+      "publisher": "Apple",
+      "url": "https://www.apple.com/investor/earnings-call/",
+      "publishedAt": "2026-07-30",
+      "retrievedAt": "2026-07-30T18:30:00+08:00",
+      "sourceType": "official",
+      "quality": "公司官方排程；確認7月30日14:00 PDT財報電話會議，結果尚未公布。"
+    },
+    {
+      "id": "src-amazon-q2-2026-schedule",
+      "title": "Amazon.com to Webcast Second Quarter 2026 Financial Results Conference Call",
+      "publisher": "Amazon",
+      "url": "https://press.aboutamazon.com/2026/7/amazon-com-to-webcast-second-quarter-2026-financial-results-conference-call",
+      "publishedAt": "2026-07-15",
+      "retrievedAt": "2026-07-30T18:30:00+08:00",
+      "sourceType": "official",
+      "quality": "公司官方排程；確認7月30日14:00 PDT財報電話會議，結果尚未公布。"
+    },
+    {
+      "id": "src-fed-fomc-calendar-2026",
+      "title": "Federal Open Market Committee meeting calendars and information",
+      "publisher": "Board of Governors of the Federal Reserve System",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "publishedAt": "2026-08-03",
+      "retrievedAt": "2026-08-03T18:30:00+08:00",
+      "sourceType": "official",
+      "quality": "Fed官方FOMC日程；2026年7月28至29日會議已結束，下一次利率會議為9月15至16日。"
+    },
+    {
+      "id": "src-boj-mpm-calendar-2026",
+      "title": "Schedule of Monetary Policy Meetings for 2026",
+      "publisher": "Bank of Japan",
+      "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/m_ref/mref250731a.pdf",
+      "publishedAt": "2025-07-31",
+      "retrievedAt": "2026-08-03T18:30:00+08:00",
+      "sourceType": "official",
+      "quality": "日本銀行官方會議日程；7月30至31日會議已結束，下一次政策會議為9月17至18日；8月5日僅為意見摘要發布。"
+    },
+    {
+      "id": "src-boe-mpc-calendar-2026",
+      "title": "Monetary Policy Committee dates for 2026",
+      "publisher": "Bank of England",
+      "url": "https://www.bankofengland.co.uk/news/2025/september/monetary-policy-committee-dates-for-2026",
+      "publishedAt": "2025-09-19",
+      "retrievedAt": "2026-08-03T18:30:00+08:00",
+      "sourceType": "official",
+      "quality": "英國央行官方MPC日程；7月30日結果已公布，下一次利率決議為9月17日。"
+    },
+    {
+      "id": "src-ecb-monetary-calendar-2026",
+      "title": "Meetings of the Governing Council and the General Council",
+      "publisher": "European Central Bank",
+      "url": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html",
+      "publishedAt": "2026-08-03",
+      "retrievedAt": "2026-08-03T18:30:00+08:00",
+      "sourceType": "official",
+      "quality": "ECB官方管理委員會日程；7月22至23日貨幣政策會議已結束，下一次貨幣政策會議為9月9至10日。"
+    },
+    {
+      "id": "src-twse-taiex-history-20260805",
+      "title": "115年8月發行量加權股價指數歷史資料",
+      "publisher": "臺灣證券交易所",
+      "url": "https://www.twse.com.tw/rwd/zh/TAIEX/MI_5MINS_HIST?date=20260805&response=json",
+      "publishedAt": "2026-08-05",
+      "retrievedAt": "2026-08-05T18:30:00+08:00",
+      "sourceType": "official",
+      "quality": "證交所官方月資料；確認8月5日OHLC為43,809.83／44,980.31／43,809.83／44,611.60點，並用於均線與20／60日高低點計算。"
+    },
+    {
+      "id": "src-twse-market-turnover-20260805",
+      "title": "115年8月市場成交資訊",
+      "publisher": "臺灣證券交易所",
+      "url": "https://www.twse.com.tw/rwd/zh/afterTrading/FMTQIK?date=20260805&response=json",
+      "publishedAt": "2026-08-05",
+      "retrievedAt": "2026-08-05T18:30:00+08:00",
+      "sourceType": "official",
+      "quality": "證交所官方成交資訊；data:technicals計算8月5日成交金額1兆2,002.1億元、20日量比1.18。"
+    },
+    {
+      "id": "src-twse-market-breadth-20260805",
+      "title": "115年8月5日每日收盤行情與市場統計",
+      "publisher": "臺灣證券交易所",
+      "url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260805&type=ALLBUT0999&response=json",
+      "publishedAt": "2026-08-05",
+      "retrievedAt": "2026-08-05T18:30:00+08:00",
+      "sourceType": "official",
+      "quality": "證交所官方收盤統計；上市股票686家上漲、293家下跌、93家平盤，半導體、台灣50、中型100與小型300同步上漲。"
+    },
+    {
+      "id": "src-ap-asia-markets-20260805",
+      "title": "World shares surge after Wall Street records on earnings and Iran-deal hopes",
+      "publisher": "Associated Press",
+      "url": "https://apnews.com/article/stocks-markets-rates-oil-prices-53179dc1c0148c5afeb47379b8f5b5c5",
+      "publishedAt": "2026-08-05T05:00:40Z",
+      "retrievedAt": "2026-08-05T18:30:00+08:00",
+      "sourceType": "news_derived",
+      "quality": "AP記錄亞洲與美股實際變動、TSMC漲幅及市場對企業獲利與荷莫茲協議希望的單一媒體歸因；不升級為兩家媒體共同歸因。"
+    },
+    {
+      "id": "src-ap-hormuz-deal-20260805",
+      "title": "Trump says deal to reopen Strait of Hormuz could come as early as Wednesday",
+      "publisher": "Associated Press",
+      "url": "https://apnews.com/article/iran-war-us-hormuz-trump-august-5-2026-ecdbd96f2b46c70beb5926d8508f9c55",
+      "publishedAt": "2026-08-05T05:35:35Z",
+      "retrievedAt": "2026-08-05T18:30:00+08:00",
+      "sourceType": "news_derived",
+      "quality": "AP逐一記錄Trump、Rubio、伊朗外交部與阿曼談判進度，以及Brent早盤跌1.2%至78.43美元；各方均明示尚未完成最終協議。"
+    },
+    {
+      "id": "src-amd-q2-2026-results",
+      "title": "AMD Reports Second Quarter 2026 Financial Results",
+      "publisher": "Advanced Micro Devices",
+      "url": "https://ir.amd.com/news-events/press-releases/detail/1295/amd-reports-second-quarter-2026-financial-results",
+      "publishedAt": "2026-08-04T16:15:00-04:00",
+      "retrievedAt": "2026-08-05T18:30:00+08:00",
+      "sourceType": "official",
+      "quality": "AMD官方財報；確認第二季營收115.4億美元、資料中心67.2億美元及第三季營收約130億美元正負3億美元。"
+    },
+    {
+      "id": "src-sandisk-hbf-ocp-spec-20260803",
+      "title": "Sandisk and SK hynix Advance Global Standardization of High Bandwidth Flash with Release of First OCP Technical Specification",
+      "publisher": "Sandisk",
+      "url": "https://investor.sandisk.com/news-releases/news-release-details/sandisk-and-sk-hynix-advance-global-standardization-high",
+      "publishedAt": "2026-08-03",
+      "retrievedAt": "2026-08-05T18:30:00+08:00",
+      "sourceType": "official",
+      "quality": "Sandisk IR首頁與新聞稿確認雙方發布第一份HBF OCP技術規格；屬規格里程碑，不等於量產、認證或台廠訂單。"
+    },
+    {
+      "id": "src-skhynix-hbf-standardization-20260226",
+      "title": "SK hynix and Sandisk Begin Global Standardization of Next-Generation Memory HBF",
+      "publisher": "SK hynix",
+      "url": "https://news.skhynix.com/sk-hynix-and-sandisk-begin-global-standardization-ofnext-generation-memory-hbf/",
+      "publishedAt": "2026-02-26",
+      "retrievedAt": "2026-08-05T18:30:00+08:00",
+      "sourceType": "official",
+      "quality": "SK hynix官方說明HBF為HBM與SSD間的新記憶體層，雙方在OCP成立工作流；提供第一份規格發布前的獨立公司脈絡。"
+    },
+    {
+      "id": "src-rbi-mpc-20260805",
+      "title": "Monetary Policy Statement 2026-27: MPC Resolution August 3 to 5, 2026",
+      "publisher": "Reserve Bank of India",
+      "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63287",
+      "publishedAt": "2026-08-05",
+      "retrievedAt": "2026-08-05T18:30:00+08:00",
+      "sourceType": "official",
+      "quality": "RBI官方決議；MPC全票維持repo rate 5.25%與中性立場，並明示能源、糧食與地緣政治風險。"
+    },
+    {
+      "id": "src-twse-taiex-history-20260810",
+      "title": "115年8月發行量加權股價指數歷史資料",
+      "publisher": "臺灣證券交易所",
+      "url": "https://www.twse.com.tw/rwd/zh/TAIEX/MI_5MINS_HIST?date=20260810&response=json",
+      "publishedAt": "2026-08-10",
+      "retrievedAt": "2026-08-10T18:30:00+08:00",
+      "sourceType": "official",
+      "quality": "官方OHLC與指數計算資料"
+    },
+    {
+      "id": "src-twse-market-turnover-20260810",
+      "title": "集中市場成交資訊",
+      "publisher": "臺灣證券交易所",
+      "url": "https://www.twse.com.tw/rwd/zh/afterTrading/FMTQIK?date=20260810&response=json",
+      "publishedAt": "2026-08-10",
+      "retrievedAt": "2026-08-10T18:30:00+08:00",
+      "sourceType": "official",
+      "quality": "官方成交金額與量能計算"
+    },
+    {
+      "id": "src-ap-world-markets-20260810",
+      "title": "World shares are mixed after Wall Street gains, while oil prices bounce higher",
+      "publisher": "Associated Press",
+      "url": "https://apnews.com/article/adb7b918b15206e38d7899d482422308",
+      "publishedAt": "2026-08-10T06:26:49Z",
+      "retrievedAt": "2026-08-10T18:30:00+08:00",
+      "sourceType": "news_derived",
+      "quality": "市場行情與媒體摘要"
+    },
+    {
+      "id": "src-twse-taiex-history-20260811",
+      "title": "115年8月發行量加權股價指數歷史資料",
+      "publisher": "臺灣證券交易所",
+      "url": "https://www.twse.com.tw/rwd/zh/TAIEX/MI_5MINS_HIST?date=20260811&response=json",
+      "publishedAt": "2026-08-11",
+      "retrievedAt": "2026-08-11T18:30:00+08:00",
+      "sourceType": "official",
+      "quality": "官方OHLC與均線資料"
+    },
+    {
+      "id": "src-twse-market-turnover-20260811",
+      "title": "集中市場成交資訊",
+      "publisher": "臺灣證券交易所",
+      "url": "https://www.twse.com.tw/rwd/zh/afterTrading/FMTQIK?date=20260811&response=json",
+      "publishedAt": "2026-08-11",
+      "retrievedAt": "2026-08-11T18:30:00+08:00",
+      "sourceType": "official",
+      "quality": "官方成交資料"
+    },
+    {
+      "id": "src-twse-taiex-history-20260812",
+      "title": "115年8月發行量加權股價指數歷史資料",
+      "publisher": "臺灣證券交易所",
+      "url": "https://www.twse.com.tw/rwd/zh/TAIEX/MI_5MINS_HIST?date=20260812&response=json",
+      "publishedAt": "2026-08-12",
+      "retrievedAt": "2026-08-12T18:30:00+08:00",
+      "sourceType": "official",
+      "quality": "官方OHLC"
+    },
+    {
+      "id": "src-twse-market-turnover-20260812",
+      "title": "集中市場成交資訊",
+      "publisher": "臺灣證券交易所",
+      "url": "https://www.twse.com.tw/rwd/zh/afterTrading/FMTQIK?date=20260812&response=json",
+      "publishedAt": "2026-08-12",
+      "retrievedAt": "2026-08-12T18:30:00+08:00",
+      "sourceType": "official",
+      "quality": "官方成交"
+    },
+    {
+      "id": "src-twse-taiex-history-20260813",
+      "title": "115年8月發行量加權股價指數歷史資料",
+      "publisher": "臺灣證券交易所",
+      "url": "https://www.twse.com.tw/rwd/zh/TAIEX/MI_5MINS_HIST?date=20260813&response=json",
+      "publishedAt": "2026-08-13",
+      "retrievedAt": "2026-08-13T18:30:00+08:00",
+      "sourceType": "official",
+      "quality": "官方OHLC"
+    },
+    {
+      "id": "src-twse-market-turnover-20260813",
+      "title": "集中市場成交資訊",
+      "publisher": "臺灣證券交易所",
+      "url": "https://www.twse.com.tw/rwd/zh/afterTrading/FMTQIK?date=20260813&response=json",
+      "publishedAt": "2026-08-13",
+      "retrievedAt": "2026-08-13T18:30:00+08:00",
+      "sourceType": "official",
+      "quality": "官方成交"
+    },
+    {
+      "id": "src-twse-taiex-history-20260817",
+      "title": "115年8月發行量加權股價指數歷史資料",
+      "publisher": "臺灣證券交易所",
+      "url": "https://www.twse.com.tw/rwd/zh/TAIEX/MI_5MINS_HIST?date=20260817&response=json",
+      "publishedAt": "2026-08-17",
+      "retrievedAt": "2026-08-17T18:30:00+08:00",
+      "sourceType": "official",
+      "quality": "官方OHLC"
+    },
+    {
+      "id": "src-twse-market-turnover-20260817",
+      "title": "集中市場成交資訊",
+      "publisher": "臺灣證券交易所",
+      "url": "https://www.twse.com.tw/rwd/zh/afterTrading/FMTQIK?date=20260817&response=json",
+      "publishedAt": "2026-08-17",
+      "retrievedAt": "2026-08-17T18:30:00+08:00",
+      "sourceType": "official",
+      "quality": "官方成交"
+    },
+    {
+      "id": "src-twse-taiex-history-20260818",
+      "title": "115年8月發行量加權股價指數歷史資料",
+      "publisher": "臺灣證券交易所",
+      "url": "https://www.twse.com.tw/rwd/zh/TAIEX/MI_5MINS_HIST?date=20260818&response=json",
+      "publishedAt": "2026-08-18",
+      "retrievedAt": "2026-08-18T18:30:00+08:00",
+      "sourceType": "official",
+      "quality": "官方OHLC"
+    },
+    {
+      "id": "src-twse-market-turnover-20260818",
+      "title": "集中市場成交資訊",
+      "publisher": "臺灣證券交易所",
+      "url": "https://www.twse.com.tw/rwd/zh/afterTrading/FMTQIK?date=20260818&response=json",
+      "publishedAt": "2026-08-18",
+      "retrievedAt": "2026-08-18T18:30:00+08:00",
+      "sourceType": "official",
+      "quality": "官方成交"
+    },
+    {
+      "id": "src-twse-taiex-history-20260820",
+      "title": "115年8月發行量加權股價指數歷史資料",
+      "publisher": "臺灣證券交易所",
+      "url": "https://www.twse.com.tw/rwd/zh/TAIEX/MI_5MINS_HIST?date=20260820&response=json",
+      "publishedAt": "2026-08-20",
+      "retrievedAt": "2026-08-20T18:30:00+08:00",
+      "sourceType": "official",
+      "quality": "官方OHLC"
+    },
+    {
+      "id": "src-twse-market-turnover-20260820",
+      "title": "集中市場成交資訊",
+      "publisher": "臺灣證券交易所",
+      "url": "https://www.twse.com.tw/rwd/zh/afterTrading/FMTQIK?date=20260820&response=json",
+      "publishedAt": "2026-08-20",
+      "retrievedAt": "2026-08-20T18:30:00+08:00",
+      "sourceType": "official",
+      "quality": "官方成交"
     }
   ],
   "claims": [
     {
-      "id": "claim-taiex-technicals-20260729",
+      "id": "claim-taiex-technicals-20260806",
       "entityType": "event",
-      "entityId": "event-asia-ai-reset-20260728",
-      "statement": "依證交所7月29日正式收盤資料計算，加權指數低於5、10、20、60日線，高於120日半年線與240日年線；成交金額為20日均值1.10倍，上市下跌777家、上漲243家。",
+      "entityId": "event-taiex-style-rotation-20260806",
+      "statement": "依證交所8月6日正式收盤資料計算，加權指數高於5／10／20／60／120／240日線；成交金額為20日均值0.96倍，120日線為半年線、240日線為年線。",
       "confidence": "high",
       "sourceType": "manual_review",
       "sourceIds": [
-        "src-twse-taiex-history-20260729",
-        "src-twse-market-turnover-20260729",
-        "src-twse-market-breadth-20260729"
+        "src-twse-taiex-history-20260806",
+        "src-twse-market-turnover-20260806"
+      ]
+    },
+    {
+      "id": "claim-taiex-breadth-20260806",
+      "entityType": "event",
+      "entityId": "event-taiex-style-rotation-20260806",
+      "statement": "證交所資料顯示8月6日上市股票530家上漲、438家下跌；台灣50與半導體分別下跌0.93%與1.26%，中型100與小型300分別上漲0.87%與0.69%。",
+      "confidence": "high",
+      "sourceType": "official",
+      "sourceIds": [
+        "src-twse-market-breadth-20260806"
+      ]
+    },
+    {
+      "id": "claim-taiex-rotation-inference-20260806",
+      "entityType": "event",
+      "entityId": "event-taiex-style-rotation-20260806",
+      "statement": "量比低於1、收盤守季線且上漲家數仍較多，支持強彈後量縮整理與風格輪動；這是依官方價格與廣度形成的Codex推論，不是證交所提供的因果結論。",
+      "confidence": "high",
+      "sourceType": "llm_inference",
+      "sourceIds": [
+        "src-twse-taiex-history-20260806",
+        "src-twse-market-turnover-20260806",
+        "src-twse-market-breadth-20260806"
+      ]
+    },
+    {
+      "id": "claim-global-chip-pullback-20260806",
+      "entityType": "event",
+      "entityId": "event-global-chip-pullback-20260806",
+      "statement": "AP記錄KOSPI下跌4.6%、Nikkei下跌0.9%，前一Nasdaq下跌0.8%；獲利了結與美國就業報告前降風險只有單一publisher歸因，不視為共同結論。",
+      "confidence": "medium",
+      "sourceType": "news_derived",
+      "sourceIds": [
+        "src-ap-world-markets-20260806"
+      ]
+    },
+    {
+      "id": "claim-sandisk-q4-results-20260806",
+      "entityType": "theme",
+      "entityId": "memory-price-upcycle",
+      "statement": "Sandisk第四季營收89.65億美元、季增51%，公司指出約三分之二增幅來自較高價格；資料中心營收29.77億美元、季增103%，下一季營收指引103億至108億美元。",
+      "confidence": "high",
+      "sourceType": "official",
+      "sourceIds": [
+        "src-sandisk-q4-2026-results"
+      ]
+    },
+    {
+      "id": "claim-sandisk-taiwan-transmission-20260806",
+      "entityType": "theme",
+      "entityId": "memory-price-upcycle",
+      "statement": "Sandisk結果確認NAND價格與AI儲存需求，但台灣DRAM、利基型記憶體與模組廠的受益程度仍取決於產品組合、庫存成本、實現售價與毛利，不能直接等比例外推。",
+      "confidence": "medium",
+      "sourceType": "llm_inference",
+      "sourceIds": [
+        "src-sandisk-q4-2026-results",
+        "src-trendforce-memory-3q26",
+        "src-edn-memory-3q26"
+      ]
+    },
+    {
+      "id": "claim-hbf-no-new-node-20260806",
+      "entityType": "theme",
+      "entityId": "high-bandwidth-flash-ai-inference",
+      "statement": "Sandisk第四季新聞稿提供NAND與資料中心營運數字，但未提供HBF樣品、互通測試、客戶認證、設備到位或量產時程，故HBF維持spark。",
+      "confidence": "high",
+      "sourceType": "manual_review",
+      "sourceIds": [
+        "src-sandisk-q4-2026-results",
+        "src-sandisk-hbf-ocp-spec-20260803",
+        "src-skhynix-hbf-standardization-20260226"
+      ]
+    },
+    {
+      "id": "claim-hormuz-draft-not-final-20260806",
+      "entityType": "event",
+      "entityId": "event-hormuz-draft-20260806",
+      "statement": "伊朗稱與阿曼的荷莫茲協議進入最後起草階段，但共同聲明、解除封鎖、正常船流與保費下降均未完成確認，因此不能寫成已簽署或已復航。",
+      "confidence": "high",
+      "sourceType": "manual_review",
+      "sourceIds": [
+        "src-ap-hormuz-roundup-20260806",
+        "src-ap-world-markets-20260806",
+        "src-ukmto-live-20260804"
+      ]
+    },
+    {
+      "id": "claim-us-jobs-scheduled-20260807",
+      "entityType": "event",
+      "entityId": "event-us-jobs-scheduled-20260807",
+      "statement": "BLS排定2026年8月7日08:30 ET公布7月Employment Situation；結果尚未發生，不預判就業、失業率、薪資或利率反應。",
+      "confidence": "high",
+      "sourceType": "official",
+      "sourceIds": [
+        "src-bls-employment-calendar-20260807"
+      ]
+    },
+    {
+      "id": "claim-major-central-bank-calendar-20260806",
+      "entityType": "event",
+      "entityId": "event-major-central-bank-calendar-20260803",
+      "statement": "Fed、BOJ、ECB與BOE官方日程顯示，台北時間2026年8月6日18:30至8月9日18:30沒有新的政策利率決議；美國7月就業報告是短窗內主要宏觀排程，但不是央行決議。",
+      "confidence": "high",
+      "sourceType": "manual_review",
+      "sourceIds": [
+        "src-fed-fomc-calendar-2026",
+        "src-boj-mpm-calendar-2026",
+        "src-boe-mpc-calendar-2026",
+        "src-ecb-monetary-calendar-2026",
+        "src-bls-employment-calendar-20260807"
+      ]
+    },
+    {
+      "id": "claim-material-scan-20260806",
+      "entityType": "theme",
+      "entityId": "memory-price-upcycle",
+      "statement": "本次掃描DRAM、NAND、銅、鋁、鋼、油、天然氣、化工、面板與電池材料；只有記憶體與Brent具足夠期間、幅度、供需原因及至少兩個publisher的可追溯證據，其他類別不為更新而新增訊號。",
+      "confidence": "medium",
+      "sourceType": "manual_review",
+      "sourceIds": [
+        "src-sandisk-q4-2026-results",
+        "src-trendforce-memory-3q26",
+        "src-edn-memory-3q26",
+        "src-ap-hormuz-roundup-20260806",
+        "src-ap-world-markets-20260806",
+        "src-ukmto-live-20260804"
+      ]
+    },
+    {
+      "id": "claim-taiex-technicals-20260805",
+      "entityType": "event",
+      "entityId": "event-taiex-broad-rebound-20260805",
+      "statement": "依證交所8月5日正式收盤資料計算，加權指數高於5／10／20／60／120／240日線；成交金額為20日均值1.18倍，120日線為半年線、240日線為年線。",
+      "confidence": "high",
+      "sourceType": "manual_review",
+      "sourceIds": [
+        "src-twse-taiex-history-20260805",
+        "src-twse-market-turnover-20260805"
+      ]
+    },
+    {
+      "id": "claim-taiex-breadth-20260805",
+      "entityType": "event",
+      "entityId": "event-taiex-broad-rebound-20260805",
+      "statement": "證交所資料顯示8月5日上市股票686家上漲、293家下跌；台灣50、半導體、中型100與小型300分別上漲3.13%、3.64%、2.51%與2.30%。",
+      "confidence": "high",
+      "sourceType": "official",
+      "sourceIds": [
+        "src-twse-market-breadth-20260805"
+      ]
+    },
+    {
+      "id": "claim-taiex-rebound-inference-20260805",
+      "entityType": "event",
+      "entityId": "event-taiex-broad-rebound-20260805",
+      "statement": "價格、量能與廣度已確認反彈升級，但指數仍低於20／60日高點，尚不足以宣稱中期修正完成。",
+      "confidence": "high",
+      "sourceType": "llm_inference",
+      "sourceIds": [
+        "src-twse-taiex-history-20260805",
+        "src-twse-market-turnover-20260805",
+        "src-twse-market-breadth-20260805"
+      ]
+    },
+    {
+      "id": "claim-global-rally-attribution-20260805",
+      "entityType": "event",
+      "entityId": "event-taiex-broad-rebound-20260805",
+      "statement": "AP把亞洲與美股上漲連結到強勁企業獲利及荷莫茲協議希望；因只有單一publisher，本研究不標成至少兩家媒體共同歸因。",
+      "confidence": "medium",
+      "sourceType": "news_derived",
+      "sourceIds": [
+        "src-ap-asia-markets-20260805"
+      ]
+    },
+    {
+      "id": "claim-amd-q2-results-20260805",
+      "entityType": "event",
+      "entityId": "event-amd-q2-results-20260805",
+      "statement": "AMD第二季營收115.4億美元、資料中心營收67.2億美元，第三季營收指引約130億美元正負3億美元。",
+      "confidence": "high",
+      "sourceType": "official",
+      "sourceIds": [
+        "src-amd-q2-2026-results"
+      ]
+    },
+    {
+      "id": "claim-amd-taiwan-transmission-20260805",
+      "entityType": "theme",
+      "entityId": "ai-capital-discipline-advanced-nodes",
+      "statement": "AMD資料中心成長對台灣先進製程、封裝、載板與伺服器鏈有需求映射，但不能替代個別公司的訂單、營收與毛利證據。",
+      "confidence": "medium",
+      "sourceType": "llm_inference",
+      "sourceIds": [
+        "src-amd-q2-2026-results",
+        "src-twse-market-breadth-20260805"
+      ]
+    },
+    {
+      "id": "claim-rbi-hold-20260805",
+      "entityType": "event",
+      "entityId": "event-rbi-hold-20260805",
+      "statement": "RBI MPC於8月5日全票維持政策repo rate 5.25%，並維持中性立場。",
+      "confidence": "high",
+      "sourceType": "official",
+      "sourceIds": [
+        "src-rbi-mpc-20260805"
+      ]
+    },
+    {
+      "id": "claim-hormuz-not-final-20260805",
+      "entityType": "event",
+      "entityId": "event-hormuz-talks-20260805",
+      "statement": "Trump稱協議可能很快達成，Rubio明示尚未定案，伊朗僅確認與阿曼討論安全航道；因此不能寫成正式協議。",
+      "confidence": "high",
+      "sourceType": "news_derived",
+      "sourceIds": [
+        "src-ap-hormuz-deal-20260805",
+        "src-ukmto-live-20260804"
+      ]
+    },
+    {
+      "id": "claim-hbf-first-spec-20260803",
+      "entityType": "theme",
+      "entityId": "high-bandwidth-flash-ai-inference",
+      "statement": "Sandisk與SK hynix已發布第一份HBF OCP技術規格，將合作從標準化工作流推進至規格節點。",
+      "confidence": "high",
+      "sourceType": "official",
+      "sourceIds": [
+        "src-sandisk-hbf-ocp-spec-20260803",
+        "src-skhynix-hbf-standardization-20260226"
+      ]
+    },
+    {
+      "id": "claim-hbf-taiwan-mapping-20260805",
+      "entityType": "theme",
+      "entityId": "high-bandwidth-flash-ai-inference",
+      "statement": "台灣晶圓與封測業者目前只有控制器、互連與封裝能力的研究映射，尚無HBF訂單、設備到位或認證公開證據。",
+      "confidence": "low",
+      "sourceType": "llm_inference",
+      "sourceIds": [
+        "src-sandisk-hbf-ocp-spec-20260803",
+        "src-skhynix-hbf-standardization-20260226"
+      ]
+    },
+    {
+      "id": "claim-material-scan-20260805",
+      "entityType": "theme",
+      "entityId": "memory-price-upcycle",
+      "statement": "本次掃描DRAM、NAND、銅、鋁、鋼、油、天然氣、化工、面板與電池材料；只有記憶體與Brent具足夠期間、幅度、供需原因及至少兩個publisher的可追溯證據。",
+      "confidence": "medium",
+      "sourceType": "manual_review",
+      "sourceIds": [
+        "src-trendforce-memory-3q26",
+        "src-edn-memory-3q26",
+        "src-ap-hormuz-deal-20260805",
+        "src-ukmto-live-20260804"
+      ]
+    },
+    {
+      "id": "claim-taiex-technicals-20260804",
+      "entityType": "event",
+      "entityId": "event-taiex-style-rotation-20260804",
+      "statement": "依證交所8月4日正式收盤資料計算，加權指數高於5日、10日線，低於20日月線與60日季線，高於120日半年線與240日年線；成交金額為20日均值1.07倍。",
+      "confidence": "high",
+      "sourceType": "manual_review",
+      "sourceIds": [
+        "src-twse-taiex-history-20260804",
+        "src-twse-market-turnover-20260804"
+      ]
+    },
+    {
+      "id": "claim-taiex-breadth-20260804",
+      "entityType": "event",
+      "entityId": "event-taiex-style-rotation-20260804",
+      "statement": "證交所資料顯示8月4日上市股票599家上漲、397家下跌、42家漲停且無跌停；台灣50下跌0.81%、中型100上漲2.60%、小型300上漲1.14%、半導體下跌1.37%。",
+      "confidence": "high",
+      "sourceType": "official",
+      "sourceIds": [
+        "src-twse-market-breadth-20260804"
+      ]
+    },
+    {
+      "id": "claim-taiex-rotation-inference-20260804",
+      "entityType": "event",
+      "entityId": "event-taiex-style-rotation-20260804",
+      "statement": "盤中越過月線後收回其下，且權值半導體落後中小型，支持風格輪動而非全面轉強；這是依官方價格與廣度形成的Codex推論，不是證交所提供的因果結論。",
+      "confidence": "medium",
+      "sourceType": "llm_inference",
+      "sourceIds": [
+        "src-twse-taiex-history-20260804",
+        "src-twse-market-breadth-20260804"
+      ]
+    },
+    {
+      "id": "claim-us-stocks-oil-relief-20260803",
+      "entityType": "event",
+      "entityId": "event-us-stocks-oil-relief-20260803",
+      "statement": "8月3日美股S&P 500、Dow、Nasdaq分別上漲1.5%、1.3%、2.1%；AP把Brent下跌4.7%與10年債殖利率由4.75%降至4.68%列為重要市場背景，但不代表唯一原因。",
+      "confidence": "high",
+      "sourceType": "news_derived",
+      "sourceIds": [
+        "src-ap-us-markets-20260803",
+        "src-ap-asia-markets-20260804"
+      ]
+    },
+    {
+      "id": "claim-hormuz-cargo-20260804",
+      "entityType": "event",
+      "entityId": "event-hormuz-cargo-20260804",
+      "statement": "UKMTO通報一艘貨輪8月4日於阿曼Al Khasab東北37公里處遭不明投射物擊中，Ambrey確認船舶受損；船名、船旗、貨物及攻擊責任尚未確認。",
+      "confidence": "high",
+      "sourceType": "manual_review",
+      "sourceIds": [
+        "src-ap-hormuz-cargo-20260804",
+        "src-ukmto-live-20260804"
+      ]
+    },
+    {
+      "id": "claim-us-iran-conflicting-talks-20260804",
+      "entityType": "event",
+      "entityId": "event-hormuz-cargo-20260804",
+      "statement": "川普稱美伊談判已恢復且第一階段將處理海峽開放；伊朗外交部稱只與阿曼談安全航道，故不能把公開說法寫成共同承認的談判或協議。",
+      "confidence": "high",
+      "sourceType": "news_derived",
+      "sourceIds": [
+        "src-ap-trump-iran-last-chance-20260803",
+        "src-ap-hormuz-cargo-20260804"
+      ]
+    },
+    {
+      "id": "claim-central-bank-calendar-20260804",
+      "entityType": "event",
+      "entityId": "event-major-central-bank-calendar-20260803",
+      "statement": "Fed、BOJ、ECB與BOE官方日程顯示，台北時間2026年8月4日18:30至8月7日18:30沒有新的政策利率決議；BOJ 8月5日發布的是既有會議意見摘要，不是新利率結果。",
+      "confidence": "high",
+      "sourceType": "manual_review",
+      "sourceIds": [
+        "src-fed-fomc-calendar-2026",
+        "src-boj-mpm-calendar-2026",
+        "src-boe-mpc-calendar-2026",
+        "src-ecb-monetary-calendar-2026"
+      ]
+    },
+    {
+      "id": "claim-entegris-tower-scheduled-20260804",
+      "entityType": "theme",
+      "entityId": "ai-capital-discipline-advanced-nodes",
+      "statement": "Entegris與Tower Semiconductor官方排定8月4日公布第二季結果；截至台北時間18:30，本研究不預寫其營收、毛利、利用率或第三季指引。",
+      "confidence": "high",
+      "sourceType": "official",
+      "sourceIds": [
+        "src-entegris-q2-2026-schedule",
+        "src-towersemi-q2-2026-schedule"
+      ]
+    },
+    {
+      "id": "claim-taiex-technicals-20260803",
+      "entityType": "event",
+      "entityId": "event-taiex-breadth-rebound-20260803",
+      "statement": "依證交所8月3日正式收盤資料計算，加權指數高於5日、10日線，低於20日月線與60日季線，高於120日半年線與240日年線；成交金額為20日均值0.87倍。",
+      "confidence": "high",
+      "sourceType": "manual_review",
+      "sourceIds": [
+        "src-twse-taiex-history-20260803",
+        "src-twse-market-turnover-20260803"
+      ]
+    },
+    {
+      "id": "claim-taiex-breadth-20260803",
+      "entityType": "event",
+      "entityId": "event-taiex-breadth-rebound-20260803",
+      "statement": "證交所資料顯示8月3日上市股票648家上漲、354家下跌；台灣50下跌0.06%，中型100上漲2.52%，小型300上漲2.37%。",
+      "confidence": "high",
+      "sourceType": "official",
+      "sourceIds": [
+        "src-twse-market-breadth-20260803"
+      ]
+    },
+    {
+      "id": "claim-taiex-causality-20260803",
+      "entityType": "event",
+      "entityId": "event-taiex-breadth-rebound-20260803",
+      "statement": "AP記錄台股上漲0.6%、Amazon前一現貨交易日上漲15.3%、油價回落與日圓干預；把這些因素視為台股風險偏好背景屬Codex傳導推論，不是證交所計算的唯一原因，也不是兩家媒體共同確認的單一歸因。",
+      "confidence": "medium",
+      "sourceType": "llm_inference",
+      "sourceIds": [
+        "src-ap-world-markets-20260803",
+        "src-twse-market-breadth-20260803"
+      ]
+    },
+    {
+      "id": "claim-us-japan-yen-intervention-20260803",
+      "entityType": "event",
+      "entityId": "event-us-japan-yen-intervention-20260803",
+      "statement": "美國與日本官員確認協調買進日圓；美元兌日圓由上週高於163回落，8月3日一度接近155.20，實際干預規模仍待官方月度資料。",
+      "confidence": "high",
+      "sourceType": "news_derived",
+      "sourceIds": [
+        "src-ap-us-japan-yen-intervention-20260803",
+        "src-us-japan-fx-joint-statement-20250911"
+      ]
+    },
+    {
+      "id": "claim-trump-iran-pause-20260803",
+      "entityType": "event",
+      "entityId": "event-trump-iran-pause-20260803",
+      "statement": "川普表示8月3日恢復談判並暫緩新一輪大規模攻擊；Brent亞洲盤跌4.7%至83.92美元，但尚無和平協議或荷莫茲全面復航證據。",
+      "confidence": "high",
+      "sourceType": "news_derived",
+      "sourceIds": [
+        "src-ap-oil-iran-pause-20260803",
+        "src-ap-iran-talks-20260803",
+        "src-ap-world-markets-20260803"
+      ]
+    },
+    {
+      "id": "claim-brent-pause-pattern-20260803",
+      "entityType": "theme",
+      "entityId": "ai-power-grid-resilience",
+      "statement": "Reuters與AP在7月27日與8月3日兩次暫緩攻擊事件中都記錄Brent急跌，支持外交降溫壓低風險溢價；攻擊反覆與船流未恢復使方向仍具雙向風險。",
+      "confidence": "medium",
+      "sourceType": "news_derived",
+      "sourceIds": [
+        "src-reuters-oil-pause-20260727",
+        "src-ap-oil-iran-pause-20260803",
+        "src-ap-world-markets-20260803"
+      ]
+    },
+    {
+      "id": "claim-amd-q2-scheduled-20260805",
+      "entityType": "theme",
+      "entityId": "ai-capital-discipline-advanced-nodes",
+      "statement": "AMD官方排定台北時間8月5日05:00公布第二季結果；公布前只能列為scheduled，不預判營收、毛利或指引。",
+      "confidence": "high",
+      "sourceType": "official",
+      "sourceIds": [
+        "src-amd-q2-2026-schedule",
+        "src-amd-q1-2026-outlook"
+      ]
+    },
+    {
+      "id": "claim-sandisk-fy26-scheduled-20260806",
+      "entityType": "theme",
+      "entityId": "memory-price-upcycle",
+      "statement": "Sandisk官方排定台北時間8月6日04:30公布第四季與全年結果；NAND售價、位元出貨、庫存與毛利均待正式結果驗證。",
+      "confidence": "high",
+      "sourceType": "official",
+      "sourceIds": [
+        "src-sandisk-fy26-results-schedule",
+        "src-trendforce-memory-3q26"
+      ]
+    },
+    {
+      "id": "claim-taiex-technicals-20260731",
+      "entityType": "event",
+      "entityId": "event-taiex-rebound-20260731",
+      "statement": "依證交所7月31日正式收盤資料計算，加權指數高於5日、10日線，低於20日月線與60日季線，高於120日半年線與240日年線；成交金額為20日均值0.87倍。",
+      "confidence": "high",
+      "sourceType": "manual_review",
+      "sourceIds": [
+        "src-twse-taiex-history-20260731",
+        "src-twse-market-turnover-20260731"
+      ]
+    },
+    {
+      "id": "claim-taiex-breadth-20260731",
+      "entityType": "event",
+      "entityId": "event-taiex-rebound-20260731",
+      "statement": "證交所資料顯示7月31日上市股票892家上漲、145家下跌；台灣50上漲9.15%、中型100上漲4.91%、小型300上漲3.33%。",
+      "confidence": "high",
+      "sourceType": "official",
+      "sourceIds": [
+        "src-twse-market-breadth-20260731"
+      ]
+    },
+    {
+      "id": "claim-taiex-causality-20260731",
+      "entityType": "event",
+      "entityId": "event-taiex-rebound-20260731",
+      "statement": "AP市場報導共同把亞洲AI股反彈連結到Microsoft盈利驗證與急跌後回補；Amazon需求數字強化催化，但這是新聞歸因與Codex傳導推論，不是證交所計算的唯一原因。",
+      "confidence": "medium",
+      "sourceType": "news_derived",
+      "sourceIds": [
+        "src-ap-asia-rebound-20260731",
+        "src-ap-wallstreet-rebound-20260730",
+        "src-amazon-q2-2026-results"
+      ]
+    },
+    {
+      "id": "claim-amazon-q2-2026",
+      "entityType": "theme",
+      "entityId": "ai-capital-discipline-advanced-nodes",
+      "statement": "Amazon第二季營收2,006億美元、AWS營收422億美元且年增37%，過去12個月自由現金流為流出76億美元；管理層把2026年資本支出上修至2,200億美元。",
+      "confidence": "high",
+      "sourceType": "official",
+      "sourceIds": [
+        "src-amazon-q2-2026-results",
+        "src-ap-amazon-q2-2026"
+      ]
+    },
+    {
+      "id": "claim-apple-q3-2026",
+      "entityType": "theme",
+      "entityId": "memory-price-upcycle",
+      "statement": "Apple第三季營收1,094億美元、年增16%，EPS 2.02美元；公司與媒體資料顯示記憶體成本及供應限制仍是後續毛利與產品價格變數。",
+      "confidence": "high",
+      "sourceType": "official",
+      "sourceIds": [
+        "src-apple-q3-2026-results",
+        "src-ap-apple-q3-2026"
+      ]
+    },
+    {
+      "id": "claim-us-gdp-pce-20260730",
+      "entityType": "event",
+      "entityId": "event-us-gdp-pce-20260730",
+      "statement": "美國第二季實質GDP年化增1.5%；6月PCE月減0.1%、年增3.7%，核心PCE月增0.1%、年增3.3%。",
+      "confidence": "high",
+      "sourceType": "official",
+      "sourceIds": [
+        "src-bea-pce-june-2026",
+        "src-ap-us-gdp-pce-20260730"
+      ]
+    },
+    {
+      "id": "claim-boj-boe-20260731",
+      "entityType": "event",
+      "entityId": "event-boj-boe-20260731",
+      "statement": "日本銀行7月31日會議結束並維持政策不變；英國央行以6比3維持3.75%，三位委員主張升息至4%。",
+      "confidence": "high",
+      "sourceType": "official",
+      "sourceIds": [
+        "src-boj-meeting-20260731",
+        "src-ap-asia-rebound-20260731",
+        "src-boe-rate-20260730",
+        "src-ap-boe-rate-20260730"
+      ]
+    },
+    {
+      "id": "claim-memory-cost-transmission-20260731",
+      "entityType": "theme",
+      "entityId": "memory-price-upcycle",
+      "statement": "Amazon把記憶體成本列為資本支出上修主因之一，Apple則已受記憶體短缺與價格傳導影響；這支持供給緊縮已跨雲端與終端，但個別台股受益仍須由合約價、營收與毛利驗證。",
+      "confidence": "medium",
+      "sourceType": "llm_inference",
+      "sourceIds": [
+        "src-amazon-q2-2026-results",
+        "src-ap-amazon-q2-2026",
+        "src-apple-q3-2026-results",
+        "src-ap-apple-q3-2026"
+      ]
+    },
+    {
+      "id": "claim-taiex-technicals-20260730",
+      "entityType": "event",
+      "entityId": "event-asia-ai-reset-20260728",
+      "statement": "依證交所7月30日正式收盤資料計算，加權指數低於5、10、20、60日線，高於120日半年線與240日年線；成交金額為20日均值1.11倍。",
+      "confidence": "high",
+      "sourceType": "manual_review",
+      "sourceIds": [
+        "src-twse-taiex-history-20260731",
+        "src-twse-market-turnover-20260731"
+      ]
+    },
+    {
+      "id": "claim-taiex-breadth-20260730",
+      "entityType": "event",
+      "entityId": "event-asia-ai-reset-20260728",
+      "statement": "證交所資料顯示7月30日上市股票上漲224家、下跌775家、跌停25家；台灣50上漲0.27%，中型100與小型300均下跌2.18%。",
+      "confidence": "high",
+      "sourceType": "official",
+      "sourceIds": [
+        "src-twse-market-breadth-20260730"
+      ]
+    },
+    {
+      "id": "claim-taiex-causality-20260730",
+      "entityType": "event",
+      "entityId": "event-asia-ai-reset-20260728",
+      "statement": "AP與Reuters共同把亞洲AI股波動連結到資本支出回收疑慮與去槓桿；大型權值止穩掩蓋台股中小型壓力屬Codex推論，不是交易所計算事實。",
+      "confidence": "medium",
+      "sourceType": "news_derived",
+      "sourceIds": [
+        "src-ap-asia-markets-20260730",
+        "src-reuters-asia-ai-rout",
+        "src-twse-market-breadth-20260730"
+      ]
+    },
+    {
+      "id": "claim-fomc-decision-20260730",
+      "entityType": "event",
+      "entityId": "event-fomc-decision-20260730",
+      "statement": "FOMC於7月29日以9比3維持聯邦基金利率目標區間3.50%至3.75%；三位反對者主張升息25個基點。",
+      "confidence": "high",
+      "sourceType": "official",
+      "sourceIds": [
+        "src-fed-fomc-20260729",
+        "src-ap-fed-decision-20260729"
+      ]
+    },
+    {
+      "id": "claim-microsoft-fy26-q4",
+      "entityType": "theme",
+      "entityId": "ai-capital-discipline-advanced-nodes",
+      "statement": "Microsoft 2026會計年度第四季營收900.07億美元、Azure年增43%、商業待履約義務6,780億美元，單季資本支出410億美元。",
+      "confidence": "high",
+      "sourceType": "official",
+      "sourceIds": [
+        "src-microsoft-fy26-q4-results",
+        "src-ap-microsoft-fy26-q4"
+      ]
+    },
+    {
+      "id": "claim-meta-q2-2026",
+      "entityType": "theme",
+      "entityId": "ai-capital-discipline-advanced-nodes",
+      "statement": "Meta第二季營收608.01億美元、年增28%，成本增55%、自由現金流7.84億美元，全年資本支出預估1,300億至1,450億美元。",
+      "confidence": "high",
+      "sourceType": "official",
+      "sourceIds": [
+        "src-meta-q2-2026-results",
+        "src-ap-meta-q2-2026"
+      ]
+    },
+    {
+      "id": "claim-ai-capital-efficiency-divergence-20260730",
+      "entityType": "theme",
+      "entityId": "ai-capital-discipline-advanced-nodes",
+      "statement": "Microsoft與Meta同時證明AI資本支出仍大，但收入、成本與自由現金流表現分化；供應鏈研究應由支出總額進一步檢查訂單品質與回收期。",
+      "confidence": "medium",
+      "sourceType": "llm_inference",
+      "sourceIds": [
+        "src-microsoft-fy26-q4-results",
+        "src-meta-q2-2026-results",
+        "src-ap-microsoft-fy26-q4",
+        "src-ap-meta-q2-2026"
+      ]
+    },
+    {
+      "id": "claim-us-iran-energy-risk-20260730",
+      "entityType": "event",
+      "entityId": "event-us-iran-renewed-strikes-20260730",
+      "statement": "美伊敵對行動恢復後Brent反彈7.3%至88.09美元；此前停火消息曾使Brent單日下跌8.7%至88.36美元，顯示事件驅動的雙向波動。",
+      "confidence": "high",
+      "sourceType": "news_derived",
+      "sourceIds": [
+        "src-ap-iran-oil-20260729",
+        "src-reuters-oil-pause-20260727",
+        "src-ap-us-iran-strikes-20260730"
       ]
     },
     {
@@ -1642,30 +3340,6 @@
         "src-sbs-asia-chip-20260728",
         "src-pts-taiex-20260728",
         "src-reuters-asia-ai-rout"
-      ]
-    },
-    {
-      "id": "claim-trump-iran-whipsaw-20260729",
-      "entityType": "event",
-      "entityId": "event-trump-iran-whipsaw-20260729",
-      "statement": "川普先表示美國正與伊朗談判，攻擊恢復後又警告若無協議將完成任務；同一事件的口風轉換使油價與避險交易反覆。",
-      "confidence": "high",
-      "sourceType": "news_derived",
-      "sourceIds": [
-        "src-reuters-trump-iran-talks-20260727",
-        "src-ap-trump-iran-flare-20260728"
-      ]
-    },
-    {
-      "id": "claim-fomc-not-yet-released-20260729",
-      "entityType": "event",
-      "entityId": "event-fomc-20260729",
-      "statement": "截至 2026 年 7 月 29 日台北時間中午，7 月 FOMC 利率決定與記者會尚未公布；現行目標區間仍為 3.50% 至 3.75%。",
-      "confidence": "high",
-      "sourceType": "official",
-      "sourceIds": [
-        "src-fed-implementation-20260617",
-        "src-fed-minutes-20260617"
       ]
     },
     {
@@ -1938,15 +3612,89 @@
       ]
     },
     {
-      "id": "claim-brent-whipsaw-20260729",
+      "id": "claim-major-central-bank-calendar-20260803",
       "entityType": "event",
-      "entityId": "event-trump-iran-whipsaw-20260729",
-      "statement": "Brent在7月28日因談判希望一度跌約2%，7月29日攻擊再起後盤中反彈3.1%至84.58美元；這是事件驅動震盪，不足以推論單向長期價格趨勢。",
+      "entityId": "event-major-central-bank-calendar-20260803",
+      "statement": "Fed、BOJ、ECB與BOE官方日程顯示，台北時間2026年8月3日18:30至8月6日18:30沒有新的政策利率決議；四家央行7月會議結果均已公布，下一次正式決策均在此窗口之外。",
       "confidence": "high",
-      "sourceType": "news_derived",
+      "sourceType": "manual_review",
       "sourceIds": [
-        "src-reuters-oil-whipsaw-20260728",
-        "src-ap-iran-oil-20260729"
+        "src-fed-fomc-calendar-2026",
+        "src-boj-mpm-calendar-2026",
+        "src-boe-mpc-calendar-2026",
+        "src-ecb-monetary-calendar-2026"
+      ]
+    },
+    {
+      "id": "claim-taiex-technicals-20260810",
+      "entityType": "event",
+      "entityId": "event-taiex-technical-20260810",
+      "statement": "依證交所8月10日正式收盤資料，加權指數高於5／10／20／60／120／240日線，20日量比0.88；120日線為半年線、240日線為年線。",
+      "confidence": "high",
+      "sourceType": "manual_review",
+      "sourceIds": [
+        "src-twse-taiex-history-20260810",
+        "src-twse-market-turnover-20260810"
+      ]
+    },
+    {
+      "id": "claim-taiex-technicals-20260811",
+      "entityType": "event",
+      "entityId": "event-taiex-technical-20260811",
+      "statement": "依證交所8月11日正式收盤資料，加權指數高於六條均線，20日量比0.92；120日線為半年線、240日線為年線。",
+      "confidence": "high",
+      "sourceType": "manual_review",
+      "sourceIds": [
+        "src-twse-taiex-history-20260811",
+        "src-twse-market-turnover-20260811"
+      ]
+    },
+    {
+      "id": "claim-taiex-technicals-2026-08-13",
+      "entityType": "event",
+      "entityId": "event-taiex-technical-2026-08-13",
+      "statement": "依證交所8月13日正式收盤資料，加權指數高於六條均線，20日量比1.13；120日線為半年線、240日線為年線。",
+      "confidence": "high",
+      "sourceType": "manual_review",
+      "sourceIds": [
+        "src-twse-taiex-history-20260813",
+        "src-twse-market-turnover-20260813"
+      ]
+    },
+    {
+      "id": "claim-taiex-technicals-2026-08-17",
+      "entityType": "event",
+      "entityId": "event-taiex-technical-2026-08-17",
+      "statement": "依證交所8月17日正式收盤資料，加權指數高於六條均線，20日量比1.02；120日線為半年線、240日線為年線。",
+      "confidence": "high",
+      "sourceType": "manual_review",
+      "sourceIds": [
+        "src-twse-taiex-history-20260817",
+        "src-twse-market-turnover-20260817"
+      ]
+    },
+    {
+      "id": "claim-taiex-technicals-2026-08-18",
+      "entityType": "event",
+      "entityId": "event-taiex-technical-2026-08-18",
+      "statement": "依證交所8月18日正式收盤資料，加權指數跌破5日線但高於10／20／60／120／240日線，20日量比1.04；120日線為半年線、240日線為年線。",
+      "confidence": "high",
+      "sourceType": "manual_review",
+      "sourceIds": [
+        "src-twse-taiex-history-20260818",
+        "src-twse-market-turnover-20260818"
+      ]
+    },
+    {
+      "id": "claim-taiex-technicals-2026-08-20",
+      "entityType": "event",
+      "entityId": "event-taiex-technical-2026-08-20",
+      "statement": "依證交所8月20日正式收盤資料，加權指數20日量比0.87；120日線為半年線、240日線為年線。",
+      "confidence": "high",
+      "sourceType": "manual_review",
+      "sourceIds": [
+        "src-twse-taiex-history-20260820",
+        "src-twse-market-turnover-20260820"
       ]
     }
   ],
@@ -1955,46 +3703,49 @@
       "id": "memory-contract-price-3q26",
       "material": "DRAM／NAND Flash",
       "direction": "up",
-      "change": "DRAM +13～18%｜NAND +10～15%",
-      "period": "2026 第三季預估",
-      "status": "供給緊、漲幅收斂",
-      "thesis": "上游晶圓製造商對售價最直接；模組廠有庫存槓桿，但也更容易承受高價補庫與終端需求風險。",
+      "change": "3Q預估：DRAM +13～18%、NAND +10～15%；Sandisk Q4營收季增51%，約三分之二增幅來自價格",
+      "period": "2026年第三季預估；Sandisk截至2026-07-03季度實績",
+      "status": "研究預估獲Sandisk價格與資料中心營收部分驗證；台灣公司實現售價、產品組合、庫存與毛利仍待確認",
+      "thesis": "TrendForce與獨立台灣財經媒體提供第三季DRAM／NAND漲價區間，Sandisk公司財報再確認NAND較高價格與AI資料中心需求已進入營收；Consumer季減32%顯示傳導並不均勻。",
       "sourceIds": [
         "src-trendforce-memory-3q26",
-        "src-edn-memory-3q26"
+        "src-edn-memory-3q26",
+        "src-sandisk-q4-2026-results"
       ],
       "themeIds": [
-        "memory-price-upcycle"
+        "memory-price-upcycle",
+        "high-bandwidth-flash-ai-inference"
       ],
       "stockLinks": [
         {
           "ticker": "2408",
           "relationship": "direct_supplier",
-          "reasoning": "DRAM 製造商，合約價傳導最直接。"
+          "reasoning": "DRAM製造商，價格關聯直接但產品不是Sandisk NAND；須以實現售價、月營收與毛利驗證。"
         },
         {
           "ticker": "2344",
           "relationship": "direct_supplier",
-          "reasoning": "利基型記憶體製造商，但產品組合與 server DRAM 不同。"
+          "reasoning": "利基型DRAM與NOR製造商，產品組合與server DRAM及Sandisk NAND不同。"
         },
         {
           "ticker": "3260",
           "relationship": "inventory_leverage",
-          "reasoning": "低成本庫存可能受惠，但高價補庫與需求轉弱是反向風險。"
+          "reasoning": "低成本庫存可能受惠，但高價補庫、消費需求轉弱與HBF無直接訂單是反向風險。"
         }
       ]
     },
     {
-      "id": "brent-iran-whipsaw-20260729",
+      "id": "brent-hormuz-easing-20260806",
       "material": "Brent原油",
-      "direction": "up",
-      "change": "7/29盤中+3.1%至84.58美元；前一日一度約-2%",
-      "period": "2026-07-28至2026-07-29",
-      "status": "地緣事件驅動、方向反覆",
-      "thesis": "攻擊與談判消息讓原油在24小時內反向；對台灣科技製造鏈先視為能源、物流與折現率風險，不視為個股營收利多。",
+      "direction": "easing",
+      "change": "8/4跌5.3%；8/6約79.50美元、日內近乎持平",
+      "period": "2026-08-04至2026-08-06",
+      "status": "協議起草希望使風險溢價回落後暫穩；共同文本、解除封鎖、船流、保費與攻擊風險仍未確認",
+      "thesis": "AP記錄油價與外交說法，UKMTO提供獨立船舶安全脈絡；價格正在交易協議希望，但實體供應與航運尚未恢復。台灣主要承受能源、物流、通膨與折現率傳導。",
       "sourceIds": [
-        "src-ap-iran-oil-20260729",
-        "src-reuters-oil-whipsaw-20260728"
+        "src-ap-hormuz-roundup-20260806",
+        "src-ap-world-markets-20260806",
+        "src-ukmto-live-20260804"
       ],
       "themeIds": [
         "ai-power-grid-resilience",
@@ -2004,17 +3755,17 @@
         {
           "ticker": "2317",
           "relationship": "cost_pressure",
-          "reasoning": "全球製造與物流規模大，能源與運輸成本變化的傳導較直接。"
+          "reasoning": "全球製造與物流規模大，能源、保險與運輸成本傳導較直接。"
         },
         {
           "ticker": "3231",
           "relationship": "cost_pressure",
-          "reasoning": "伺服器跨區交付與供應鏈物流成本可能受油價與航運風險影響。"
+          "reasoning": "伺服器跨區交付可能受油價、航運與保險成本影響。"
         },
         {
           "ticker": "2330",
           "relationship": "cost_pressure",
-          "reasoning": "油價主要透過通膨、電力與折現率間接傳導，並非直接原油需求題材。"
+          "reasoning": "主要透過通膨、電力與折現率間接傳導，並非直接原油題材。"
         }
       ]
     }
