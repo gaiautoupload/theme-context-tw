@@ -1,15 +1,15 @@
 {
   "run": {
-    "id": "2026-10-06-close-v1",
-    "asOf": "2026-10-06T13:30:00+08:00",
+    "id": "2026-10-07-close-v1",
+    "asOf": "2026-10-07T13:30:00+08:00",
     "status": "candidate",
     "sourceIds": [
-      "src-twse-taiex-history-2026-10-06",
-      "src-twse-market-turnover-2026-10-06"
+      "src-twse-taiex-history-2026-10-07",
+      "src-twse-market-turnover-2026-10-07"
     ]
   },
   "dailyReport": {
-    "id": "daily-2026-10-06",
+    "id": "daily-2026-10-07",
     "title": "台股正式收盤技術更新",
     "eyebrow": "2026.09.07｜正式收盤研究",
     "narrative": "證交所正式收盤47326.27點，變動775.14點（1.67%），成交997.94億元、20日量比1.05；依官方均線與區間更新，單日變動不外推為趨勢。",
@@ -23,57 +23,57 @@
     "risks": [
       "勿預測確切落底日期。"
     ],
-    "date": "2026-10-06",
-    "asOf": "2026-10-06T13:30:00+08:00",
-    "headline": "台股正式收盤 49822.55 點",
-    "summary": "加權指數變動0.22%，成交1026.2億元，技術結構依正式收盤更新。",
+    "date": "2026-10-07",
+    "asOf": "2026-10-07T13:30:00+08:00",
+    "headline": "台股正式收盤 49806.37 點",
+    "summary": "加權指數變動-0.03%，成交986.28億元，技術結構依正式收盤更新。",
     "sourceIds": [
-      "src-twse-taiex-history-2026-10-06",
-      "src-twse-market-turnover-2026-10-06"
+      "src-twse-taiex-history-2026-10-07",
+      "src-twse-market-turnover-2026-10-07"
     ]
   },
   "indexTechnicalAnalysis": {
-    "id": "taiex-technical-2026-10-06",
+    "id": "taiex-technical-2026-10-07",
     "symbol": "TWSE:IX0001",
     "name": "臺灣證券交易所發行量加權股價指數",
-    "asOf": "2026-10-06T13:30:00+08:00",
+    "asOf": "2026-10-07T13:30:00+08:00",
     "dataStatus": "official_close",
-    "close": 49822.55,
-    "changePoints": 110.51,
-    "changePercent": 0.22,
-    "turnoverBillionTwd": 1026.2,
-    "turnoverRatio20": 1.16,
+    "close": 49806.37,
+    "changePoints": -16.18,
+    "changePercent": -0.03,
+    "turnoverBillionTwd": 986.28,
+    "turnoverRatio20": 1.12,
     "regime": "短期依價格與量能判讀；中期觀察季線；長期以半年線與年線界定",
-    "summary": "正式收盤49822.55點，成交1026.2億元、20日量比1.16；均線結構依官方資料更新。",
+    "summary": "正式收盤49806.37點，成交986.28億元、20日量比1.12；均線結構依官方資料更新。",
     "movingAverages": [
       {
         "period": 5,
-        "value": 48860.79,
+        "value": 49234.04,
         "position": "above"
       },
       {
         "period": 10,
-        "value": 48363.68,
+        "value": 48572.43,
         "position": "above"
       },
       {
         "period": 20,
-        "value": 47453.46,
+        "value": 47577.47,
         "position": "above"
       },
       {
         "period": 60,
-        "value": 45576.76,
+        "value": 45650.53,
         "position": "above"
       },
       {
         "period": 120,
-        "value": 44227.41,
+        "value": 44336.45,
         "position": "above"
       },
       {
         "period": 240,
-        "value": 37300.01,
+        "value": 37393.78,
         "position": "above"
       }
     ],
@@ -104,13 +104,13 @@
       },
       {
         "label": "120日半年線",
-        "value": 44227.41,
+        "value": 44336.45,
         "kind": "support",
         "basis": "120日均線，稱半年線"
       },
       {
         "label": "240日年線",
-        "value": 37300.01,
+        "value": 37393.78,
         "kind": "support",
         "basis": "240日均線，稱年線"
       }
@@ -142,14 +142,14 @@
         "status": "risk_case",
         "confidence": "low",
         "thesis": "跌破季線並伴隨放量與籌碼惡化才成立。",
-        "trigger": "收盤跌破45576.76且量比高於1.2。",
+        "trigger": "收盤跌破45650.53且量比高於1.2。",
         "invalidation": "重新站回60日線。",
-        "targetZone": "39384.85至45576.76"
+        "targetZone": "39384.85至45650.53"
       }
     ],
     "observations": [
       "均線與價格位置依官方資料更新",
-      "20日量比1.16",
+      "20日量比1.12",
       "外部政策與能源風險需持續觀察"
     ],
     "nextConfirmation": [
@@ -158,23 +158,23 @@
       "權值與半導體廣度"
     ],
     "sourceIds": [
-      "src-twse-taiex-history-2026-10-06",
-      "src-twse-market-turnover-2026-10-06"
+      "src-twse-taiex-history-2026-10-07",
+      "src-twse-market-turnover-2026-10-07"
     ]
   },
   "marketSignals": [
     {
-      "id": "signal-taiex-close-2026-10-06",
+      "id": "signal-taiex-close-2026-10-07",
       "kind": "market_shock",
       "headline": "台股正式收盤技術更新",
       "actor": "台灣加權指數／臺灣證券交易所",
       "quote": null,
-      "occurredAt": "2026-10-06T13:30:00+08:00",
+      "occurredAt": "2026-10-07T13:30:00+08:00",
       "freshness": "breaking",
       "severity": "high",
-      "direction": "up",
+      "direction": "down",
       "status": "證交所OHLC與成交資訊已確認",
-      "marketMove": "收49822.55點，0.22%；成交1026.2億元、量比1.16",
+      "marketMove": "收49806.37點，-0.03%；成交986.28億元、量比1.12",
       "whyItMatters": "技術位置與量能需由下一交易日驗證。",
       "affectedThemeIds": [],
       "affectedTickers": [
@@ -183,8 +183,8 @@
       ],
       "nextWatch": "下一交易日成交量與20日高低點",
       "sourceIds": [
-        "src-twse-taiex-history-2026-10-06",
-        "src-twse-market-turnover-2026-10-06"
+        "src-twse-taiex-history-2026-10-07",
+        "src-twse-market-turnover-2026-10-07"
       ]
     }
   ],
@@ -971,6 +971,18 @@
       "sourceIds": [
         "src-twse-taiex-history-2026-10-06",
         "src-twse-market-turnover-2026-10-06"
+      ]
+    },
+    {
+      "id": "event-taiex-technical-2026-10-07",
+      "title": "TAIEX 49806.37 正式收盤",
+      "summary": "證交所正式收盤資料已更新。",
+      "region": "台灣",
+      "happenedAt": "2026-10-07",
+      "impact": "技術結構與量價需持續觀察。",
+      "sourceIds": [
+        "src-twse-taiex-history-2026-10-07",
+        "src-twse-market-turnover-2026-10-07"
       ]
     }
   ],
@@ -3428,6 +3440,26 @@
       "publishedAt": "2026-10-06",
       "retrievedAt": "2026-10-06T13:30:00+08:00",
       "quality": "證交所官方資料。"
+    },
+    {
+      "id": "src-twse-taiex-history-2026-10-07",
+      "publisher": "TWSE",
+      "title": "TAIEX historical prices",
+      "url": "https://www.twse.com.tw/rwd/zh/TAIEX/MI_5MINS_HIST?date=20261007&response=json",
+      "sourceType": "official",
+      "publishedAt": "2026-10-07",
+      "retrievedAt": "2026-10-07T13:30:00+08:00",
+      "quality": "證交所官方資料。"
+    },
+    {
+      "id": "src-twse-market-turnover-2026-10-07",
+      "publisher": "TWSE",
+      "title": "Market turnover statistics",
+      "url": "https://www.twse.com.tw/rwd/zh/afterTrading/FMTQIK?date=20261007&response=json",
+      "sourceType": "official",
+      "publishedAt": "2026-10-07",
+      "retrievedAt": "2026-10-07T13:30:00+08:00",
+      "quality": "證交所官方資料。"
     }
   ],
   "claims": [
@@ -4760,6 +4792,18 @@
       "sourceIds": [
         "src-twse-taiex-history-2026-10-06",
         "src-twse-market-turnover-2026-10-06"
+      ]
+    },
+    {
+      "id": "claim-taiex-technicals-2026-10-07",
+      "entityType": "event",
+      "entityId": "event-taiex-technical-2026-10-07",
+      "statement": "2026-10-07 證交所加權指數正式收盤為 49806.37 點；120日線稱半年線、240日線稱年線。",
+      "confidence": "high",
+      "sourceType": "official",
+      "sourceIds": [
+        "src-twse-taiex-history-2026-10-07",
+        "src-twse-market-turnover-2026-10-07"
       ]
     }
   ],
